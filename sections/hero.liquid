@@ -1,0 +1,75 @@
+<div class="h-[calc(100vh_-_130px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container mt-10">
+  <div class="swiper-wrapper">
+    <div class="relative swiper-slide">
+      <img
+        src="{{ 'hero.jpg' | asset_url }}"
+        alt="Hero Image 1"
+        class="object-cover w-full h-full"
+        width="auto"
+        height="auto"
+      >
+      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
+        <!-- Testo -->
+        <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
+          <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
+          <p>Comfy styles have just arrived</p>
+          {% render 'button', url: 'collections_url', label: 'Tutti i prodotti' %}
+        </div>
+      </div>
+    </div>
+    <div class="relative swiper-slide">
+      <img
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        alt="Hero Image 2"
+        class="object-cover object-top w-full h-full"
+        width="auto"
+        height="auto"
+      >
+      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 flex items-center justify-center text-2xl text-white ">
+        <!-- Testo -->
+        <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
+          <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
+          <p>Comfy styles have just arrived</p>
+          {% render 'button', url: 'collections_url', label: 'Tutti i prodotti' %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots di navigazione -->
+  <div class="swiper-pagination"></div>
+</div>
+<style>
+  .swiper-pagination {
+    position: absolute;
+    bottom: -20px !important; /* Distanza dalla fine dell'immagine */
+    left: 50%;
+    transform: translateX(-50%); /* Centra i dots */
+    display: flex;
+    gap: 5px; /* Spaziatura tra i dots */
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px !important; /* Larghezza dei dots */
+    height: 15px !important; /* Altezza dei dots */
+    background: transparent; /* Sfondo trasparente di default */
+    border: 2px solid white; /* Bordo bianco */
+    border-radius: 50%; /* Rendi i dots rotondi */
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white !important; /* Colore di sfondo attivo */
+    border: none; /* Rimuovi il bordo per il dot attivo */
+  }
+
+  @media screen and (max-width: 768px) {
+    .swiper-pagination {
+      bottom: 0px !important; /* Distanza dalla fine dell'immagine */
+    }
+  }
+</style>
