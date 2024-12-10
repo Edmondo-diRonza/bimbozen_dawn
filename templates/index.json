@@ -15,25 +15,41 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/hero.jpg"
+            "image": "shopify://shop_images/hero.jpg",
+            "text": "Testo Predefinito",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16
           }
         },
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg"
+            "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg",
+            "text": "Testo Predefinito",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16
           }
         },
         "image_block_9kJDye": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/cloth-and-carry-lennylamb-preemie-wrap-luna-5-556542.webp"
+            "image": "shopify://shop_images/cloth-and-carry-lennylamb-preemie-wrap-luna-5-556542.webp",
+            "text": "Testo Predefinito",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16
           }
         },
         "image_block_4Qenb4": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/pol_pl_Little-Dutch-Stolik-edukacyjny-Flowers-Butterflies-FSC-LD7093-16575_4.webp"
+            "image": "shopify://shop_images/pol_pl_Little-Dutch-Stolik-edukacyjny-Flowers-Butterflies-FSC-LD7093-16575_4.webp",
+            "text": "Testo Predefinito",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16
           }
         }
       },
@@ -101,13 +117,13 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
