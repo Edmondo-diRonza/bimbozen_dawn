@@ -23,11 +23,25 @@
           "settings": {
             "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg"
           }
+        },
+        "image_block_9kJDye": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/cloth-and-carry-lennylamb-preemie-wrap-luna-5-556542.webp"
+          }
+        },
+        "image_block_4Qenb4": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/pol_pl_Little-Dutch-Stolik-edukacyjny-Flowers-Butterflies-FSC-LD7093-16575_4.webp"
+          }
         }
       },
       "block_order": [
         "image_block_bMGeCF",
-        "image_block_tWPn8q"
+        "image_block_tWPn8q",
+        "image_block_9kJDye",
+        "image_block_4Qenb4"
       ],
       "settings": {}
     },
