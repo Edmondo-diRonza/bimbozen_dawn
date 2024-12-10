@@ -12,34 +12,32 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      },
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
