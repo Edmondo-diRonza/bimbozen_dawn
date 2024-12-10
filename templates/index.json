@@ -9,66 +9,27 @@
  */
 {
   "sections": {
-    // "image_banner": {
-    //   "type": "image-banner",
-    //   "blocks": {
-    //     "heading": {
-    //       "type": "heading",
-    //       "settings": {
-    //         "heading": "Browse our latest products",
-    //         "heading_size": "h0"
-    //       }
-    //     },
-    //     "button": {
-    //       "type": "buttons",
-    //       "settings": {
-    //         "button_label_1": "Shop all",
-    //         "button_link_1": "shopify://collections/all",
-    //         "button_style_secondary_1": true,
-    //         "button_label_2": "",
-    //         "button_link_2": "",
-    //         "button_style_secondary_2": false
-    //       }
-    //     }
-    //   },
-    //   "block_order": ["heading", "button"],
-    //   "settings": {
-    //     "image": "shopify://shop_images/hero_4f31a46d-c9c0-45bb-833b-18959961305c.jpg",
-    //     "image_2": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg",
-    //     "image_overlay_opacity": 30,
-    //     "image_height": "adapt",
-    //     "desktop_content_position": "bottom-center",
-    //     "show_text_box": false,
-    //     "desktop_content_alignment": "center",
-    //     "color_scheme": "scheme-3",
-    //     "image_behavior": "none",
-    //     "mobile_content_alignment": "center",
-    //     "stack_images_on_mobile": false,
-    //     "show_text_below": false
-    //   }
-    // },
     "hero_banner": {
-      "type": "hero"
-      // "blocks": {
-      //   "heading": {
-      //     "type": "heading",
-      //     "settings": {
-      //       "heading": "Browser cacca latest products",
-      //       "heading_size": "h0"
-      //     }
-      //   },
-      //   "button": {
-      //     "type": "button",
-      //     "settings": {
-      //       "button_label_1": "Shop all",
-      //       "button_link_1": "shopify://collections/all",
-      //       "button_style_secondary_1": true,
-      //       "button_label_2": "",
-      //       "button_link_2": "",
-      //       "button_style_secondary_2": false
-      //     }
-      //   }
-      // }
+      "type": "hero",
+      "blocks": {
+        "image_block_bMGeCF": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/hero.jpg"
+          }
+        },
+        "image_block_tWPn8q": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_bMGeCF",
+        "image_block_tWPn8q"
+      ],
+      "settings": {}
     },
     "collection_list_jfwGA7": {
       "type": "collection-list",
@@ -139,5 +100,9 @@
       }
     }
   },
-  "order": ["hero_banner", "collection_list_jfwGA7", "featured_collection"]
+  "order": [
+    "hero_banner",
+    "collection_list_jfwGA7",
+    "featured_collection"
+  ]
 }
