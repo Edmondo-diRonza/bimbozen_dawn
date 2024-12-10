@@ -17,10 +17,17 @@
           "settings": {
             "image": "shopify://shop_images/hero.jpg"
           }
+        },
+        "image_block_tWPn8q": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg"
+          }
         }
       },
       "block_order": [
-        "image_block_bMGeCF"
+        "image_block_bMGeCF",
+        "image_block_tWPn8q"
       ],
       "settings": {}
     },
