@@ -1,42 +1,30 @@
 <div class="h-[calc(100vh_-_130px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container mt-10">
   <div class="swiper-wrapper">
-    <div class="relative swiper-slide">
-      <img
-        src="{{ 'hero.jpg' | asset_url }}"
-        alt="Hero Image 1"
-        class="object-cover w-full h-full"
-        width="auto"
-        height="auto"
-      >
-      <div class="absolute inset-0 bg-black/40"></div>
-      <!-- Overlay -->
-      <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
-        <!-- Testo -->
-        <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
-          <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
-          <p>Comfy styles have just arrived</p>
+  {% for block in section.blocks %}
+    {% if block.settings.image %}
+      <div class="relative swiper-slide">
+        <img
+          src="{{ block.settings.image | img_url: 'large' }}"
+          alt="Hero Image"
+          class="object-cover object-top w-full h-full"
+          width="auto"
+          height="auto"
+        >
+        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
+          <!-- Testo -->
+          <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
+            <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
+            <p>Comfy styles have just arrived</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="relative swiper-slide">
-      <img
-        src="{{ 'placeholder.jpg' | asset_url }}"
-        alt="Hero Image 2"
-        class="object-cover object-top w-full h-full"
-        width="auto"
-        height="auto"
-      >
-      <div class="absolute inset-0 bg-black/40"></div>
-      <!-- Overlay -->
-      <div class="absolute inset-0 flex items-center justify-center text-2xl text-white ">
-        <!-- Testo -->
-        <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
-          <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
-          <p>Comfy styles have just arrived</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
 
   <!-- Dots di navigazione -->
   <div class="swiper-pagination"></div>
@@ -71,3 +59,35 @@
     }
   }
 </style>
+{% schema %}
+{
+  "name": "Immagini Multiple",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Immagine",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Seleziona Immagine"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Immagini Multiple",
+      "blocks": [
+        {
+          "type": "image_block"
+        },
+        {
+          "type": "image_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
