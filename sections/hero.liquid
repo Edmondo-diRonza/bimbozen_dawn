@@ -1,22 +1,23 @@
-<div class="h-[calc(100vh_-_130px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container mt-10">
+<div class="h-[calc(100vh_-_150px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container">
   <div class="swiper-wrapper">
   {% for block in section.blocks %}
     {% if block.settings.image %}
       <div class="relative swiper-slide">
         <img
-          src="{{ block.settings.image | img_url: 'large' }}"
+          src="{{ block.settings.image | img_url: '1920x' }}"
           alt="Hero Image"
           class="object-cover object-top w-full h-full"
-          width="auto"
+          width="1200px"
           height="auto"
         >
-        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 overlay bg-black/40">
         <!-- Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
+          <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
           <!-- Testo -->
-          <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
-            <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
-            <p>Comfy styles have just arrived</p>
+            <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
+              <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
+              <p>Comfy styles have just arrived</p>
+            </div>
           </div>
         </div>
       </div>
