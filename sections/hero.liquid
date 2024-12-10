@@ -1,31 +1,32 @@
 <div class="h-[calc(100vh_-_150px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container">
   <div class="swiper-wrapper">
-  {% for block in section.blocks %}
-    {% if block.settings.image %}
-      <div class="relative swiper-slide">
-        <img
-          src="{{ block.settings.image | img_url: '1920x' }}"
-          alt="Hero Image"
-          class="object-cover object-top w-full h-full"
-          width="1200px"
-          height="auto"
-        >
-        <div class="absolute inset-0 overlay bg-black/40">
-        <!-- Overlay -->
-          <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
-          <!-- Testo -->
-            <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%] ">
-              <h1 class="text-6xl text-white lg:text-8xl">Stay Cozy</h1>
-              <p>Comfy styles have just arrived</p>
+    {% for block in section.blocks %}
+      {% if block.settings.image %}
+        <div class="relative swiper-slide">
+          <img
+            src="{{ block.settings.image | img_url: '1920x' }}"
+            alt="Hero Image"
+            class="object-cover object-top w-full h-full"
+            width="1920px"
+            height="auto">
+          <div class="absolute inset-0 overlay bg-black/40">
+            <!-- Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
+              <!-- Testo Dinamico -->
+              <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%]">
+                <h1 class="text-white" style="font-size: {{ block.settings.text_size | default: 96 }}px;">
+                  {{ block.settings.text | default: "Testo Predefinito" }}
+                </h1>
+                {% if block.settings.subtext %}
+                  <p style="font-size: {{ block.settings.subtext_size | default: 16 }}px;">{{ block.settings.subtext }}</p>
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div>
-
-
+      {% endif %}
+    {% endfor %}
+  </div>
 
   <!-- Dots di navigazione -->
   <div class="swiper-pagination"></div>
@@ -33,62 +34,101 @@
 <style>
   .swiper-pagination {
     position: absolute;
-    bottom: -20px !important; /* Distanza dalla fine dell'immagine */
+    bottom: -20px !important;
+    /* Distanza dalla fine dell'immagine */
     left: 50%;
-    transform: translateX(-50%); /* Centra i dots */
+    transform: translateX(-50%);
+    /* Centra i dots */
     display: flex;
-    gap: 5px; /* Spaziatura tra i dots */
+    gap: 5px;
+    /* Spaziatura tra i dots */
     justify-content: center;
   }
 
   .swiper-pagination-bullet {
-    width: 15px !important; /* Larghezza dei dots */
-    height: 15px !important; /* Altezza dei dots */
-    background: transparent; /* Sfondo trasparente di default */
-    border: 2px solid white; /* Bordo bianco */
-    border-radius: 50%; /* Rendi i dots rotondi */
+    width: 15px !important;
+    /* Larghezza dei dots */
+    height: 15px !important;
+    /* Altezza dei dots */
+    background: transparent;
+    /* Sfondo trasparente di default */
+    border: 2px solid white;
+    /* Bordo bianco */
+    border-radius: 50%;
+    /* Rendi i dots rotondi */
   }
 
   .swiper-pagination-bullet-active {
-    background: white !important; /* Colore di sfondo attivo */
-    border: none; /* Rimuovi il bordo per il dot attivo */
+    background: white !important;
+    /* Colore di sfondo attivo */
+    border: none;
+    /* Rimuovi il bordo per il dot attivo */
   }
 
   @media screen and (max-width: 768px) {
     .swiper-pagination {
-      bottom: 0px !important; /* Distanza dalla fine dell'immagine */
+      bottom: 0 !important;
+      /* Distanza dalla fine dell'immagine */
     }
   }
 </style>
 {% schema %}
-{
-  "name": "Immagini Multiple",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "image_block",
-      "name": "Immagine",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Seleziona Immagine"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Immagini Multiple",
-      "blocks": [
-        {
-          "type": "image_block"
-        },
-        {
-          "type": "image_block"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Hero",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image_block",
+        "name": "Immagine Hero",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Seleziona Immagine"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Testo Dinamico",
+            "default": "Testo Predefinito"
+          },
+          {
+            "type": "text",
+            "id": "subtext",
+            "label": "Testo Sottotitolo",
+            "default": "Testo predefinito"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "label": "Dimensione Titolo principale",
+            "min": 96,
+            "max": 120,
+            "step": 1,
+            "default": 96
+          }, {
+            "type": "range",
+            "id": "subtext_size",
+            "label": "Dimensione Paragrafo",
+            "min": 16,
+            "max": 48,
+            "step": 1,
+            "default": 16
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero",
+        "blocks": [
+          {
+            "type": "image_block"
+          }, {
+            "type": "image_block"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

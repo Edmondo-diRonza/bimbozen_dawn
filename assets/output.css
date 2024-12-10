@@ -4565,8 +4565,15 @@ video {
     justify-content: center;
   }
 
-  .lg\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
+  .lg\:text-\[126px\] {
+    font-size: 126px;
+  }
+
+  .lg\:text-\[108px\] {
+    font-size: 108px;
+  }
+
+  .lg\:text-\[96px\] {
+    font-size: 96px;
   }
 }
