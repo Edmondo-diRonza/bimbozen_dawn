@@ -1,6 +1,6 @@
 {
   "sections": {
-    "about": {
+    "about_page": {
       "type": "template-about",
       "settings": {
         "padding_top": 36,
@@ -8,5 +8,5 @@
       }
     }
   },
-  "order": ["about"]
+  "order": ["about_page"]
 }
