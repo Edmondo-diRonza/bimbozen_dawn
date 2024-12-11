@@ -4503,11 +4503,6 @@ video {
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -4563,17 +4558,5 @@ video {
 
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:text-\[126px\] {
-    font-size: 126px;
-  }
-
-  .lg\:text-\[108px\] {
-    font-size: 108px;
-  }
-
-  .lg\:text-\[96px\] {
-    font-size: 96px;
   }
 }
