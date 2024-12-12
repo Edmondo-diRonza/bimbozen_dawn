@@ -1,24 +1,28 @@
-<div class="h-[calc(100vh_-_150px)] lg:min-h-[calc(100vh_-_150px)] w-[90%] mx-auto swiper-container">
+<div class="tw-h-[calc(100vh_-_150px)] lg:tw-min-h-[calc(100vh_-_150px)] tw-w-[90%] tw-mx-auto swiper-container">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       {% if block.settings.image %}
-        <div class="relative swiper-slide">
+        <div class="tw-relative swiper-slide">
           <img
             src="{{ block.settings.image | img_url: '1920x' }}"
             alt="Hero Image"
-            class="object-cover object-top w-full h-full"
+            class="tw-object-cover tw-object-top tw-w-full tw-h-full"
             width="1920px"
-            height="auto">
-          <div class="absolute inset-0 overlay bg-black/40">
+            height="auto"
+          >
+
+          <div class="tw-absolute tw-inset-0 overlay tw-bg-black/40">
             <!-- Overlay -->
-            <div class="absolute inset-0 flex items-center justify-center text-2xl text-white">
+            <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
               <!-- Testo Dinamico -->
-              <div class="flex flex-col items-center lg:justify-center text-center gap-4 w-[90%]">
-                <h1 class="text-white" style="font-size: {{ block.settings.text_size | default: 96 }}px;">
-                  {{ block.settings.text | default: "Testo Predefinito" }}
+              <div class="tw-flex tw-flex-col tw-items-center lg:tw-justify-center tw-text-center tw-gap-4 tw-w-[90%]">
+                <h1 class="tw-text-white" style="font-size: {{ block.settings.text_size | default: 96 }}px;">
+                  {{ block.settings.text | default: 'Testo Predefinito' }}
                 </h1>
                 {% if block.settings.subtext %}
-                  <p style="font-size: {{ block.settings.subtext_size | default: 16 }}px;">{{ block.settings.subtext }}</p>
+                  <p style="font-size: {{ block.settings.subtext_size | default: 16 }}px;">
+                    {{ block.settings.subtext }}
+                  </p>
                 {% endif %}
               </div>
             </div>
@@ -73,62 +77,64 @@
   }
 </style>
 {% schema %}
-  {
-    "name": "Hero",
-    "settings": [],
-    "blocks": [
-      {
-        "type": "image_block",
-        "name": "Immagine Hero",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Seleziona Immagine"
-          },
-          {
-            "type": "text",
-            "id": "text",
-            "label": "Testo Dinamico",
-            "default": "Testo Predefinito"
-          },
-          {
-            "type": "text",
-            "id": "subtext",
-            "label": "Testo Sottotitolo",
-            "default": "Testo predefinito"
-          },
-          {
-            "type": "range",
-            "id": "text_size",
-            "label": "Dimensione Titolo principale",
-            "min": 96,
-            "max": 120,
-            "step": 1,
-            "default": 96
-          }, {
-            "type": "range",
-            "id": "subtext_size",
-            "label": "Dimensione Paragrafo",
-            "min": 16,
-            "max": 48,
-            "step": 1,
-            "default": 16
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Hero",
-        "blocks": [
-          {
-            "type": "image_block"
-          }, {
-            "type": "image_block"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Hero",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Immagine Hero",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Seleziona Immagine"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Testo Dinamico",
+          "default": "Testo Predefinito"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Testo Sottotitolo",
+          "default": "Testo predefinito"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Dimensione Titolo principale",
+          "min": 96,
+          "max": 120,
+          "step": 1,
+          "default": 96
+        },
+        {
+          "type": "range",
+          "id": "subtext_size",
+          "label": "Dimensione Paragrafo",
+          "min": 16,
+          "max": 48,
+          "step": 1,
+          "default": 16
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "image_block"
+        },
+        {
+          "type": "image_block"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

@@ -61,6 +61,9 @@
       ],
       "settings": {}
     },
+    "palle": {
+      "type": "palle"
+    },
     "collection_list_jfwGA7": {
       "type": "collection-list",
       "blocks": {
@@ -130,9 +133,5 @@
       }
     }
   },
-  "order": [
-    "hero_banner",
-    "collection_list_jfwGA7",
-    "featured_collection"
-  ]
+  "order": ["hero_banner", "palle", "featured_collection"]
 }

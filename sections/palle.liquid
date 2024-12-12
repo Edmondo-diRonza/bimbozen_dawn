@@ -1,0 +1,56 @@
+{% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4' | split: ', ' %}
+
+<div class="tw-w-[90%] tw-mx-auto tw-py-20 tw-flex tw-flex-col tw-gap-10">
+  <div class="tw-gap-6 tw-grid-cols-2 tw-grid lg:tw-grid-cols-4 ">
+    {% assign count = 0 %}
+    {% for collection in collections %}
+      {% unless collection.handle == 'home' %}
+        <div
+          class="tw-text-lg tw-rounded-full tw-p-4 tw-mx-auto tw-h-full tw-justify-center tw-flex tw-items-center tw-gap-y-6 lg:tw-p-0 lg:tw-w-11/12 tw-text-main lg:tw-text-2xl tw-aspect-square"
+          style="background-color: {{ colors[count]}}; opacity: 0.8"
+        >
+          {{- collection.title | link_to: collection.url }}
+        </div>
+        {% assign count = count | plus: 1 %}
+        {% if count == colors.size %}
+          {% assign count = 0 %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+  <div class="tw-grid tw-grid-cols-3 tw-gap-6">
+    <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+      <img
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
+      >
+      <h3 class="tw-text-xl">0 - 3 mesi</h3>
+    </div>
+    <div class="tw-items-center tw-gap-4 tw-flex-col tw-flex">
+      <img
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
+      >
+      <h3 class="tw-text-xl">3 - 12 mesi</h3>
+    </div>
+    <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+      <img
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
+      >
+      <h3 class="tw-text-xl">1 - 6 anni</h3>
+    </div>
+  </div>
+</div>

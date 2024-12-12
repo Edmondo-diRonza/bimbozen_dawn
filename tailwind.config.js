@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  prefix: "tw-", // Sostituisci 'tw-' con il prefisso desiderato
   content: ["./**/*.liquid"],
   theme: {
     extend: {
