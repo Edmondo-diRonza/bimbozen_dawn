@@ -22,6 +22,7 @@
             "subtext_size": 16
           }
         },
+
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
@@ -61,48 +62,8 @@
       ],
       "settings": {}
     },
-    "palle": {
-      "type": "palle"
-    },
-    "collection_list_jfwGA7": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_nmQYBM": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "giochi"
-          }
-        },
-        "featured_collection_iJdMpm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "handmade"
-          }
-        },
-        "featured_collection_RjHKw7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "puericultura"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_nmQYBM",
-        "featured_collection_iJdMpm",
-        "featured_collection_RjHKw7"
-      ],
-      "settings": {
-        "title": "Collezioni",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+    "main_category": {
+      "type": "main-category"
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -133,5 +94,5 @@
       }
     }
   },
-  "order": ["hero_banner", "palle", "featured_collection"]
+  "order": ["hero_banner", "main_category", "featured_collection"]
 }

@@ -78,9 +78,10 @@
 /* base */
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); max-width originale del tema */
+  max-width: 90%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -96,17 +97,17 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   margin: 0 auto;
 }
 
-.utility-bar__grid.page-width {
+/* .utility-bar__grid.page-width {
   padding-left: 3rem;
   padding-right: 3rem;
-}
+} */
 
 @media screen and (min-width: 750px) {
-  .page-width {
+  /* .page-width {
     padding: 0 5rem;
-  }
+  } */
 
-  .header.page-width,
+  /* .header.page-width, */
   .utility-bar__grid.page-width {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
@@ -121,15 +122,15 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width-tablet {
-    padding: 0 5rem;
+    /* padding: 0 5rem; */
   }
 }
 
 @media screen and (min-width: 990px) {
-  .header:not(.drawer-menu).page-width {
+  /* .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
+  } */
 
   .page-width--narrow {
     max-width: 72.6rem;
@@ -137,8 +138,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width-desktop {
-    max-width: var(--page-width);
-    padding: 0 5rem;
+    /* max-width: var(--page-width); */
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding: 0 5rem; */
   }
 }
 
@@ -2245,10 +2248,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 990px) {
-  body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
+  /* body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
+  } */
 
   .announcement-bar-slider {
     width: 60%;

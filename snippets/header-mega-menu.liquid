@@ -75,15 +75,14 @@
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
             class="header__menu-item list-menu__item link link--text focus-inset"
-            style="padding: 1rem 2.8rem;"
             {% if link.current %}
               aria-current="page"
             {% endif %}
           >
             <span
-              style="font-size: 17px; font-weight: bold"
+              style="cacca font-size: 17px; font-weight: bold"
               {%- if link.current %}
-                class="header__active-menu-item"
+                class="tw-text-2xl header__active-menu-item"
               {% endif %}
             >
               {{- link.title | escape -}}

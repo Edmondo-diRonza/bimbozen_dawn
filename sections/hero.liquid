@@ -1,8 +1,8 @@
 <div class="tw-h-[calc(100vh_-_150px)] lg:tw-min-h-[calc(100vh_-_150px)] tw-w-[90%] tw-mx-auto swiper-container">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      {% if block.settings.image %}
-        <div class="tw-relative swiper-slide">
+      <div class="tw-relative swiper-slide">
+        {% if block.settings.image != blank %}
           <img
             src="{{ block.settings.image | img_url: '1920x' }}"
             alt="Hero Image"
@@ -10,25 +10,42 @@
             width="1920px"
             height="auto"
           >
+        {% else %}
+          {% assign placeholder_image = 'lifestyle-1' %}
+          {{ placeholder_image | placeholder_svg_tag: 'tw-object-cover tw-object-top tw-w-full tw-h-full' }}
+        {% endif %}
+        <div class="tw-absolute tw-inset-0 overlay tw-bg-black/40">
+          <!-- Overlay -->
+          <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
+            <!-- Testo Dinamico -->
+            <div class="tw-flex tw-flex-col lg:tw-items-center lg:tw-justify-center lg:tw-text-center tw-gap-4 tw-w-[90%]">
+              <h1
+                class="tw-text-white tw-text-6xl lg:tw-text-8xl"
+              >
+                {{ block.settings.text | default: 'Testo Predefinito' }}
+              </h1>
+              {% if block.settings.subtext %}
+                <p class="tw-text-white tw-text-xl lg:tw-text-4xl">
+                  {{ block.settings.subtext }}
+                </p>
+              {% endif %}
 
-          <div class="tw-absolute tw-inset-0 overlay tw-bg-black/40">
-            <!-- Overlay -->
-            <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
-              <!-- Testo Dinamico -->
-              <div class="tw-flex tw-flex-col tw-items-center lg:tw-justify-center tw-text-center tw-gap-4 tw-w-[90%]">
-                <h1 class="tw-text-white" style="font-size: {{ block.settings.text_size | default: 96 }}px;">
-                  {{ block.settings.text | default: 'Testo Predefinito' }}
-                </h1>
-                {% if block.settings.subtext %}
-                  <p style="font-size: {{ block.settings.subtext_size | default: 16 }}px;">
-                    {{ block.settings.subtext }}
-                  </p>
-                {% endif %}
-              </div>
+              {%- if block.settings.button_text != blank -%}
+                <a
+                  {% if block.settings.button_url == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_url }}"
+                  {% endif %}
+                  class="tw-py-4 tw-px-6 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-main tw-uppercase tw-text-white tw-max-w-max tw-text-xl "
+                >
+                  {{- block.settings.button_text | escape -}}
+                </a>
+              {%- endif -%}
             </div>
           </div>
         </div>
-      {% endif %}
+      </div>
     {% endfor %}
   </div>
 
@@ -119,6 +136,18 @@
           "max": 48,
           "step": 1,
           "default": 16
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Testo Bottone",
+          "default": "Tutti i prodotti"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Url Bottone",
+          "default": "/"
         }
       ]
     }

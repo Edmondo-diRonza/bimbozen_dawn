@@ -83,14 +83,14 @@
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
-            class="header__menu-item list-menu__item link link--text focus-inset"
+            class="!tw-text-3xl !tw-p-0 !tw-py-6 !tw-px-14 header__menu-item list-menu__item link link--text focus-inset"
             {% if link.current %}
               aria-current="page"
             {% endif %}
           >
             <span
               {%- if link.current %}
-                class="header__active-menu-item"
+                class="menu_dropdown header__active-menu-item"
               {% endif %}
             >
               {{- link.title | escape -}}
