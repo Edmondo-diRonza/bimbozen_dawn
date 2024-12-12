@@ -1,7 +1,7 @@
-<div class="tw-h-[calc(100vh_-_150px)] lg:tw-min-h-[calc(100vh_-_150px)] tw-w-[90%] tw-mx-auto swiper-container">
+<div class="swiper-container tw-h-[calc(100vh_-_150px)] lg:tw-min-h-[calc(100vh_-_150px)] tw-w-[90%] tw-mx-auto ">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div class="tw-relative swiper-slide">
+      <div class="hero__image-wrapper tw-relative swiper-slide">
         {% if block.settings.image != blank %}
           <img
             src="{{ block.settings.image | img_url: '1920x' }}"
@@ -12,11 +12,14 @@
           >
         {% else %}
           {% assign placeholder_image = 'lifestyle-1' %}
-          {{ placeholder_image | placeholder_svg_tag: 'tw-object-cover tw-object-top tw-w-full tw-h-full' }}
+          {{
+            placeholder_image
+            | placeholder_svg_tag: 'hero__image-wrapper tw-object-cover tw-object-top tw-w-full tw-h-full'
+          }}
         {% endif %}
-        <div class="tw-absolute tw-inset-0 overlay tw-bg-black/40">
+        <div class="hero__overlay tw-absolute tw-inset-0 overlay tw-bg-black/40">
           <!-- Overlay -->
-          <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
+          <div class="hero__message-wrapper tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
             <!-- Testo Dinamico -->
             <div class="tw-flex tw-flex-col lg:tw-items-center lg:tw-justify-center lg:tw-text-center tw-gap-4 tw-w-[90%]">
               <h1
