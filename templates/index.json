@@ -98,9 +98,5 @@
       }
     }
   },
-  "order": [
-    "hero_banner",
-    "main_category",
-    "featured_collection"
-  ]
+  "order": ["hero_banner", "main_category", "featured_collection"]
 }
