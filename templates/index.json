@@ -15,42 +15,45 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/hero.jpg",
             "text": "Testo Predefinito",
             "subtext": "Testo predefinito",
             "text_size": 96,
-            "subtext_size": 16
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
           }
         },
-
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/placeholder_afbe85f0-a7fd-44ef-b371-04dd5a2fcc24.jpg",
             "text": "Testo Predefinito",
             "subtext": "Testo predefinito",
             "text_size": 96,
-            "subtext_size": 16
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
           }
         },
         "image_block_9kJDye": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/cloth-and-carry-lennylamb-preemie-wrap-luna-5-556542.webp",
             "text": "Testo Predefinito",
             "subtext": "Testo predefinito",
             "text_size": 96,
-            "subtext_size": 16
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
           }
         },
         "image_block_4Qenb4": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/pol_pl_Little-Dutch-Stolik-edukacyjny-Flowers-Butterflies-FSC-LD7093-16575_4.webp",
             "text": "Testo Predefinito",
             "subtext": "Testo predefinito",
             "text_size": 96,
-            "subtext_size": 16
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
           }
         }
       },
@@ -63,7 +66,8 @@
       "settings": {}
     },
     "main_category": {
-      "type": "main-category"
+      "type": "main-category",
+      "settings": {}
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -94,5 +98,9 @@
       }
     }
   },
-  "order": ["hero_banner", "main_category", "featured_collection"]
+  "order": [
+    "hero_banner",
+    "main_category",
+    "featured_collection"
+  ]
 }
