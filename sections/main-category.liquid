@@ -4,7 +4,8 @@
   <div class="tw-gap-6 tw-grid-cols-2 tw-grid lg:tw-grid-cols-4 ">
     {% assign count = 0 %}
     {% for collection in collections %}
-      {% unless collection.handle == 'home' %}
+      {% unless collection.handle == 'home' or collection.handle == "neonati" %}
+
         <div class="tw-text-lg tw-rounded-full tw-p-4 tw-mx-auto tw-h-full tw-w-full tw-justify-center tw-flex tw-items-center tw-gap-y-6 lg:tw-p-0 lg:tw-w-11/12 tw-text-main lg:tw-text-4xl tw-aspect-square" style="background-color: {{ colors[count]}}; opacity: 0.8">
           {{- collection.title | link_to: collection.url }}
         </div>
