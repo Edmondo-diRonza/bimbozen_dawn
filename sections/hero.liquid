@@ -76,6 +76,7 @@
     /* Bordo bianco */
     border-radius: 50%;
     /* Rendi i dots rotondi */
+    z-index: 2 !important;
   }
 
   .swiper-pagination-bullet-active {
@@ -87,8 +88,9 @@
 
   @media screen and (max-width: 768px) {
     .swiper-pagination {
-      bottom: 0 !important;
+      bottom: 5px !important;
       /* Distanza dalla fine dell'immagine */
+      z-index: 2 !important;
     }
   }
 </style>
