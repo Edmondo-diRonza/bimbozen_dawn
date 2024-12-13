@@ -1,2 +1,46 @@
-<h1>{{ page.title }}</h1>
-<p>cacca</p>
+<div class="tw-w-[90%] tw-mx-auto tw-h-[500px]">
+  {% if block.settings.image != blank %}
+    <img
+      src="{{ block.settings.image | img_url: '1920x' }}"
+      alt="Hero Image"
+      class="tw-object-cover tw-object-top tw-w-full tw-h-full"
+      width="1920px"
+      height="auto">
+  {% else %}
+    {% assign placeholder_image = 'lifestyle-1' %}
+    {{ placeholder_image
+ | placeholder_svg_tag: 'hero__image-wrapper tw-object-cover tw-object-top tw-w-full tw-h-full tw-bg-main/50'
+    }}
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image_block",
+        "name": "Immagine Hero",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Seleziona Immagine"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero",
+        "blocks": [
+          {
+            "type": "image_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

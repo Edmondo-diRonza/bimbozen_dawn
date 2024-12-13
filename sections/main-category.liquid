@@ -5,10 +5,7 @@
     {% assign count = 0 %}
     {% for collection in collections %}
       {% unless collection.handle == 'home' %}
-        <div
-          class="tw-text-lg tw-rounded-full tw-p-4 tw-mx-auto tw-h-full tw-w-full tw-justify-center tw-flex tw-items-center tw-gap-y-6 lg:tw-p-0 lg:tw-w-11/12 tw-text-main lg:tw-text-2xl tw-aspect-square"
-          style="background-color: {{ colors[count]}}; opacity: 0.8"
-        >
+        <div class="tw-text-lg tw-rounded-full tw-p-4 tw-mx-auto tw-h-full tw-w-full tw-justify-center tw-flex tw-items-center tw-gap-y-6 lg:tw-p-0 lg:tw-w-11/12 tw-text-main lg:tw-text-4xl tw-aspect-square" style="background-color: {{ colors[count]}}; opacity: 0.8">
           {{- collection.title | link_to: collection.url }}
         </div>
         {% assign count = count | plus: 1 %}
@@ -22,62 +19,57 @@
     <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
       {% comment %}
         <img
-          src="{{ 'placeholder.jpg' | asset_url }}"
-          id="babies-img"
-          alt="Babies"
-          class="tw-object-cover timeline-img active tw-aspect-square"
-          width="auto"
-          height="auto"
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
         >
       {% endcomment %}
       {% assign placeholder_image = 'lifestyle-2' %}
       {{
-        placeholder_image
-        | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        placeholder_image | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
       }}
       <h3 class="tw-text-3xl">0 - 3 mesi</h3>
     </div>
     <div class="tw-items-center tw-gap-4 tw-flex-col tw-flex">
       {% comment %}
         <img
-          src="{{ 'placeholder.jpg' | asset_url }}"
-          id="babies-img"
-          alt="Babies"
-          class="tw-object-cover timeline-img active tw-aspect-square"
-          width="auto"
-          height="auto"
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
         >
       {% endcomment %}
       {% assign placeholder_image = 'lifestyle-1' %}
       {{
-        placeholder_image
-        | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        placeholder_image | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
       }}
       <h3 class="tw-text-3xl">3 - 12 mesi</h3>
     </div>
     <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
       {% comment %}
         <img
-          src="{{ 'placeholder.jpg' | asset_url }}"
-          id="babies-img"
-          alt="Babies"
-          class="tw-object-cover timeline-img active tw-aspect-square"
-          width="auto"
-          height="auto"
+        src="{{ 'placeholder.jpg' | asset_url }}"
+        id="babies-img"
+        alt="Babies"
+        class="tw-object-cover timeline-img active tw-aspect-square"
+        width="auto"
+        height="auto"
         >
       {% endcomment %}
       {% assign placeholder_image = 'lifestyle-1' %}
       {{
-        placeholder_image
-        | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        placeholder_image | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
       }}
       <h3 class="tw-text-3xl">1 - 6 anni</h3>
     </div>
   </div>
 </div>
-<div
-  class=" tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-20 tw-flex tw-items-center tw-justify-center "
->
+<div class=" tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-20 tw-flex tw-items-center tw-justify-center ">
   <h2 class="tw-w-full lg:tw-w-full tw-text-5xl lg:tw-text-[96px] tw-text-main">
     At Bimbo Zen, we're inspired <br>
     by adventure.
