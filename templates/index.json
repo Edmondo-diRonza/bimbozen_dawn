@@ -99,21 +99,6 @@
     },
     "logo-sec": {
       "type": "logo-sec",
-<<<<<<< HEAD
-=======
-      "blocks": {
-        "svg_block_7GerbQ": {
-          "type": "svg_block",
-          "settings": {
-            "svg_code": "",
-            "alt": "Logo"
-          }
-        }
-      },
-      "block_order": [
-        "svg_block_7GerbQ"
-      ],
->>>>>>> 3020fbd44ecf167ab49a0fcf478656f5a3e8cfdd
       "settings": {}
     },
 
