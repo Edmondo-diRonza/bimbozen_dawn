@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -11,7 +20,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_tWPn8q": {
@@ -22,7 +31,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_9kJDye": {
@@ -33,7 +42,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_4Qenb4": {
@@ -44,7 +53,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         }
       },
@@ -109,11 +118,7 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
-<<<<<<< HEAD
-            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.<\/p>",
-=======
             "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
->>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
             "text_style": "body"
           }
         },
@@ -121,11 +126,7 @@
           "type": "button",
           "settings": {
             "button_label": "Etichetta pulsante",
-<<<<<<< HEAD
-            "button_link": "shopify:\/\/products\/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
-=======
             "button_link": "shopify://products/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
->>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
             "button_style_secondary": false
           }
         }
@@ -136,11 +137,7 @@
         "button_pDbMWn"
       ],
       "settings": {
-<<<<<<< HEAD
-        "image": "shopify:\/\/shop_images\/image3.png",
-=======
         "image": "shopify://shop_images/image3.png",
->>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -154,6 +151,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_RfmP9J": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
@@ -162,6 +174,7 @@
     "main_category",
     "featured_collection",
     "logo-sec",
-    "image_with_text_Q3Laq6"
+    "image_with_text_Q3Laq6",
+    "video_RfmP9J"
   ]
 }
