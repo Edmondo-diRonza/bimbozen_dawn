@@ -92,6 +92,10 @@
       "type": "logo-sec",
       "settings": {}
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> dee12de0c187e69f0fdbb57453aaa28d21be4826
     "marquee": {
       "type": "marquee",
       "settings": {}
