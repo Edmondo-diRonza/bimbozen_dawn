@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -11,7 +20,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_tWPn8q": {
@@ -22,7 +31,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_9kJDye": {
@@ -33,7 +42,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_4Qenb4": {
@@ -44,7 +53,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         }
       },
@@ -70,6 +79,7 @@
         "title": "I nostri prodotti",
         "heading_size": "h1",
         "description": "<p>Our most popular styles right now that your little one will love.<\/p>",
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
@@ -109,6 +119,13 @@
         "color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 32
+        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_collection_mrk9fG": {
@@ -121,6 +138,11 @@
         "description_style": "body",
         "collection": "handmade",
         "products_to_show": 4,
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "handmade",
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
@@ -153,6 +175,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.<\/p>",
+            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
             "text_style": "body"
           }
         },
@@ -161,6 +184,7 @@
           "settings": {
             "button_label": "Etichetta pulsante",
             "button_link": "shopify:\/\/products\/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
+            "button_link": "shopify://products/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
             "button_style_secondary": false
           }
         }
@@ -172,6 +196,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image3.png",
+        "image": "shopify://shop_images/image3.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
