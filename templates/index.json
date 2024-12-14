@@ -111,7 +111,6 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-
         "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -121,12 +120,11 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection_mrk9fG": {
+    "featured_collection_fW3xK7": {
       "type": "featured-collection",
       "settings": {
         "title": "I nostri Handmade",
         "heading_size": "h1",
-
         "description": "<p>Our most popular styles right now that your little one will love.</p>",
         "show_description": false,
         "description_style": "body",
@@ -137,7 +135,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "color_scheme": "",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -176,7 +174,11 @@
           }
         }
       },
-      "block_order": ["heading_yEeVEX", "text_tTmeEn", "button_pDbMWn"],
+      "block_order": [
+        "heading_yEeVEX",
+        "text_tTmeEn",
+        "button_pDbMWn"
+      ],
       "settings": {
         "image": "shopify://shop_images/image3.png",
         "height": "medium",
@@ -201,7 +203,7 @@
     "featured_collection",
     "logo-sec",
     "video_RfmP9J",
-    "featured_collection_mrk9fG",
+    "featured_collection_fW3xK7",
     "image_with_text_Q3Laq6"
   ]
 }
