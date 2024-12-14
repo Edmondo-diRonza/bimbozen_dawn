@@ -10,8 +10,8 @@
 %}
 {% comment %} array dei loghi con stringa splittata {% endcomment %}
 
-<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-my-32 tw-text-center">
-  <h2 class="tw-text-4xl">I nostri partners</h2>
+<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-text-center">
+  <h2 class="tw-text-4xl tw-pb-20 lg:tw-pb-0 lg:tw-mt-20">I nostri partners</h2>
   <ul class="hero__logo-wrapper tw-grid tw-grid-cols-2 lg:tw-hidden tw-gap-4 tw-place-items-center">
     {% for logo in logos %}
       <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
@@ -19,7 +19,7 @@
           src="{{ logo | asset_url }}"
           width="100px"
           height="100px"
-          class="tw-w-[127px]"
+          class="tw-w-[80px] lg:tw-w-[127px]"
           alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}"
         >
       </li>
