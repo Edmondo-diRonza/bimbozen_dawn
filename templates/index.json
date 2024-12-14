@@ -109,7 +109,11 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
+<<<<<<< HEAD
             "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.<\/p>",
+=======
+            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+>>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
             "text_style": "body"
           }
         },
@@ -117,7 +121,11 @@
           "type": "button",
           "settings": {
             "button_label": "Etichetta pulsante",
+<<<<<<< HEAD
             "button_link": "shopify:\/\/products\/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
+=======
+            "button_link": "shopify://products/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
+>>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
             "button_style_secondary": false
           }
         }
@@ -128,7 +136,11 @@
         "button_pDbMWn"
       ],
       "settings": {
+<<<<<<< HEAD
         "image": "shopify:\/\/shop_images\/image3.png",
+=======
+        "image": "shopify://shop_images/image3.png",
+>>>>>>> 42bc00db2ea178863d2602b3620736c2ec425ef0
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
