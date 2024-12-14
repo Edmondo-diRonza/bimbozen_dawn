@@ -4376,6 +4376,10 @@ video {
   height: 100vh;
 }
 
+.tw-h-\[100px\] {
+  height: 100px;
+}
+
 .tw-w-\[127px\] {
   width: 127px;
 }
@@ -4402,6 +4406,10 @@ video {
 
 .tw-w-\[90px\] {
   width: 90px;
+}
+
+.tw-w-\[80px\] {
+  width: 80px;
 }
 
 .tw-max-w-max {
@@ -4629,6 +4637,10 @@ video {
 
   .lg\:tw-w-full {
     width: 100%;
+  }
+
+  .lg\:tw-w-\[127px\] {
+    width: 127px;
   }
 
   .lg\:tw-grid-cols-3 {
