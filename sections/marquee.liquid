@@ -1,0 +1,80 @@
+<section class="marquee-container2">
+  <div class="marquee2">
+    <div class="marquee-content2">
+      <span class="curiosity">
+        Inspired by Curiosity &nbsp;</span>
+      <span class="play">Inspired by Play &nbsp;</span>
+      <span class="joy">Inspired by Joy &nbsp;</span>
+      <span class="curiosity">Inspired by Curiosity &nbsp;</span>
+      <span class="play">Inspired by Play &nbsp;</span>
+      <span class="joy">Inspired by Joy &nbsp;</span>
+      <span class="curiosity">Inspired by Curiosity &nbsp;</span>
+      <span class="play">Inspired by Play &nbsp;</span>
+      <span class="joy">
+        Inspired by Joy &nbsp;</span>
+      <span class="curiosity">Inspired by Curiosity &nbsp;</span>
+      <span class="play">Inspired by Play &nbsp;</span>
+      <span class="joy">Inspired by Joy &nbsp;</span>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .marquee-container2 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+
+  .marquee2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+  .marquee-content2 {
+    display: flex;
+    animation: scroll 50s linear infinite;
+  }
+
+  .marquee-content2 span {
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+
+  /* Colori per ogni frase */
+  .curiosity {
+    color: #bcc7e4;
+    /* Colore per "Inspired by Curiosity" */
+  }
+
+  .play {
+    color: #e8cc56;
+    /* Colore per "Inspired by Play" */
+  }
+
+  .joy {
+    color: #d6853f;
+    /* Colore per "Inspired by Joy" */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .marquee-content2 span {
+      font-size: 50px;
+    }
+  }
+</style>

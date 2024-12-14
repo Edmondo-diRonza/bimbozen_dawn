@@ -2,11 +2,10 @@
   "sections": {
     "about_page": {
       "type": "template-about",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "settings": {}
     }
   },
-  "order": ["about_page"]
+  "order": [
+    "about_page"
+  ]
 }

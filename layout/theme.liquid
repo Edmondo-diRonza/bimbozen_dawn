@@ -432,7 +432,11 @@ body {
         document.addEventListener('DOMContentLoaded', function () {
           const swiper = new Swiper('.swiper-container', {
       loop: true,
-      effect: 'fade', // Aggiunge l'effetto fade
+      
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true},
+         // Aggiunge l'effetto fade
       autoplay: {
         delay: 10000, // Tempo tra le transizioni in millisecondi
         disableOnInteraction: false,

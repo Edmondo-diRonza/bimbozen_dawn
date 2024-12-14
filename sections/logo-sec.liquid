@@ -1,0 +1,40 @@
+{% assign logos = 
+ '<img src="/assets/goki.png" class="tw-w-[127px]" alt="goki"/>,<img src="/assets/little_dutch.jpeg" alt="Little Dutch" class="tw-w-[200px] "/>,<img src="/assets/BIBS_logo.svg" class="tw-w-[127px]" alt="Bibs" />,<img src="/assets/officina-naturae_logo.jpg" class="tw-w-[110px]" alt="Officina Naturae"/>,<img src="/assets/vilac_logo.webp" class="tw-w-[90px]"/>, <img src="/assets/logo-magna-tiles.jpg" alt="Magna Tiles" class="tw-w-[200px] "/>,<img src="/assets/logo_taftoys.jpg" alt="Taftoys" class="tw-w-[100px] "/>,<img src="/assets/logo_beaba.jpg" alt="béaba" class="tw-w-[100px] "/>' | split: ','
+%}
+{% comment %} array dei loghi con stringa splittata {% endcomment %}
+
+<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-my-32 tw-text-center">
+  <h2 class="tw-text-4xl">I nostri partners</h2>
+  <ul class="hero__logo-wrapper tw-grid tw-grid-cols-2 lg:tw-hidden tw-gap-4 tw-place-items-center">
+    {% for logo in logos %}
+      <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
+        {{ logo }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-my-20">
+  <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center">
+    {% for logo in logos %}
+      {% if forloop.index <= 5 %}
+        <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
+          {{ logo }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center tw-mt-8">
+    <li class="hero__logo-item tw-hidden lg:tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0"></li>
+
+    {% for logo in logos %}
+      {% if forloop.index > 5 and forloop.index <= 8 %}
+        <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
+          {{ logo }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
