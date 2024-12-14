@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -9,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
->>>>>>> dee12de0c187e69f0fdbb57453aaa28d21be4826
 {
   "sections": {
     "about_page": {
@@ -17,7 +14,5 @@
       "settings": {}
     }
   },
-  "order": [
-    "about_page"
-  ]
+  "order": ["about_page"]
 }
