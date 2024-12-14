@@ -78,7 +78,7 @@
       "settings": {
         "title": "I nostri prodotti",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
@@ -104,6 +104,21 @@
     "logo-sec": {
       "type": "logo-sec",
       "settings": {}
+    },
+    "video_RfmP9J": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     },
     "image_with_text_Q3Laq6": {
       "type": "image-with-text",
@@ -152,19 +167,32 @@
         "padding_bottom": 36
       }
     },
-    "video_RfmP9J": {
-      "type": "video",
+    "featured_collection_mrk9fG": {
+      "type": "featured-collection",
       "settings": {
-        "heading": "",
+        "title": "I nostri Handmade",
         "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "handmade",
+        "products_to_show": 4,
+        "columns_desktop": 4,
         "full_width": true,
-        "color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -174,7 +202,8 @@
     "main_category",
     "featured_collection",
     "logo-sec",
+    "video_RfmP9J",
     "image_with_text_Q3Laq6",
-    "video_RfmP9J"
+    "featured_collection_mrk9fG"
   ]
 }
