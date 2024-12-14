@@ -11,7 +11,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_tWPn8q": {
@@ -22,7 +22,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_9kJDye": {
@@ -33,7 +33,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         },
         "image_block_4Qenb4": {
@@ -44,7 +44,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "\/"
+            "button_url": "/"
           }
         }
       },
@@ -92,10 +92,7 @@
       "type": "logo-sec",
       "settings": {}
     },
-<<<<<<< HEAD
-=======
 
->>>>>>> dee12de0c187e69f0fdbb57453aaa28d21be4826
     "marquee": {
       "type": "marquee",
       "settings": {}
