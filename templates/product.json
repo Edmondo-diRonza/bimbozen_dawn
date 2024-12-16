@@ -115,10 +115,7 @@
         "include_margins": true
       }
     },
-    "description": {
-      "type": "description",
-      "settings": {}
-    },
+
     "secure": {
       "type": "secure",
       "settings": {}
@@ -183,7 +180,6 @@
   "order": [
     "main",
     "173436316569a62da3",
-    "description",
     "secure",
     "related-products",
     "1734380302862a50d0"
