@@ -91,7 +91,7 @@
       "type": "related-products",
       "settings": {
         "heading": "Prodotti simili",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "products_to_show": 6,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
