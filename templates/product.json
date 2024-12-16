@@ -49,7 +49,10 @@
             "show_gift_card_recipient": true
           }
         },
-
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -57,7 +60,6 @@
           }
         }
       },
-
       "block_order": [
         "vendor",
         "title",
@@ -72,9 +74,9 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "hover",
@@ -84,10 +86,6 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
-    },
-    "description": {
-      "type": "description",
-      "settings": {}
     },
     "related-products": {
       "type": "related-products",
@@ -115,11 +113,17 @@
           "settings": {}
         }
       },
-      "block_order": ["judge_me_reviews_review_widget_MWPnz9"],
+      "block_order": [
+        "judge_me_reviews_review_widget_MWPnz9"
+      ],
       "settings": {
         "include_margins": true
       }
     }
   },
-  "order": ["main", "related-products", "description", "173436316569a62da3"]
+  "order": [
+    "main",
+    "related-products",
+    "173436316569a62da3"
+  ]
 }
