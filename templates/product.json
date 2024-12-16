@@ -95,6 +95,9 @@
     "secure": {
       "type": "secure"
     },
+    "aboutsec": {
+      "type": "about-sec"
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -127,5 +130,11 @@
       }
     }
   },
-  "order": ["main", "secure", "related-products", "1734380302862a50d0"]
+  "order": [
+    "main",
+    "secure",
+    "aboutsec",
+    "related-products",
+    "1734380302862a50d0"
+  ]
 }

@@ -671,13 +671,22 @@
       </div>
     </div>
 
-    <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-3 tw-my-20 tw-gap-6">
-      <div class="tw-flex tw-flex-col tw-gap-6">
+    <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-3 tw-my-20 tw-gap-20">
+      <div class="product__description tw-flex tw-flex-col tw-gap-6">
         <h2>Descrizione</h2>
         <p>{{ product.description }}</p>
       </div>
       <div><h2>Spedizione</h2></div>
-      <div><h2>Caratteristiche</h2></div>
+      <div class="product__characteristics tw-flex tw-flex-col tw-gap-6">
+        <h2>Caratteristiche</h2>
+
+        <ul class="caratteristiche-list">
+          {% assign caratteristiche = product.metafields.custom.specs | split: '*' %}
+          {% for caratteristica in caratteristiche %}
+            <li class="tw-list-inside tw-list-disc">{{ caratteristica }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
