@@ -28,11 +28,27 @@
             "heading": "Menu",
             "menu": "footer"
           }
+        },
+        "link_list_6ARhNJ": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Link rapidi",
+            "menu": "footer"
+          }
+        },
+        "text_W6GVMR": {
+          "type": "text",
+          "settings": {
+            "heading": "Titolo",
+            "subtext": "<p>Condividi informazioni di contatto, dettagli del negozio e contenuti del brand con i clienti.</p>"
+          }
         }
       },
       "block_order": [
         "image_miCxyk",
-        "link_list_Udxp43"
+        "link_list_Udxp43",
+        "link_list_6ARhNJ",
+        "text_W6GVMR"
       ],
       "settings": {
         "color_scheme": "scheme-5",
