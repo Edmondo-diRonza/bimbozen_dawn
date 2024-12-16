@@ -101,24 +101,7 @@
         "padding_bottom": 12
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "Prodotti simili",
-        "heading_size": "h1",
-        "products_to_show": 6,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
+
     "1734380302862a50d0": {
       "type": "apps",
       "blocks": {
