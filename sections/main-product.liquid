@@ -191,7 +191,7 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
-              {%- when 'description' -%}
+                {% comment %} {%- when 'description' -%} {% endcomment %}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
@@ -671,8 +671,9 @@
       </div>
     </div>
 
-    <div class="tw-grid tw-grid-cols-3">
-      <div>
+    <div class="tw-grid tw-grid-cols-3 tw-my-20">
+      <div class="tw-flex tw-flex-col tw-gap-6">
+        <h2>Descrizione</h2>
         <p>{{ product.description }}</p>
       </div>
     </div>
