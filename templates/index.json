@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -165,7 +174,11 @@
           }
         }
       },
-      "block_order": ["heading_yEeVEX", "text_tTmeEn", "button_pDbMWn"],
+      "block_order": [
+        "heading_yEeVEX",
+        "text_tTmeEn",
+        "button_pDbMWn"
+      ],
       "settings": {
         "image": "shopify://shop_images/katie-emslie-B2-_qpgJm9Y-unsplash_1.jpg",
         "height": "medium",
@@ -206,8 +219,11 @@
           }
         }
       },
-      "block_order": ["image_CFm3Bw", "product_CpUwM7", "product_rBN9Yf"],
-
+      "block_order": [
+        "image_CFm3Bw",
+        "product_CpUwM7",
+        "product_rBN9Yf"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -253,7 +269,8 @@
       }
     },
     "secure": {
-      "type": "secure"
+      "type": "secure",
+      "settings": {}
     }
   },
   "order": [
