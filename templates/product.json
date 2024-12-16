@@ -101,9 +101,6 @@
         "padding_bottom": 12
       }
     },
-<<<<<<< HEAD
-    "173436316569a62da3": {
-=======
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -123,7 +120,6 @@
       }
     },
     "1734380302862a50d0": {
->>>>>>> dd787933b920eab62eee3b9eb83cd13800984016
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_3gYcc9": {
@@ -131,9 +127,7 @@
           "settings": {}
         }
       },
-      "block_order": [
-        "judge_me_reviews_review_widget_3gYcc9"
-      ],
+      "block_order": ["judge_me_reviews_review_widget_3gYcc9"],
       "settings": {
         "include_margins": true
       }
@@ -209,10 +203,6 @@
     "description",
     "secure",
     "related-products",
-<<<<<<< HEAD
-    "rich_text_TLjpyq"
-=======
     "1734380302862a50d0"
->>>>>>> dd787933b920eab62eee3b9eb83cd13800984016
   ]
 }
