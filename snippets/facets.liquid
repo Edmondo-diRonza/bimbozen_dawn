@@ -129,9 +129,12 @@
                     id="Details-{{ filter.param_name | escape }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 1 %}
-                      open
-                    {% endif %}
+                    open
+                    {% comment %}
+                       SEMPRE APERTI, SE VUOI CHIUDERE TOGLI IL COMMENTO {% if filter_type == 'vertical' and forloop.index == 1 %}
+                        open
+                      {% endif %}
+                    {% endcomment %}
                   >
                     <summary
                       class="facets__summary caption-large focus-offset"
@@ -287,7 +290,7 @@
                             <span class="label-show-more label-text"
                               ><span aria-hidden="true">+ </span>{{ 'products.facets.show_more' | t -}}
                             </span>
-                            <span class="label-show-less label-text hidden"
+                            <span class="hidden label-show-less label-text"
                               ><span aria-hidden="true">- </span>{{ 'products.facets.show_less' | t -}}
                             </span>
                           </button>
@@ -300,9 +303,13 @@
                     id="Details-{{ filter.param_name | escape }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 1 %}
-                      open
-                    {% endif %}
+                    open
+                    {% comment %}
+                      SEMPRE APERTI, SE VUOI CHIUDERE TOGLI IL COMMENTO
+                      {% if filter_type == 'vertical' and forloop.index == 1 %}
+                        open
+                      {% endif %}
+                    {% endcomment %}
                   >
                     <summary class="facets__summary caption-large focus-offset">
                       <div>
