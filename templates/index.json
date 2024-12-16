@@ -223,10 +223,10 @@
       ],
       "settings": {
         "heading": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "desktop_layout": "right",
         "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
+        "card_styles": "none",
         "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "padding_top": 36,
         "padding_bottom": 36
