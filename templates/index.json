@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_banner": {
@@ -20,7 +11,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "\/"
           }
         },
         "image_block_tWPn8q": {
@@ -31,7 +22,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "\/"
           }
         },
         "image_block_9kJDye": {
@@ -42,7 +33,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "\/"
           }
         },
         "image_block_4Qenb4": {
@@ -53,7 +44,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "\/"
           }
         }
       },
@@ -78,7 +69,7 @@
       "settings": {
         "title": "I nostri prodotti",
         "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "description": "<p>Our most popular styles right now that your little one will love.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
@@ -111,8 +102,8 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video": "shopify:\/\/files\/videos\/8779921-uhd_3840_2160_25fps.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
         "color_scheme": "",
@@ -125,7 +116,7 @@
       "settings": {
         "title": "I nostri Handmade",
         "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "description": "<p>Our most popular styles right now that your little one will love.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "handmade",
@@ -161,7 +152,7 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
-            "text": "<p>Una piccola spiegazione deI Toys - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+            "text": "<p>Una piccola spiegazione deI Toys - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
             "text_style": "body"
           }
         },
@@ -169,14 +160,18 @@
           "type": "button",
           "settings": {
             "button_label": "scopri i nostri giochi",
-            "button_link": "shopify://collections/giocattoli",
+            "button_link": "shopify:\/\/collections\/giocattoli",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_yEeVEX", "text_tTmeEn", "button_pDbMWn"],
+      "block_order": [
+        "heading_yEeVEX",
+        "text_tTmeEn",
+        "button_pDbMWn"
+      ],
       "settings": {
-        "image": "shopify://shop_images/katie-emslie-B2-_qpgJm9Y-unsplash_1.jpg",
+        "image": "shopify:\/\/shop_images\/katie-emslie-B2-_qpgJm9Y-unsplash_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -197,7 +192,7 @@
         "image_CFm3Bw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/young-boy-smiles-at-father-holding-baby-sister.jpg"
+            "image": "shopify:\/\/shop_images\/young-boy-smiles-at-father-holding-baby-sister.jpg"
           }
         },
         "product_CpUwM7": {
@@ -215,8 +210,11 @@
           }
         }
       },
-      "block_order": ["image_CFm3Bw", "product_CpUwM7", "product_rBN9Yf"],
-
+      "block_order": [
+        "image_CFm3Bw",
+        "product_CpUwM7",
+        "product_rBN9Yf"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -241,7 +239,7 @@
         "paragraph_pLdgeP": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.</p>"
+            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.<\/p>"
           }
         },
         "email_form_aB446b": {
