@@ -207,7 +207,6 @@
         }
       },
       "block_order": ["image_CFm3Bw", "product_CpUwM7", "product_rBN9Yf"],
-
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -253,7 +252,8 @@
       }
     },
     "secure": {
-      "type": "secure"
+      "type": "secure",
+      "settings": {}
     }
   },
   "order": [
