@@ -224,7 +224,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h2",
-        "desktop_layout": "right",
+        "desktop_layout": "left",
         "mobile_layout": "column",
         "card_styles": "none",
         "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
