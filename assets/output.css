@@ -4331,29 +4331,12 @@ video {
   margin-bottom: 5rem;
 }
 
-.tw-my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .tw-mt-20 {
   margin-top: 5rem;
 }
 
 .tw-mt-8 {
   margin-top: 2rem;
-}
-
-.tw-mb-8 {
-  margin-bottom: 2rem;
-}
-
-.tw-mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.\!tw-mb-10 {
-  margin-bottom: 2.5rem !important;
 }
 
 .tw-flex {
@@ -4411,6 +4394,10 @@ video {
 
 .tw-grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tw-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .tw-flex-col {
@@ -4487,20 +4474,12 @@ video {
   background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1));
 }
 
-.tw-bg-main\/50 {
-  background-color: rgb(58 63 76 / 0.5);
-}
-
-.tw-bg-\[\#E8CC56\]\/30 {
-  background-color: rgb(232 204 86 / 0.3);
-}
-
-.tw-bg-main\/30 {
-  background-color: rgb(58 63 76 / 0.3);
-}
-
 .tw-bg-main\/20 {
   background-color: rgb(58 63 76 / 0.2);
+}
+
+.tw-bg-main\/50 {
+  background-color: rgb(58 63 76 / 0.5);
 }
 
 .tw-object-cover {
@@ -4551,29 +4530,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.tw-py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.\!tw-pt-0 {
-  padding-top: 0px !important;
-}
-
-.\!tw-pb-10 {
-  padding-bottom: 2.5rem !important;
-}
-
 .\!tw-pb-14 {
   padding-bottom: 3.5rem !important;
 }
 
-.\!tw-pb-12 {
-  padding-bottom: 3rem !important;
-}
-
-.\!tw-pb-20 {
-  padding-bottom: 5rem !important;
+.\!tw-pt-0 {
+  padding-top: 0px !important;
 }
 
 .tw-text-center {
@@ -4613,6 +4575,11 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.tw-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .tw-font-bold {
