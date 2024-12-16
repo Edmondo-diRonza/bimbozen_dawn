@@ -40,10 +40,7 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
+
         "share": {
           "type": "share",
           "settings": {
@@ -51,6 +48,7 @@
           }
         }
       },
+
       "block_order": [
         "vendor",
         "title",
@@ -77,6 +75,10 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
+    },
+    "description": {
+      "type": "description",
+      "settings": {}
     },
     "related-products": {
       "type": "related-products",
@@ -110,5 +112,5 @@
       }
     }
   },
-  "order": ["main", "related-products", "173436316569a62da3"]
+  "order": ["main", "related-products", "description", "173436316569a62da3"]
 }
