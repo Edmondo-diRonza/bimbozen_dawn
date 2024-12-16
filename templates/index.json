@@ -200,32 +200,35 @@
       "blocks": {
         "image_CFm3Bw": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/young-boy-smiles-at-father-holding-baby-sister.jpg"
+          }
         },
         "product_CpUwM7": {
           "type": "product",
           "settings": {
-            "product": "",
-            "second_image": false
+            "product": "vilac-54-piece-wooden-blocks-in-barrel",
+            "second_image": true
           }
         },
-        "collection_6n8zhP": {
-          "type": "collection",
+        "product_rBN9Yf": {
+          "type": "product",
           "settings": {
-            "collection": ""
+            "product": "vilac-andy-westface-rainbow-guitar",
+            "second_image": true
           }
         }
       },
       "block_order": [
         "image_CFm3Bw",
         "product_CpUwM7",
-        "collection_6n8zhP"
+        "product_rBN9Yf"
       ],
       "settings": {
         "heading": "",
         "heading_size": "h2",
         "desktop_layout": "left",
-        "mobile_layout": "column",
+        "mobile_layout": "collage",
         "card_styles": "none",
         "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "padding_top": 36,
