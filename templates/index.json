@@ -154,7 +154,7 @@
         "heading_yEeVEX": {
           "type": "heading",
           "settings": {
-            "heading": "Immagine con testo",
+            "heading": "Giocare è un momento bellissimo",
             "heading_size": "h1"
           }
         },
@@ -168,8 +168,8 @@
         "button_pDbMWn": {
           "type": "button",
           "settings": {
-            "button_label": "Etichetta pulsante",
-            "button_link": "shopify://products/bici-senza-pedali-vintage-red-trybike-ideale-per-bambini-a-partire-dai-15-mesi",
+            "button_label": "scopri i nostri giochi",
+            "button_link": "shopify://collections/giocattoli",
             "button_style_secondary": false
           }
         }
