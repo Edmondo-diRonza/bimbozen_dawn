@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
+    "logo": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
+    "favicon": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
     "type_header_font": "fira_sans_n4",
     "heading_scale": 100,
     "type_body_font": "syne_n4",
@@ -99,10 +108,10 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=61555792445388",
-    "social_instagram_link": "https:\/\/www.instagram.com\/bimbozen\/",
+    "social_facebook_link": "https://www.facebook.com/profile.php?id=61555792445388",
+    "social_instagram_link": "https://www.instagram.com/bimbozen/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -136,7 +145,7 @@
     "content_for_index": [],
     "blocks": {
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#000000",
@@ -150,7 +159,11 @@
         }
       },
       "14060646107696862457": {
+<<<<<<< HEAD
         "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+=======
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+>>>>>>> b8ad67e9034ea47e21aa8416f362513e0f76f915
         "disabled": false,
         "settings": {}
       }
@@ -391,7 +404,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
