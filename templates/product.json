@@ -87,39 +87,6 @@
         "padding_bottom": 12
       }
     },
-    "173436316569a62da3": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_MWPnz9": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_MWPnz9"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "Prodotti simili",
-        "heading_size": "h1",
-        "products_to_show": 6,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "rich_text_TLjpyq": {
       "type": "rich-text",
       "blocks": {
@@ -161,12 +128,45 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "173436316569a62da3": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_MWPnz9": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_MWPnz9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Prodotti simili",
+        "heading_size": "h1",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
     "main",
     "173436316569a62da3",
-    "related-products",
-    "rich_text_TLjpyq"
+    "rich_text_TLjpyq",
+    "related-products"
   ]
 }
