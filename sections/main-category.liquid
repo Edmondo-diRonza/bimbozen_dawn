@@ -45,27 +45,7 @@
         <h3 class="tw-text-4xl tw-text-main">{{ collections.neonati.title }}</h3>
       </div>
     </a>
-    <a href="{{ collections['big-kids'].url }}">
-      <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
-        {% if collections['big-kids'].image != blank %}
-          <img
-            src="{{ collections['big-kids'].image |  image_url }}"
-            id="babies-img"
-            alt="Babies"
-            class="tw-object-cover timeline-img active tw-aspect-square"
-            width="auto"
-            height="auto"
-          >
-        {% else %}
-          {% assign placeholder_image = 'lifestyle-1' %}
-          {{
-            placeholder_image
-            | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
-          }}
-        {% endif %}
-        <h3 class="tw-text-4xl tw-text-main">{{ collections['big-kids'].title }}</h3>
-      </div>
-    </a>
+
     <a href="{{ collections['kids'].url }}">
       <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
         {% if collections['big-kids'].image != blank %}
@@ -85,6 +65,27 @@
           }}
         {% endif %}
         <h3 class="tw-text-4xl tw-text-main">{{ collections.kids.title }}</h3>
+      </div>
+    </a>
+    <a href="{{ collections['big-kids'].url }}">
+      <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
+        {% if collections['big-kids'].image != blank %}
+          <img
+            src="{{ collections['big-kids'].image |  image_url }}"
+            id="babies-img"
+            alt="Babies"
+            class="tw-object-cover timeline-img active tw-aspect-square"
+            width="auto"
+            height="auto"
+          >
+        {% else %}
+          {% assign placeholder_image = 'lifestyle-1' %}
+          {{
+            placeholder_image
+            | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+          }}
+        {% endif %}
+        <h3 class="tw-text-4xl tw-text-main">{{ collections['big-kids'].title }}</h3>
       </div>
     </a>
   </div>
