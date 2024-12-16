@@ -126,7 +126,7 @@
         "title": "I nostri Handmade",
         "heading_size": "h1",
         "description": "<p>Our most popular styles right now that your little one will love.</p>",
-        "show_description": true,
+        "show_description": false,
         "description_style": "body",
         "collection": "handmade",
         "products_to_show": 4,
