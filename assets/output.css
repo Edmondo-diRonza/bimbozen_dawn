@@ -4392,6 +4392,10 @@ video {
   max-width: max-content;
 }
 
+.tw-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .tw-grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -4480,6 +4484,15 @@ video {
 
 .tw-bg-main\/50 {
   background-color: rgb(58 63 76 / 0.5);
+}
+
+.tw-bg-main\/30 {
+  background-color: rgb(58 63 76 / 0.3);
+}
+
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .tw-object-cover {
@@ -4575,11 +4588,6 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.tw-text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .tw-font-bold {
