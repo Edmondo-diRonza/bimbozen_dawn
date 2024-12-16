@@ -17,6 +17,7 @@
         "image_miCxyk": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/logo_bianco.svg",
             "image_width": 100,
             "alignment": "center"
           }
