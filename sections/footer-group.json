@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -9,9 +18,9 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/logo_bianco.svg",
+            "subtext": "Bimbo Zen di Stefano Caradonna",
             "image_width": 100,
-            "alignment": "",
-            "subtext": "Cane che abbaia non morde"
+            "alignment": ""
           }
         },
         "link_list_Udxp43": {
@@ -58,5 +67,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
