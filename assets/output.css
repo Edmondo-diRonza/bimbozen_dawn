@@ -4375,6 +4375,10 @@ video {
   height: 100%;
 }
 
+.\!tw-w-1\/2 {
+  width: 50% !important;
+}
+
 .tw-w-\[127px\] {
   width: 127px;
 }
@@ -4520,6 +4524,10 @@ video {
   padding: 1rem;
 }
 
+.tw-p-0 {
+  padding: 0px;
+}
+
 .\!tw-px-0 {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -4567,11 +4575,6 @@ video {
   line-height: 2.25rem !important;
 }
 
-.\!tw-text-8xl {
-  font-size: 6rem !important;
-  line-height: 1 !important;
-}
-
 .tw-text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -4600,16 +4603,6 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.\!tw-text-4xl {
-  font-size: 2.25rem !important;
-  line-height: 2.5rem !important;
-}
-
-.\!tw-text-5xl {
-  font-size: 3rem !important;
-  line-height: 1 !important;
 }
 
 .tw-font-bold {

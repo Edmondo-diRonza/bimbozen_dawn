@@ -68,7 +68,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="topo footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -154,6 +154,9 @@
                       {%- endif -%}
                     </div>
                 {%- endcase -%}
+                <div class="footer__logo-text !tw-w-1/2">
+                  <p>Bimbozen di Stefano Caradonna</p>
+                </div>
               </div>
             {%- endfor -%}
           </div>
