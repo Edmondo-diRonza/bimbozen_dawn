@@ -1,7 +1,12 @@
 {% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4' | split: ', ' %}
 
 <div class="tw-w-[90%] tw-mx-auto tw-py-20 tw-flex tw-flex-col tw-gap-10">
-  <div class="tw-gap-6 tw-grid-cols-2 tw-grid lg:tw-grid-cols-4 ">
+  <div
+    class="tw-gap-6 tw-grid-cols-2 tw-grid lg:tw-grid-cols-4 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
     {% assign count = 0 %}
     {% for collection in collections %}
       {% unless collection.handle == 'home'
@@ -23,7 +28,12 @@
     {% endfor %}
   </div>
 
-  <div class="tw-grid lg:tw-grid-cols-3 tw-gap-20 lg:tw-gap-6">
+  <div
+    class="tw-grid lg:tw-grid-cols-3 tw-gap-20 lg:tw-gap-6 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
     <a href="{{ collections['neonati'].url }}">
       <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
         {% if collections.neonati.image != blank %}
@@ -90,7 +100,12 @@
     </a>
   </div>
 </div>
-<div class=" tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-20 tw-flex tw-items-center tw-justify-center ">
+<div
+  class=" tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-20 tw-flex tw-items-center tw-justify-center {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+  {% endif %}
+>
   <h2 class="tw-w-full lg:tw-w-full tw-text-5xl lg:tw-text-[96px] tw-text-main">
     At Bimbo Zen, we're inspired <br>
     by adventure.

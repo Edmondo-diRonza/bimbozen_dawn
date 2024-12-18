@@ -68,7 +68,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="topo footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block !tw-flex !tw-flex-col grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -133,7 +133,7 @@
                       {%- endif -%}
                     </div>
                   {%- when 'image' -%}
-                    <div class="cane footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                       {%- if block.settings.image != blank -%}
                         {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                         <div
@@ -154,9 +154,6 @@
                       {%- endif -%}
                     </div>
                 {%- endcase -%}
-                <div class="footer__logo-text !tw-w-1/2">
-                  <p>Bimbozen di Stefano Caradonna</p>
-                </div>
               </div>
             {%- endfor -%}
           </div>
