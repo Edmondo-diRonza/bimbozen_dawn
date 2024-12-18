@@ -19,7 +19,8 @@
           "settings": {
             "image": "shopify://shop_images/logo_bianco.svg",
             "image_width": 100,
-            "alignment": ""
+            "alignment": "",
+            "subtext": "Bimbo Zen di Stefano Caradonna"
           }
         },
         "link_list_Udxp43": {
@@ -66,7 +67,5 @@
       }
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }
