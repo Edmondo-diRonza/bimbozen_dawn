@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -20,7 +11,7 @@
             "image": "shopify://shop_images/logo_bianco.svg",
             "image_width": 100,
             "alignment": "",
-            "subtext": "Bimbo Zen di Stefano Caradonna"
+            "subtext": "Cane che abbaia non morde"
           }
         },
         "link_list_Udxp43": {
@@ -37,11 +28,11 @@
             "menu": "menu-servizi"
           }
         },
-        "text_W6GVMR": {
-          "type": "text",
+        "link_list_KqgpKg": {
+          "type": "link_list",
           "settings": {
-            "heading": "<strong>Assistenza cliente</strong>",
-            "subtext": "<p>Condividi informazioni di contatto, dettagli del negozio e contenuti del brand con i clienti.</p>"
+            "heading": "<strong>Assistenza Cliente</strong>",
+            "menu": "assistenza-cliente"
           }
         }
       },
@@ -49,7 +40,7 @@
         "image_miCxyk",
         "link_list_Udxp43",
         "link_list_6ARhNJ",
-        "text_W6GVMR"
+        "link_list_KqgpKg"
       ],
       "settings": {
         "color_scheme": "scheme-5",
