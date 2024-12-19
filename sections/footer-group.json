@@ -8,7 +8,11 @@
         "image_miCxyk": {
           "type": "image",
           "settings": {
+<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/logo_bianco.svg",
+=======
+            "image": "shopify://shop_images/logo_bianco.svg",
+>>>>>>> 1cc26a55c4f6187a99a03202abb1c70b0256c7ae
             "subtext": "Bimbo Zen di Stefano Caradonna",
             "piva": "P.iva 08834630728",
             "image_width": 100,
