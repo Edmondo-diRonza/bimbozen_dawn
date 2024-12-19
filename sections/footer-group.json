@@ -37,20 +37,12 @@
             "heading": "<strong>I nostri servizi</strong>",
             "menu": "menu-servizi"
           }
-        },
-        "link_list_KqgpKg": {
-          "type": "link_list",
-          "settings": {
-            "heading": "<strong>Assistenza Cliente</strong>",
-            "menu": "assistenza-cliente"
-          }
         }
       },
       "block_order": [
         "image_miCxyk",
         "link_list_Udxp43",
-        "link_list_6ARhNJ",
-        "link_list_KqgpKg"
+        "link_list_6ARhNJ"
       ],
       "settings": {
         "color_scheme": "scheme-5",
