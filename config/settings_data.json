@@ -144,13 +144,18 @@
     },
     "content_for_index": [],
     "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "button_color": "#000000",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
@@ -158,10 +163,36 @@
           "greeting_message": ""
         }
       },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": true,
         "settings": {}
+      },
+      "10274264662263595587": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": true,
+        "settings": {
+          "swym_collections_icon_type": "heart",
+          "swym_collections_position": "top-right",
+          "swym_collections_vertical_offset": 0,
+          "swym_collections_horizontal_offset": 0,
+          "swym_collections_button_size": 25,
+          "swym_collections_icon_color": "#000000",
+          "swym_collections_product_link_selector": "-",
+          "swym_collections_product_tile_selector": "-",
+          "enable_variant_selector": false,
+          "swym_add_to_wishlist_title_color": "#333",
+          "swym_variant_selector_font_size_1": 14,
+          "swym_variant_selector_popup_bg_color": "#fff",
+          "swym_variant_selector_section_heading_color": "#000",
+          "swym_variant_selector_section_heading_font_size_2": 12,
+          "swym_variant_selector_choose_create_text": "Choose or Create new Wishlist",
+          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
+          "swym_variant_selector_wishlist_btn_color": "#fff",
+          "swym_variant_selector_product_detail_font_color": "#fff",
+          "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
+          "swym_variant_selector_create_list_title": "Name Your Wishlist"
+        }
       }
     },
     "color_schemes": {
