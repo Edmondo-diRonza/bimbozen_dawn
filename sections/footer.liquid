@@ -162,6 +162,20 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
+            <div class="footer-block">
+              <h2 class="footer-block__heading inline-richtext tw-font-bold">Assistenza cliente</h2>
+              <ul class="footer-block__details-content list-unstyled">
+                <li>
+                  <a href="/pages/contact" class="link link--text list-menu__item list-menu__item--link">Contatti</a>
+                </li>
+                <li>
+                  <p class="tw-text-[1.4rem] tw-py-[0.8rem]">Dalle 9:00 alle 19:00 dal lunedì al venerdì</p>
+                </li>
+                <li class="tw-flex">
+                  {%- render 'social-icons', class: 'footer__list-social' -%}
+                </li>
+              </ul>
+            </div>
           </div>
         {%- endif -%}
 
@@ -404,14 +418,12 @@
         {
           "type": "text",
           "id": "subtext",
-          "label": "Brand Text",
-          "default": "CANE CHE ABBAIA"
+          "label": "Brand Text"
         },
         {
           "type": "text",
           "id": "piva",
-          "label": "Dati Azienda",
-          "default": "16554684654546"
+          "label": "Dati Azienda"
         },
         {
           "type": "range",
