@@ -2961,6 +2961,9 @@ details-disclosure > details {
   .overflow-hidden-tablet {
     overflow: auto;
   }
+  .overflow-hidden-desktop {
+    padding-right: 17px; /*Per compensare la scomparsa della scrollbar */
+  }
 }
 
 .badge {

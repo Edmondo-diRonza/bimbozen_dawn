@@ -512,3 +512,7 @@
     }
   }
 }
+.ep_a_white path {
+  color: #ffff;
+  fill: #ffff;
+}
