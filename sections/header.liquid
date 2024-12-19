@@ -255,10 +255,10 @@
         </a> {% endcomment %}
         <a
   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-  class="header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
+  class="!tw-no-underline header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
   rel="nofollow"
 >
-  {%- if section.settings.enable_customer_avatar -%}
+  {% comment %} {%- if section.settings.enable_customer_avatar -%}
     <account-icon>
       {%- if customer and customer.has_avatar? -%}
         {{ customer | avatar }}
@@ -269,17 +269,18 @@
   {%- else -%}
     <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
   {%- endif -%}
-  
+   {% endcomment %}
   <!-- Iniziali del cliente -->
+  <account-icon>
   {% if customer %}
-    <span class="tw-block tw-mt-1 tw-text-sm tw-font-semibold tw-text-center tw-text-gray-700">
+    <span class="tw-block tw-uppercase  tw-text-lg tw-p-4  tw-mt-1 tw-font-bold tw-text-center tw-text-gray-700 tw-rounded-full !tw-w-14 !tw-h-14 tw-bg-main/30">
       {{ customer.first_name | slice: 0, 1 }}{{ customer.last_name | slice: 0, 1 }}
-    </span>
-  {% else %}
-    <span class="tw-block tw-mt-1 tw-text-sm tw-font-semibold tw-text-center tw-text-gray-500">
-      Guest
-    </span>
+    </span>  
+  {% else  %}
+  <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+
   {% endif %}
+  </account-icon>
   
   <span class="visually-hidden">
     {%- liquid
