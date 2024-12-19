@@ -61,7 +61,7 @@
             endif
           -%}
           <div
-            class="footer__blocks-wrapper tw-flex {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper tw-flex tw-flex-col lg:tw-flex-row  {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
@@ -151,6 +151,9 @@
                         </div>
                         {% if block.settings.subtext %}
                           <p class="footer-subtext">{{ block.settings.subtext }}</p>
+                        {% endif %}
+                        {% if block.settings.piva %}
+                          <p class="footer-subtext">{{ block.settings.piva }}</p>
                         {% endif %}
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -403,6 +406,12 @@
           "id": "subtext",
           "label": "Brand Text",
           "default": "CANE CHE ABBAIA"
+        },
+        {
+          "type": "text",
+          "id": "piva",
+          "label": "Dati Azienda",
+          "default": "16554684654546"
         },
         {
           "type": "range",
