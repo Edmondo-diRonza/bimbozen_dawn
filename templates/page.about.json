@@ -23,9 +23,114 @@
         "image_block_wHtrww"
       ],
       "settings": {}
+    },
+    "multicolumn_inj4bL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7jgrmn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mother-kissing-newborn.jpg",
+            "title": "",
+            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_t67nem": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/family-laughing-with-holiday-lights.jpg",
+            "title": "",
+            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ApyGEN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woman-and-boy-muscle.jpg",
+            "title": "",
+            "text": "<p>Associa un testo a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_gPLkrC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ddCYeF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sempre Accanto ai Genitori",
+            "heading_size": "h1"
+          }
+        },
+        "text_7xdBaY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Bimbo Zen non offriamo solo prodotti per bambini, ma anche sostegno ai genitori. Nel nostro negozio a Molfetta organizziamo incontri dedicati ai neo-genitori, guidati da esperti qualificati, per affrontare temi importanti legati alla crescita e al benessere dei più piccoli.<br/><br/>Oltre a ricevere consigli utili, avrete l’opportunità di condividere esperienze con altri genitori e costruire una vera comunità. Passate a trovarci e scoprite come possiamo accompagnarvi nel meraviglioso viaggio della genitorialità!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_yPFjde": {
+          "type": "button",
+          "settings": {
+            "button_label": "Scopri dove siamo",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/baby-nursery.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "about_page"
+    "about_page",
+    "multicolumn_inj4bL",
+    "image_with_text_gPLkrC"
   ]
 }
