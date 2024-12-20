@@ -2,10 +2,126 @@
   "sections": {
     "about_page": {
       "type": "template-about",
+      "blocks": {
+        "image_block_wHtrww": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_wHtrww"
+      ],
       "settings": {}
+    },
+    "multicolumn_inj4bL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7jgrmn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mother-kissing-newborn.jpg",
+            "title": "<strong>Ogni cliente è speciale<\/strong>",
+            "text": "<p>A Bimbo Zen, ogni cliente è unico e speciale. Vogliamo che tu ti senta accolto e a tuo agio, proprio come a casa tua. Ogni visita è un’esperienza, e siamo qui per ascoltarti e aiutarti a trovare esattamente ciò di cui hai bisogno per il tuo bambino.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_t67nem": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/family-laughing-with-holiday-lights.jpg",
+            "title": "<strong>Sostenibilità a Bimbo Zen<\/strong>",
+            "text": "<p>La nostra missione va oltre la vendita di prodotti. A Bimbo Zen, ci impegniamo per un futuro migliore, scegliendo articoli sostenibili e rispettosi dell'ambiente. Crediamo che ogni piccolo gesto verso il green possa fare una grande differenza per il mondo in cui cresceranno i nostri figli.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ApyGEN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-and-boy-muscle.jpg",
+            "title": "<strong>Una Comunità Accogliente<\/strong>",
+            "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_gPLkrC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ddCYeF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sempre Accanto ai Genitori",
+            "heading_size": "h1"
+          }
+        },
+        "text_7xdBaY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Bimbo Zen non offriamo solo prodotti per bambini, ma anche sostegno ai genitori. Nel nostro negozio a Molfetta organizziamo incontri dedicati ai neo-genitori, guidati da esperti qualificati, per affrontare temi importanti legati alla crescita e al benessere dei più piccoli.<br\/><br\/>Oltre a ricevere consigli utili, avrete l’opportunità di condividere esperienze con altri genitori e costruire una vera comunità. Passate a trovarci e scoprite come possiamo accompagnarvi nel meraviglioso viaggio della genitorialità!<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_yPFjde": {
+          "type": "button",
+          "settings": {
+            "button_label": "Scopri dove siamo",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/baby-nursery.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "about_page"
+    "about_page",
+    "multicolumn_inj4bL",
+    "image_with_text_gPLkrC"
   ]
 }
