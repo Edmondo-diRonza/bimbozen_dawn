@@ -21,7 +21,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "shopify://collections/giocattoli"
           }
         },
         "image_block_tWPn8q": {
@@ -33,7 +33,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "shopify://collections/puericultura"
           }
         },
         "image_block_JKkpTn": {
@@ -45,7 +45,7 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "shopify://collections/idee-regalo"
           }
         }
       },
