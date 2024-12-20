@@ -4698,6 +4698,16 @@ video {
   padding-bottom: 0.8rem;
 }
 
+.tw-px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.tw-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .\!tw-pb-14 {
   padding-bottom: 3.5rem !important;
 }
