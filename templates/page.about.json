@@ -152,6 +152,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "newsletter_JH6e8e": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_ReCECm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rimani aggiornato su eventi e novità!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_JjU8Ni": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Iscriviti alla nostra newsletter per non perdere appuntamenti speciali, offerte e tutte le novità di Bimbozen!<\/p>"
+          }
+        },
+        "email_form_iY7G6y": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_ReCECm",
+        "paragraph_JjU8Ni",
+        "email_form_iY7G6y"
+      ],
+      "settings": {
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -159,6 +192,7 @@
     "collection_list_CHNfzD",
     "secure",
     "multicolumn_inj4bL",
-    "image_with_text_gPLkrC"
+    "image_with_text_gPLkrC",
+    "newsletter_JH6e8e"
   ]
 }

@@ -6,61 +6,37 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/children-sharing-and-playing-with-toys.jpg",
-=======
-            "image": "shopify://shop_images/children-sharing-and-playing-with-toys.jpg",
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
             "text": "Gioca, Immagina, Cresci!",
             "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Scopri tutti i giochi",
-<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/giocattoli"
-=======
-            "button_url": "shopify://collections/giocattoli"
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
           }
         },
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/baby-toys-bottles-products.jpg",
-=======
-            "image": "shopify://shop_images/baby-toys-bottles-products.jpg",
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
             "text": "La Cura che Ogni Bambino Merita",
             "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Scopri i Nostri Prodotti per la Cura",
-<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/puericultura"
-=======
-            "button_url": "shopify://collections/puericultura"
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
           }
         },
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/taf_palestrina4.jpg",
-=======
-            "image": "shopify://shop_images/taf_palestrina4.jpg",
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
             "text": "La Magia di un Regalo Speciale",
             "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Scopri le Idee Perfette",
-<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/idee-regalo"
-=======
-            "button_url": "shopify://collections/idee-regalo"
->>>>>>> 06f1e7735b77b553d28131fbbbb1312dc85451d8
           }
         }
       },
