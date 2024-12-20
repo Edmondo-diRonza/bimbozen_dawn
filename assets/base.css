@@ -3690,15 +3690,13 @@ details-disclosure > details {
   }
 }
 
+.cat {
+  background-image: url("bg-cat.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: fit-content;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-  .cat {
-    background-image: url("/bg-cat.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-}

@@ -3754,6 +3754,14 @@ details-disclosure > details {
   }
 }
 
+.cat {
+  background-image: url("bg-cat.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -4558,10 +4566,6 @@ video {
 .tw-bg-main {
   --tw-bg-opacity: 1;
   background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1));
-}
-
-.tw-bg-main\/20 {
-  background-color: rgb(58 63 76 / 0.2);
 }
 
 .tw-bg-main\/30 {
