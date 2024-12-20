@@ -31,7 +31,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/mother-kissing-newborn.jpg",
-            "title": "",
+            "title": "<strong>Ogni cliente è speciale</strong>",
             "text": "<p>A Bimbo Zen, ogni cliente è unico e speciale. Vogliamo che tu ti senta accolto e a tuo agio, proprio come a casa tua. Ogni visita è un’esperienza, e siamo qui per ascoltarti e aiutarti a trovare esattamente ciò di cui hai bisogno per il tuo bambino.<br/></p>",
             "link_label": "",
             "link": ""
@@ -41,7 +41,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/family-laughing-with-holiday-lights.jpg",
-            "title": "",
+            "title": "<strong>Sostenibilità a Bimbo Zen</strong>",
             "text": "<p>La nostra missione va oltre la vendita di prodotti. A Bimbo Zen, ci impegniamo per un futuro migliore, scegliendo articoli sostenibili e rispettosi dell'ambiente. Crediamo che ogni piccolo gesto verso il green possa fare una grande differenza per il mondo in cui cresceranno i nostri figli.<br/></p>",
             "link_label": "",
             "link": ""
@@ -51,7 +51,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/woman-and-boy-muscle.jpg",
-            "title": "",
+            "title": "<strong>Una Comunità Accogliente</strong>",
             "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.</p>",
             "link_label": "",
             "link": ""
