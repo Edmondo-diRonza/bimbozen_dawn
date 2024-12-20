@@ -103,13 +103,41 @@
   </div>
 </div>
 <div
-  class=" tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-20 tw-flex tw-items-center tw-justify-center {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+  class="tw-relative tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-32 tw-flex tw-items-center tw-justify-center {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
   {% if settings.animations_reveal_on_scroll %}
     data-cascade
   {% endif %}
 >
-  <h2 class="tw-w-full lg:tw-w-full tw-text-5xl lg:tw-text-[96px] tw-text-main">
-    At Bimbo Zen, we're inspired <br>
-    by adventure.
-  </h2>
+  <div class="tw-relative tw-flex tw-flex-col tw-w-full tw-gap-4 lg:tw-justify-center lg:tw-items-center">
+    <div class="tw-absolute tw-left-0 tw-top-0 tw-transform -tw-translate-y-24 lg:tw-translate-x-16 lg:-tw-translate-y-20 ">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="auto"
+        height="auto"
+        viewBox="0 0 24 24"
+        class="tw-text-main/5 tw-w-[120px] tw-h-[120px] lg:tw-w-[200px] lg:tw-h-[200px]"
+      >
+        <path fill="currentColor" d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.87 3.87 0 0 1-2.748-1.179m10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.87 3.87 0 0 1-2.748-1.179" />
+      </svg>
+    </div>
+
+    <h2 class="tw-w-full lg:tw-w-full tw-text-6xl lg:tw-text-[76px] tw-text-main/60 tw-italic">
+      Da <strong>Bimbo Zen</strong>, ci lasciamo ispirare <br>
+      dalle avventure.
+    </h2>
+
+    <div class="tw-absolute tw-right-0 tw-bottom-0 tw-transform tw-translate-y-24 lg:-tw-translate-x-16 lg:tw-translate-y-20">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="auto"
+        height="auto"
+        viewBox="0 0 24 24"
+        class="tw-text-main/5 tw-w-[120px] tw-h-[120px] lg:tw-w-[200px] lg:tw-h-[200px]"
+      >
+        <path fill="currentColor" d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.456 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.248-5.621c-.537.278-1.24.375-1.93.311c-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.1.49 2.748 1.179m-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.456 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621c-.537.278-1.24.375-1.929.311C4.591 12.323 3.17 10.842 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.1.49 2.748 1.179" />
+      </svg>
+    </div>
+  </div>
 </div>
+
+{% comment %} At Bimbo Zen, we're inspired  by adventure. {% endcomment %}
