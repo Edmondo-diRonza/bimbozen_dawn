@@ -22,10 +22,11 @@
       "block_order": ["image_block_wHtrww"],
       "settings": {}
     },
-    "secure": {
-      "type": "secure",
+    "main_category": {
+      "type": "main-category",
       "settings": {}
     },
+
     "multicolumn_inj4bL": {
       "type": "multicolumn",
       "blocks": {
