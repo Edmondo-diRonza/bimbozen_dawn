@@ -11,16 +11,9 @@
   "sections": {
     "about_page": {
       "type": "template-about",
-      "blocks": {
-        "image_block_wHtrww": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/image.png"
-          }
-        }
-      },
-      "block_order": ["image_block_wHtrww"],
-      "settings": {}
+      "settings": {
+        "image": "shopify://shop_images/image.png"
+      }
     },
     "secure": {
       "type": "secure",
@@ -60,7 +53,11 @@
           }
         }
       },
-      "block_order": ["column_7jgrmn", "column_t67nem", "column_ApyGEN"],
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -104,7 +101,11 @@
           }
         }
       },
-      "block_order": ["heading_ddCYeF", "text_7xdBaY", "button_yPFjde"],
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
       "settings": {
         "image": "shopify://shop_images/baby-nursery.jpg",
         "height": "adapt",
