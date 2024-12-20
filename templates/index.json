@@ -12,7 +12,11 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
+<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/giocattoli"
+=======
+            "button_url": "shopify://collections/giocattoli"
+>>>>>>> 31b81efe911be532abe24f3f4185765f57409c0e
           }
         },
         "image_block_tWPn8q": {
@@ -24,7 +28,11 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
+<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/puericultura"
+=======
+            "button_url": "shopify://collections/puericultura"
+>>>>>>> 31b81efe911be532abe24f3f4185765f57409c0e
           }
         },
         "image_block_JKkpTn": {
@@ -36,7 +44,11 @@
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
+<<<<<<< HEAD
             "button_url": "shopify:\/\/collections\/idee-regalo"
+=======
+            "button_url": "shopify://collections/idee-regalo"
+>>>>>>> 31b81efe911be532abe24f3f4185765f57409c0e
           }
         }
       },
