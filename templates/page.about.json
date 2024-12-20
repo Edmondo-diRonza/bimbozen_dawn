@@ -22,6 +22,10 @@
       "block_order": ["image_block_wHtrww"],
       "settings": {}
     },
+    "secure": {
+      "type": "secure",
+      "settings": {}
+    },
     "multicolumn_inj4bL": {
       "type": "multicolumn",
       "blocks": {
@@ -118,5 +122,10 @@
       }
     }
   },
-  "order": ["about_page", "multicolumn_inj4bL", "image_with_text_gPLkrC"]
+  "order": [
+    "about_page",
+    "secure",
+    "multicolumn_inj4bL",
+    "image_with_text_gPLkrC"
+  ]
 }
