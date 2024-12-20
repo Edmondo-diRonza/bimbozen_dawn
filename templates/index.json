@@ -16,11 +16,11 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/children-sharing-and-playing-with-toys.jpg",
-            "text": "Testo Predefinito",
-            "subtext": "Testo predefinito",
+            "text": "Gioca, Immagina, Cresci!",
+            "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Tutti i prodotti",
+            "button_text": "Scopri tutti i giochi",
             "button_url": "shopify://collections/giocattoli"
           }
         },
@@ -28,23 +28,34 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/baby-toys-bottles-products.jpg",
-            "text": "Testo Predefinito",
+            "text": "La Cura che Ogni Bambino Merita",
+            "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
+            "text_size": 96,
+            "subtext_size": 16,
+            "button_text": "Scopri i Nostri Prodotti per la Cura",
+            "button_url": "shopify://collections/puericultura"
+          }
+        },
+        "image_block_awF3ke": {
+          "type": "image_block",
+          "settings": {
+            "text": "missing translation: \"t:Testo Predefinito\" is not present in any of the [\"it\", \"en\"] schema locale files",
             "subtext": "Testo predefinito",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "shopify://collections/puericultura"
+            "button_url": "/"
           }
         },
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/taf_palestrina4.jpg",
-            "text": "",
-            "subtext": "Testo predefinito",
+            "text": "La Magia di un Regalo Speciale",
+            "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Tutti i prodotti",
+            "button_text": "Scopri le Idee Perfette",
             "button_url": "shopify://collections/idee-regalo"
           }
         }
@@ -52,6 +63,7 @@
       "block_order": [
         "image_block_bMGeCF",
         "image_block_tWPn8q",
+        "image_block_awF3ke",
         "image_block_JKkpTn"
       ],
       "settings": {}
