@@ -11,16 +11,49 @@
   "sections": {
     "about_page": {
       "type": "template-about",
+      "settings": {
+        "image": "shopify://shop_images/image.png"
+      }
+    },
+    "collection_list_CHNfzD": {
+      "type": "collection-list",
       "blocks": {
-        "image_block_wHtrww": {
-          "type": "image_block",
+        "featured_collection_zgWtxm": {
+          "type": "featured_collection",
           "settings": {
-            "image": "shopify://shop_images/image.png"
+            "collection": "neonati"
+          }
+        },
+        "featured_collection_pi4Emq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids"
+          }
+        },
+        "featured_collection_ixDc7X": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "big-kids"
           }
         }
       },
-      "block_order": ["image_block_wHtrww"],
-      "settings": {}
+      "block_order": [
+        "featured_collection_zgWtxm",
+        "featured_collection_pi4Emq",
+        "featured_collection_ixDc7X"
+      ],
+      "settings": {
+        "title": "Tutto ciò che serve per crescere, imparare e giocare.",
+        "heading_size": "hxxl",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "main_category": {
       "type": "main-category",
@@ -61,7 +94,11 @@
           }
         }
       },
-      "block_order": ["column_7jgrmn", "column_t67nem", "column_ApyGEN"],
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -105,7 +142,11 @@
           }
         }
       },
-      "block_order": ["heading_ddCYeF", "text_7xdBaY", "button_yPFjde"],
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
       "settings": {
         "image": "shopify://shop_images/baby-nursery.jpg",
         "height": "adapt",
@@ -125,6 +166,7 @@
   },
   "order": [
     "about_page",
+    "collection_list_CHNfzD",
     "secure",
     "multicolumn_inj4bL",
     "image_with_text_gPLkrC"
