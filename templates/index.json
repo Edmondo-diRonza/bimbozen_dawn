@@ -36,17 +36,6 @@
             "button_url": "shopify://collections/puericultura"
           }
         },
-        "image_block_awF3ke": {
-          "type": "image_block",
-          "settings": {
-            "text": "missing translation: \"t:Testo Predefinito\" is not present in any of the [\"it\", \"en\"] schema locale files",
-            "subtext": "Testo predefinito",
-            "text_size": 96,
-            "subtext_size": 16,
-            "button_text": "Tutti i prodotti",
-            "button_url": "/"
-          }
-        },
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
@@ -63,7 +52,6 @@
       "block_order": [
         "image_block_bMGeCF",
         "image_block_tWPn8q",
-        "image_block_awF3ke",
         "image_block_JKkpTn"
       ],
       "settings": {}
