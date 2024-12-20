@@ -1942,7 +1942,7 @@ input[type="checkbox"] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  /* width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2); */
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
@@ -4359,6 +4359,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.tw-ml-4 {
+  margin-left: 1rem;
+}
+
 .tw-mr-2 {
   margin-right: 0.5rem;
 }
@@ -4407,8 +4411,16 @@ video {
   height: 3.5rem !important;
 }
 
+.\!tw-h-16 {
+  height: 4rem !important;
+}
+
 .\!tw-h-28 {
   height: 7rem !important;
+}
+
+.\!tw-h-\[50vh\] {
+  height: 50vh !important;
 }
 
 .tw-h-10 {
@@ -4417,10 +4429,6 @@ video {
 
 .tw-h-\[120px\] {
   height: 120px;
-}
-
-.tw-h-\[30vh\] {
-  height: 30vh;
 }
 
 .tw-h-\[500px\] {
@@ -4435,16 +4443,12 @@ video {
   height: 100%;
 }
 
-.\!tw-h-\[30vh\] {
-  height: 30vh !important;
-}
-
-.\!tw-h-\[50vh\] {
-  height: 50vh !important;
-}
-
 .\!tw-w-14 {
   width: 3.5rem !important;
+}
+
+.\!tw-w-16 {
+  width: 4rem !important;
 }
 
 .\!tw-w-28 {
@@ -4626,6 +4630,11 @@ video {
   background-color: rgb(58 63 76 / 0.8);
 }
 
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .tw-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -4673,6 +4682,11 @@ video {
   padding-bottom: 1.5rem !important;
 }
 
+.tw-px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .tw-px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -4693,19 +4707,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.tw-py-\[0\.8rem\] {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-}
-
-.tw-px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .tw-py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.tw-py-\[0\.8rem\] {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 .\!tw-pb-14 {
@@ -4778,6 +4787,10 @@ video {
 
 .tw-italic {
   font-style: italic;
+}
+
+.\!tw-leading-\[4rem\] {
+  line-height: 4rem !important;
 }
 
 .tw-text-main {
@@ -4856,6 +4869,16 @@ video {
 .hover\:-tw-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:tw-bg-main:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:tw-text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:tw-opacity-100:hover {
