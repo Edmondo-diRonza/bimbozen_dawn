@@ -1,7 +1,7 @@
 <div class="tw-w-[90%] tw-mx-auto tw-h-[500px]">
-  {% if section.blocks.settings.image != blank %}
+  {% if section.settings.image != blank %}
     <img
-      src="{{ section.blocks.settings.image | img_url: '1920x' }}"
+      src="{{ section.settings.image | img_url: '1920x' }}"
       alt="Hero Image"
       class="tw-object-cover tw-object-top tw-w-full tw-h-full"
       width="1920px"
@@ -19,28 +19,17 @@
 {% schema %}
 {
   "name": "Hero",
-  "settings": [],
-  "blocks": [
+  "settings": [
     {
-      "type": "image_block",
-      "name": "Immagine Hero",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Seleziona Immagine"
-        }
-      ]
+      "type": "image_picker",
+      "id": "image",
+      "label": "Seleziona Immagine"
     }
   ],
+
   "presets": [
     {
-      "name": "Hero",
-      "blocks": [
-        {
-          "type": "image_block"
-        }
-      ]
+      "name": "Hero"
     }
   ]
 }
