@@ -145,11 +145,14 @@
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="!tw-py-4 !tw-px-20 !tw-rounded-[30px] !tw-transition !tw-duration-200 !tw-bg-main !tw-uppercase tw-text-white !tw-max-w-max tw-text-2xl tw-my-10">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
+      <a
+        href="{{ routes.account_register_url }}"
+        class="tw-py-4 tw-px-6 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-main tw-uppercase tw-text-white tw-max-w-max tw-text-2xl tw-my-10"
+      >
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}

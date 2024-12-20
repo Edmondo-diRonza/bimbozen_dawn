@@ -1235,8 +1235,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
-.shopify-challenge__button,
-.customer button {
+.shopify-challenge__button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -4380,6 +4379,10 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.\!tw-h-14 {
+  height: 3.5rem !important;
+}
+
 .\!tw-h-28 {
   height: 7rem !important;
 }
@@ -4404,24 +4407,8 @@ video {
   height: 100%;
 }
 
-.tw-h-8 {
-  height: 2rem;
-}
-
-.\!tw-h-8 {
-  height: 2rem !important;
-}
-
-.\!tw-h-20 {
-  height: 5rem !important;
-}
-
-.\!tw-h-10 {
-  height: 2.5rem !important;
-}
-
-.\!tw-h-14 {
-  height: 3.5rem !important;
+.\!tw-w-14 {
+  width: 3.5rem !important;
 }
 
 .\!tw-w-28 {
@@ -4448,24 +4435,9 @@ video {
   width: 100%;
 }
 
-.tw-w-8 {
-  width: 2rem;
-}
-
-.\!tw-w-8 {
-  width: 2rem !important;
-}
-
-.\!tw-w-20 {
-  width: 5rem !important;
-}
-
-.\!tw-w-10 {
-  width: 2.5rem !important;
-}
-
-.\!tw-w-14 {
-  width: 3.5rem !important;
+.\!tw-max-w-max {
+  max-width: -moz-max-content !important;
+  max-width: max-content !important;
 }
 
 .tw-max-w-max {
@@ -4545,16 +4517,16 @@ video {
   row-gap: 1.5rem;
 }
 
+.\!tw-rounded-\[30px\] {
+  border-radius: 30px !important;
+}
+
 .tw-rounded-\[30px\] {
   border-radius: 30px;
 }
 
 .tw-rounded-full {
   border-radius: 9999px;
-}
-
-.tw-rounded {
-  border-radius: 0.25rem;
 }
 
 .tw-border {
@@ -4568,6 +4540,11 @@ video {
 .tw-border-main {
   --tw-border-opacity: 1;
   border-color: rgb(58 63 76 / var(--tw-border-opacity, 1));
+}
+
+.\!tw-bg-main {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .tw-bg-\[\#BCC7E4\]\/20 {
@@ -4625,6 +4602,16 @@ video {
 .\!tw-px-14 {
   padding-left: 3.5rem !important;
   padding-right: 3.5rem !important;
+}
+
+.\!tw-px-20 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.\!tw-py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .\!tw-py-6 {
@@ -4698,9 +4685,9 @@ video {
   font-size: 1.4rem;
 }
 
-.tw-text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.tw-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .tw-text-xl {
@@ -4708,17 +4695,12 @@ video {
   line-height: 1.75rem;
 }
 
-.tw-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .tw-font-bold {
   font-weight: 700;
 }
 
-.tw-font-semibold {
-  font-weight: 600;
+.\!tw-uppercase {
+  text-transform: uppercase !important;
 }
 
 .tw-uppercase {
@@ -4739,10 +4721,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.tw-no-underline {
-  text-decoration-line: none;
-}
-
 .\!tw-no-underline {
   text-decoration-line: none !important;
 }
@@ -4760,6 +4738,14 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.\!tw-transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 .tw-transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -4772,6 +4758,10 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.\!tw-duration-200 {
+  transition-duration: 200ms !important;
 }
 
 .tw-duration-200 {
