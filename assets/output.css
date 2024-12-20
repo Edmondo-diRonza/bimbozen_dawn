@@ -3758,8 +3758,6 @@ details-disclosure > details {
   background-image: url("bg-cat.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 *, ::before, ::after {
@@ -4419,10 +4417,6 @@ video {
   height: 7rem !important;
 }
 
-.\!tw-h-\[50vh\] {
-  height: 50vh !important;
-}
-
 .tw-h-10 {
   height: 2.5rem;
 }
@@ -4435,12 +4429,24 @@ video {
   height: 500px;
 }
 
+.tw-h-\[50vh\] {
+  height: 50vh;
+}
+
 .tw-h-\[calc\(100vh_-_150px\)\] {
   height: calc(100vh - 150px);
 }
 
 .tw-h-full {
   height: 100%;
+}
+
+.tw-h-screen {
+  height: 100vh;
+}
+
+.tw-h-\[30vh\] {
+  height: 30vh;
 }
 
 .\!tw-w-14 {
@@ -4905,6 +4911,14 @@ video {
 
   .lg\:tw-h-\[200px\] {
     height: 200px;
+  }
+
+  .lg\:tw-h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .lg\:tw-h-\[30vh\] {
+    height: 30vh;
   }
 
   .lg\:tw-min-h-\[calc\(100vh_-_150px\)\] {

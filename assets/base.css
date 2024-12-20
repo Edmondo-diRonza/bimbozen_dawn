@@ -3694,7 +3694,6 @@ details-disclosure > details {
   background-image: url("bg-cat.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  width: fit-content;
 }
 
 @tailwind base;
