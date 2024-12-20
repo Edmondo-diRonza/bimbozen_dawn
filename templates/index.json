@@ -47,36 +47,12 @@
             "button_text": "Tutti i prodotti",
             "button_url": "/"
           }
-        },
-        "image_block_9kJDye": {
-          "type": "image_block",
-          "settings": {
-            "text": "Testo Predefinito",
-            "subtext": "Testo predefinito",
-            "text_size": 96,
-            "subtext_size": 16,
-            "button_text": "Tutti i prodotti",
-            "button_url": "/"
-          }
-        },
-        "image_block_4Qenb4": {
-          "type": "image_block",
-          "settings": {
-            "text": "Testo Predefinito",
-            "subtext": "Testo predefinito",
-            "text_size": 96,
-            "subtext_size": 16,
-            "button_text": "Tutti i prodotti",
-            "button_url": "/"
-          }
         }
       },
       "block_order": [
         "image_block_bMGeCF",
         "image_block_tWPn8q",
-        "image_block_JKkpTn",
-        "image_block_9kJDye",
-        "image_block_4Qenb4"
+        "image_block_JKkpTn"
       ],
       "settings": {}
     },
