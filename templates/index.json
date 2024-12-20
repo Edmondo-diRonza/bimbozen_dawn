@@ -15,6 +15,7 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
+            "image": "shopify://shop_images/children-sharing-and-playing-with-toys.jpg",
             "text": "Testo Predefinito",
             "subtext": "Testo predefinito",
             "text_size": 96,
@@ -26,7 +27,20 @@
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
+            "image": "shopify://shop_images/baby-toys-bottles-products.jpg",
             "text": "Testo Predefinito",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
+          }
+        },
+        "image_block_JKkpTn": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/taf_palestrina4.jpg",
+            "text": "",
             "subtext": "Testo predefinito",
             "text_size": 96,
             "subtext_size": 16,
@@ -60,6 +74,7 @@
       "block_order": [
         "image_block_bMGeCF",
         "image_block_tWPn8q",
+        "image_block_JKkpTn",
         "image_block_9kJDye",
         "image_block_4Qenb4"
       ],
