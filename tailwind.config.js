@@ -2,6 +2,11 @@
 module.exports = {
   prefix: "tw-", // Sostituisci 'tw-' con il prefisso desiderato
   content: ["./**/*.liquid"],
+  safelist: [
+    "lg:tw-w-[19%]", // Queste classi saranno sempre presenti
+    "lg:tw-w-[24%]",
+    "lg:tw-w-[32%]",
+  ],
   theme: {
     extend: {
       screens: {

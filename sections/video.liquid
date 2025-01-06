@@ -37,6 +37,36 @@
     calc(100vw - 10rem), 100vw
   {%- endif %}
 {%- endcapture -%}
+<div class="tw-py-6 tw-bg-main tw-text-white tw-w-full tw-overflow-hidden video-marquee-container">
+  <div class="tw-flex tw-animate-marquee tw-w-max video-marquee">
+    <div class="video-marquee-content">
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+      <span class="tw-inline-block tw-whitespace-nowrap tw-mr-8">
+        Amato sia dai bambini che dai genitori. <span>• &nbsp;</span></span
+      >
+    </div>
+  </div>
+</div>
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
@@ -119,6 +149,49 @@
     </deferred-media>
   </div>
 </div>
+
+<style>
+  .video-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .video-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+  .video-marquee-content {
+    display: flex;
+    gap: 50px; /* Spazio tra gli elementi */
+    animation: scroll-infinite 60s linear infinite; /* Animazione infinita */
+  }
+
+  .video-marquee span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    gap: 20px;
+    color: #ffffff;
+  }
+  @keyframes scroll-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .tw-animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+</style>
 
 {% schema %}
 {

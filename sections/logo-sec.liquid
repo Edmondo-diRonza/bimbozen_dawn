@@ -10,7 +10,7 @@
 %}
 {% comment %} array dei loghi con stringa splittata {% endcomment %}
 
-<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-text-center">
+<div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-text-center">
   <ul
     class="hero__logo-wrapper tw-grid tw-grid-cols-2 lg:tw-hidden tw-gap-10 tw-place-items-center tw-mt-20 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -31,7 +31,7 @@
   </ul>
 </div>
 
-<div class="hero__logo-container tw-w-[90%] tw-mx-auto tw-my-20">
+<div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-my-20">
   <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center">
     {% for logo in logos %}
       {% if forloop.index <= 5 %}

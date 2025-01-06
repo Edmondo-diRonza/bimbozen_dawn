@@ -1,8 +1,16 @@
-{% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4' | split: ', ' %}
+{% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4, #d6853f' | split: ', ' %}
+{% assign categorieVar = collections.size | minus: 5 %}
+{% assign catPercentage = 100 | divided_by: categorieVar %}
+{% assign adjustment = catPercentage | times: 0.02 %}
+{% assign adjusted_percentage = catPercentage | minus: adjustment %}
+{% assign integer_percentage = adjusted_percentage | floor %}
+{% if integer_percentage < 19 %}
+  {% assign integer_percentage = 19 %}
+{% endif %}
 
-<div class="tw-w-[90%] tw-mx-auto tw-py-20 tw-flex tw-flex-col tw-gap-10">
+<div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-col tw-gap-10">
   <div
-    class="tw-gap-6 tw-grid-cols-2 tw-grid lg:tw-grid-cols-4 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="tw-mt-[40px] tw-flex tw-w-full tw-gap-y-4 tw-justify-between t tw-flex-wrap {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
@@ -17,10 +25,10 @@
       %}
         <a
           href="{{ collection.url }}"
-          class="tw-text-3xl tw-rounded-full tw-p-4 tw-mx-auto tw-h-full tw-w-full tw-justify-center tw-flex tw-items-center tw-gap-y-6 lg:tw-p-0 lg:tw-w-11/12 tw-text-main lg:tw-text-4xl tw-aspect-square tw-transition-all tw-duration-500 hover:-tw-translate-y-2 tw-opacity-[0.8] hover:tw-opacity-100"
+          class="tw-w-[49%] lg:tw-w-[{{integer_percentage}}%]  tw-py-6 tw-px-[22px] tw-rounded-[300px] lg:tw-min-w-[260px] tw-transition tw-flex tw-justify-center tw-items-center  tw-bg-main tw-uppercase tw-text-main tw-duration-500 hover:-tw-translate-y-2 tw-opacity-[0.8] hover:tw-opacity-100 "
           style="background-color: {{ colors[count] }};"
         >
-          {{ collection.title }}
+          <h2 class="tw-line-clamp-1 tw-text-[11px] lg:tw-text-[16px]">{{ collection.title }}</h2>
         </a>
         {% assign count = count | plus: 1 %}
         {% if count == colors.size %}
@@ -31,79 +39,99 @@
   </div>
 
   <div
-    class="tw-grid lg:tw-grid-cols-3 tw-gap-20 lg:tw-gap-6 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="tw-grid lg:tw-grid-cols-3 tw-gap-4 lg:tw-gap-2 tw-mt-[40px] {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
-    <a href="{{ collections['neonati'].url }}" class="tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
-      <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
-        {% if collections.neonati.image != blank %}
-          <img
-            src="{{ collections['neonati'].image |  image_url }}"
-            id="babies-img"
-            alt="Babies"
-            class="tw-object-cover timeline-img active tw-aspect-square"
-            width="auto"
-            height="auto"
-          >
-        {% else %}
-          {% assign placeholder_image = 'lifestyle-1' %}
-          {{
-            placeholder_image
-            | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
-          }}
-        {% endif %}
-        <h3 class="tw-text-4xl tw-text-main">{{ collections.neonati.title }}</h3>
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections.neonati.image != blank %}
+        <img
+          src="{{ collections['neonati'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square "
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Neonati</h3>
+        <a
+          href="{{ collections['neonati'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
+          >Scopri ora</a
+        >
       </div>
-    </a>
+    </div>
 
-    <a href="{{ collections['kids'].url }}" class="tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
-      <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
-        {% if collections['big-kids'].image != blank %}
-          <img
-            src="{{ collections['kids'].image |  image_url }}"
-            id="babies-img"
-            alt="Babies"
-            class="tw-object-cover timeline-img active tw-aspect-square"
-            width="auto"
-            height="auto"
-          >
-        {% else %}
-          {% assign placeholder_image = 'lifestyle-1' %}
-          {{
-            placeholder_image
-            | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
-          }}
-        {% endif %}
-        <h3 class="tw-text-4xl tw-text-main">{{ collections.kids.title }}</h3>
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections['big-kids'].image != blank %}
+        <img
+          src="{{ collections['kids'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square"
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Kids</h3>
+        <a
+          href="{{ collections['kids'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-10 tw-rounded-[30px] tw-text-center tw-max-w-max tw-uppercase"
+          >Scopri ora</a
+        >
       </div>
-    </a>
-    <a href="{{ collections['big-kids'].url }}" class="tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
-      <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 lg:tw-gap-4">
-        {% if collections['big-kids'].image != blank %}
-          <img
-            src="{{ collections['big-kids'].image |  image_url }}"
-            id="babies-img"
-            alt="Babies"
-            class="tw-object-cover timeline-img active tw-aspect-square"
-            width="auto"
-            height="auto"
-          >
-        {% else %}
-          {% assign placeholder_image = 'lifestyle-1' %}
-          {{
-            placeholder_image
-            | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
-          }}
-        {% endif %}
-        <h3 class="tw-text-4xl tw-text-main">{{ collections['big-kids'].title }}</h3>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections['big-kids'].image != blank %}
+        <img
+          src="{{ collections['big-kids'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square"
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Big Kids</h3>
+        <a
+          href="{{ collections['big-kids'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
+          >Scopri ora</a
+        >
       </div>
-    </a>
+    </div>
   </div>
 </div>
 <div
-  class="tw-relative tw-w-[90%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-32 tw-flex tw-items-center tw-justify-center {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+  class="tw-relative tw-w-[95%] lg:tw-w-full tw-mx-auto tw-text-center tw-py-32 tw-flex tw-items-center tw-justify-center {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
   {% if settings.animations_reveal_on_scroll %}
     data-cascade
   {% endif %}
