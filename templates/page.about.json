@@ -17,31 +17,6 @@
     },
     "collection_list_CHNfzD": {
       "type": "collection-list",
-      "blocks": {
-        "featured_collection_zgWtxm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "neonati"
-          }
-        },
-        "featured_collection_pi4Emq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kids"
-          }
-        },
-        "featured_collection_ixDc7X": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "big-kids"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_zgWtxm",
-        "featured_collection_pi4Emq",
-        "featured_collection_ixDc7X"
-      ],
       "settings": {
         "title": "Tutto ciò che serve per crescere, imparare e giocare.",
         "heading_size": "hxxl",
@@ -175,11 +150,7 @@
         "paragraph_JjU8Ni": {
           "type": "paragraph",
           "settings": {
-<<<<<<< HEAD
-            "text": "<p>Iscriviti alla nostra newsletter per non perdere appuntamenti speciali, offerte e tutte le novità di Bimbozen!<\/p>"
-=======
             "text": "<p>Iscriviti alla nostra newsletter per non perdere appuntamenti speciali, offerte e tutte le novità di Bimbozen!</p>"
->>>>>>> 5d4d60036ea6a752e91c092400e1fe51b38b7612
           }
         },
         "email_form_iY7G6y": {
