@@ -1,16 +1,18 @@
 {% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4, #d6853f' | split: ', ' %}
-{% assign categorieVar = collections.size | minus: 5 %}
+{% assign categorieVar = collections.size | minus: 3 %}
 {% assign catPercentage = 100 | divided_by: categorieVar %}
 {% assign adjustment = catPercentage | times: 0.02 %}
 {% assign adjusted_percentage = catPercentage | minus: adjustment %}
 {% assign integer_percentage = adjusted_percentage | floor %}
+{% assign nonstocapendo = 'tw-flex tw-justify-between tw-flex-wrap' %}
 {% if integer_percentage < 19 %}
   {% assign integer_percentage = 19 %}
+  {% assign nonstocapendo = 'tw-flex tw-justify-between tw-flex-wrap lg:tw-grid lg:tw-grid-cols-5 lg:tw-justify-items-center ' %}
 {% endif %}
 
 <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-col tw-gap-10">
   <div
-    class="tw-mt-[40px] tw-flex tw-w-full tw-gap-y-4 tw-justify-between t tw-flex-wrap {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="{{nonstocapendo}} tw-mt-[40px]  tw-w-full tw-gap-y-4  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
