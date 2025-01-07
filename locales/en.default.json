@@ -309,8 +309,12 @@
       "button_url": "Url Bottone"
     },
     "mcategory": {
-      "text": "At Bimbo Zen, we let ourselves be inspired by adventures."
+      "text": "At",
+      "text1": " Bimbo Zen,",
+      "text2": "we let ourselves be inspired",
+      "text3": "by adventures."
     },
+
     "cart": {
       "title": "Your cart",
       "caption": "Cart items",
