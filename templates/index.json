@@ -16,11 +16,11 @@
           "type": "image_block",
           "settings": {
             "image": "shopify://shop_images/children-sharing-and-playing-with-toys.jpg",
-            "text : "Gioca, Immagina, Cresci!",
+            "text": "Gioca, Immagina, Cresci!",
             "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri tutti i giochi",
+            "button_text": "Scopri ora",
             "button_url": "shopify://collections/giocattoli"
           }
         },
@@ -32,7 +32,7 @@
             "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri i Nostri Prodotti",
+            "button_text": "Scopri ora",
             "button_url": "shopify://collections/puericultura"
           }
         },
@@ -44,7 +44,7 @@
             "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri le Idee Perfette",
+            "button_text": "Scopri ora",
             "button_url": "shopify://collections/idee-regalo"
           }
         }
