@@ -16,7 +16,8 @@
       }
     },
     "collection-age": {
-      "type": "main-category-age"
+      "type": "main-category-age",
+      "settings": {}
     },
     "secure": {
       "type": "secure",
@@ -56,7 +57,11 @@
           }
         }
       },
-      "block_order": ["column_7jgrmn", "column_t67nem", "column_ApyGEN"],
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -100,7 +105,11 @@
           }
         }
       },
-      "block_order": ["heading_ddCYeF", "text_7xdBaY", "button_yPFjde"],
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
       "settings": {
         "image": "shopify://shop_images/baby-nursery.jpg",
         "height": "adapt",
