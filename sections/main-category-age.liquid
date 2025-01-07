@@ -1,0 +1,97 @@
+<div class="tw-w-[95%] tw-mx-auto tw-py-20">
+  <h1 class="!tw-text-8xl tw-text-center">
+    Tutto ciò che serve <br>
+    per crescere, imparare e giocare.
+  </h1>
+  <div
+    class="tw-grid lg:tw-grid-cols-3 tw-gap-4 lg:tw-gap-2 tw-mt-[40px]  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections.neonati.image != blank %}
+        <img
+          src="{{ collections['neonati'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square "
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Neonati</h3>
+        <a
+          href="{{ collections['neonati'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
+          >Scopri ora</a
+        >
+      </div>
+    </div>
+
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections['big-kids'].image != blank %}
+        <img
+          src="{{ collections['kids'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square"
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Kids</h3>
+        <a
+          href="{{ collections['kids'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-10 tw-rounded-[30px] tw-text-center tw-max-w-max tw-uppercase"
+          >Scopri ora</a
+        >
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
+      {% if collections['big-kids'].image != blank %}
+        <img
+          src="{{ collections['big-kids'].image |  image_url }}"
+          id="babies-img"
+          alt="Babies"
+          class="tw-object-cover timeline-img active tw-aspect-square"
+          width="auto"
+          height="auto"
+        >
+        <div class="tw-inset-0 tw-bg-main/30 tw-absolute"></div>
+
+      {% else %}
+        {% assign placeholder_image = 'lifestyle-1' %}
+        {{
+          placeholder_image
+          | placeholder_svg_tag: 'tw-border tw-border-2 tw-border-main tw-object-cover timeline-img active tw-aspect-square'
+        }}
+      {% endif %}
+      <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Big Kids</h3>
+        <a
+          href="{{ collections['big-kids'].url }}"
+          class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
+          >Scopri ora</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
