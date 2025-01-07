@@ -17,7 +17,7 @@
         "image_miCxyk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo_bianco.svg",
+            "image": "shopify://shop_images/logo_bianco.svg",
             "subtext": "Bimbo Zen di Stefano Caradonna",
             "piva": "P.iva 08834630728",
             "image_width": 100,
@@ -34,16 +34,12 @@
         "link_list_6ARhNJ": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>I nostri servizi<\/strong>",
+            "heading": "<strong>I nostri servizi</strong>",
             "menu": "menu-servizi"
           }
         }
       },
-      "block_order": [
-        "image_miCxyk",
-        "link_list_Udxp43",
-        "link_list_6ARhNJ"
-      ],
+      "block_order": ["image_miCxyk", "link_list_Udxp43", "link_list_6ARhNJ"],
       "settings": {
         "color_scheme": "scheme-5",
         "newsletter_enable": false,
@@ -58,9 +54,10 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "terms": {
+      "type": "delivery-terms"
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["terms", "footer"]
 }
