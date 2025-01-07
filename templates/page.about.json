@@ -12,7 +12,7 @@
     "about_page": {
       "type": "template-about",
       "settings": {
-        "image": "shopify://shop_images/bimbo_zen.png"
+        "image": "shopify://shop_images/hero_chi_siamo.jpg"
       }
     },
     "collection-age": {
