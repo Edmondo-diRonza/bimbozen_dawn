@@ -364,6 +364,21 @@
     "footer": {
       "payment": "Metodi di pagamento"
     },
+    "secure": {
+      "title": "Ragioni per amare Bimbo Zen",
+      "finger": {
+        "title": "Creati per il Gioco",
+        "text": "Perfetti per ogni piccola avventura!"
+      },
+      "cloud": {
+        "title": "Leggeri come una Nuvola",
+        "text": "Comfort e durata in ogni prodotto."
+      },
+      "bio": {
+        "title": "Materiali Sostenibili",
+        "text": "Materiali naturali che rispettano il tuo bambino."
+      }
+    },
     "featured_blog": {
       "view_all": "Visualizza tutto",
       "onboarding_title": "Articolo del blog",
