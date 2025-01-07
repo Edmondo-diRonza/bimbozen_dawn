@@ -12,7 +12,7 @@
     "main": {
       "type": "template-contact",
       "settings": {
-        "image": "shopify://shop_images/negozio.png"
+        "image": "shopify://shop_images/negozio_1.png"
       }
     }
   },
