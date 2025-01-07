@@ -4,7 +4,7 @@
     per crescere, imparare e giocare.
   </h1>
   <div
-    class="tw-grid lg:tw-grid-cols-3 tw-gap-4 lg:tw-gap-2 tw-mt-[40px]  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="tw-grid lg:tw-grid-cols-3 tw-gap-4 lg:tw-gap-2 tw-mt-[40px] {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
@@ -28,12 +28,13 @@
         }}
       {% endif %}
       <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
-        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Neonati</h3>
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">{{ collections.neonati.title }}</h3>
         <a
           href="{{ collections['neonati'].url }}"
           class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
-          >Scopri ora</a
         >
+          {{ 'sections.mcategory.ctaText' | t -}}
+        </a>
       </div>
     </div>
 
@@ -57,12 +58,13 @@
         }}
       {% endif %}
       <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
-        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Kids</h3>
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">{{ collections.kids.title }}</h3>
         <a
           href="{{ collections['kids'].url }}"
           class="tw-bg-white tw-py-4 tw-px-10 tw-rounded-[30px] tw-text-center tw-max-w-max tw-uppercase"
-          >Scopri ora</a
         >
+          {{ 'sections.mcategory.ctaText' | t -}}
+        </a>
       </div>
     </div>
     <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-gap-4 tw-relative tw-transition-all tw-duration-500 hover:-tw-translate-y-2">
@@ -85,12 +87,13 @@
         }}
       {% endif %}
       <div class="tw-absolute tw-bottom-10 tw-left-10 tw-flex tw-flex-col tw-gap-4">
-        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">Big Kids</h3>
+        <h3 class="tw-text-6xl tw-font-bold tw-text-white ">{{ collections['big-kids'].title }}</h3>
         <a
           href="{{ collections['big-kids'].url }}"
           class="tw-bg-white tw-py-4 tw-px-2 tw-rounded-[30px] tw-text-center tw-uppercase"
-          >Scopri ora</a
         >
+          {{ 'sections.mcategory.ctaText' | t -}}
+        </a>
       </div>
     </div>
   </div>
