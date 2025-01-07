@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "about_page": {
@@ -5,9 +14,12 @@
       "settings": {
         "image": "shopify://shop_images/image.png"
       }
+<<<<<<< HEAD
     },
     "collection-age": {
       "type": "main-category-age"
+=======
+>>>>>>> 468ef432e126fccb3686e5d860e0d15b821625da
     },
     "secure": {
       "type": "secure",
@@ -144,7 +156,10 @@
   },
   "order": [
     "about_page",
+<<<<<<< HEAD
     "collection-age",
+=======
+>>>>>>> 468ef432e126fccb3686e5d860e0d15b821625da
     "secure",
     "multicolumn_inj4bL",
     "image_with_text_gPLkrC",
