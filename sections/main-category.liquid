@@ -30,7 +30,7 @@
           class="tw-w-[49%] lg:tw-w-[{{integer_percentage}}%]  tw-py-6 tw-px-[22px] tw-rounded-[300px] lg:tw-min-w-[260px] fxl:tw-min-w-[350px] tw-transition tw-flex tw-justify-center tw-items-center  tw-bg-main tw-uppercase tw-text-main tw-duration-500 hover:-tw-translate-y-2 tw-opacity-[0.8] hover:tw-opacity-100 "
           style="background-color: {{ colors[count] }};"
         >
-          <h2 class="tw-line-clamp-1 tw-text-[11px] lg:tw-text-[16px]">{{ collection.title | t }}</h2>
+          <h2 class="tw-line-clamp-1 tw-text-[11px] lg:tw-text-[16px]">{{ collection.title }}</h2>
         </a>
         {% assign count = count | plus: 1 %}
         {% if count == colors.size %}
