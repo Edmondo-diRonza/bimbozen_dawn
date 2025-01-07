@@ -163,6 +163,33 @@
         "type": "shopify://apps/whatsapp-button/blocks/app-embed-block/96d80a63-e860-4262-a001-8b82ac4d00e6",
         "disabled": false,
         "settings": {}
+      },
+      "5846654113244447633": {
+        "type": "shopify://apps/xo-scroll-to-top/blocks/xo-scrolltop/ea52da47-6aa9-474c-8ff9-df181b3784b4",
+        "disabled": false,
+        "settings": {}
+      },
+      "384495262013941155": {
+        "type": "shopify://apps/advanced-wishlist/blocks/collection-btn/330d9272-08ea-4193-b3e0-475a69fa65fa",
+        "disabled": true,
+        "settings": {
+          "is_added_selector": false,
+          "collection_icon_selector": ".card__heading",
+          "collection_icon_type": "outline",
+          "collection_icon_background_type": "icon_no_background",
+          "collection_icon_size": 16,
+          "collection_icon_background_color": "#ffffff",
+          "collection_icon_fill_color": "#5c6ac4",
+          "collection_icon_border_color": "#5c6ac4",
+          "collection_icon_hover_color": "#f5f5f5",
+          "collection_selected_icon_fill_color": "#5c6ac4",
+          "collection_selected_icon_border_color": "#5c6ac4",
+          "custom_wishlist_icon": false,
+          "custom_wishlist_icon_right": "true",
+          "collection_count_layout": "top_count",
+          "collection_count_background_color": "#5c6ac4",
+          "collection_count_color": "#ffffff"
+        }
       }
     },
     "color_schemes": {
