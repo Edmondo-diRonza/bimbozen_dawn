@@ -3,11 +3,9 @@
     "main": {
       "type": "template-contact",
       "settings": {
-        "image": "shopify:\/\/shop_images\/negozio_1.png"
+        "image": "shopify://shop_images/negozio_1.png"
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
