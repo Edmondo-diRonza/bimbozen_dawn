@@ -12,14 +12,8 @@
     "about_page": {
       "type": "template-about",
       "settings": {
-        "image": "shopify://shop_images/image.png"
+        "image": "shopify://shop_images/bimbo_zen.png"
       }
-<<<<<<< HEAD
-    },
-    "collection-age": {
-      "type": "main-category-age"
-=======
->>>>>>> 468ef432e126fccb3686e5d860e0d15b821625da
     },
     "secure": {
       "type": "secure",
@@ -41,7 +35,7 @@
         "column_t67nem": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/family-laughing-with-holiday-lights.jpg",
+            "image": "shopify://shop_images/placeholder.jpg",
             "title": "<strong>Sostenibilità a Bimbo Zen</strong>",
             "text": "<p>La nostra missione va oltre la vendita di prodotti. A Bimbo Zen, ci impegniamo per un futuro migliore, scegliendo articoli sostenibili e rispettosi dell'ambiente. Crediamo che ogni piccolo gesto verso il green possa fare una grande differenza per il mondo in cui cresceranno i nostri figli.<br/></p>",
             "link_label": "",
@@ -51,7 +45,7 @@
         "column_ApyGEN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/woman-and-boy-muscle.jpg",
+            "image": "shopify://shop_images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg",
             "title": "<strong>Una Comunità Accogliente</strong>",
             "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.</p>",
             "link_label": "",
@@ -59,7 +53,11 @@
           }
         }
       },
-      "block_order": ["column_7jgrmn", "column_t67nem", "column_ApyGEN"],
+      "block_order": [
+        "column_7jgrmn",
+        "column_t67nem",
+        "column_ApyGEN"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -103,7 +101,11 @@
           }
         }
       },
-      "block_order": ["heading_ddCYeF", "text_7xdBaY", "button_yPFjde"],
+      "block_order": [
+        "heading_ddCYeF",
+        "text_7xdBaY",
+        "button_yPFjde"
+      ],
       "settings": {
         "image": "shopify://shop_images/baby-nursery.jpg",
         "height": "adapt",
@@ -156,10 +158,6 @@
   },
   "order": [
     "about_page",
-<<<<<<< HEAD
-    "collection-age",
-=======
->>>>>>> 468ef432e126fccb3686e5d860e0d15b821625da
     "secure",
     "multicolumn_inj4bL",
     "image_with_text_gPLkrC",
