@@ -351,6 +351,24 @@
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
       }
     },
+    "terms": {
+      "delivery": {
+        "title": "Free Home Delivery",
+        "text": "for orders over 79€"
+      },
+      "pick": {
+        "title": "Free In-Store Pickup",
+        "text": "ready within 4-5 business days"
+      },
+      "refound": {
+        "title": "Returns and Refunds",
+        "text": "60 days to request a refund"
+      },
+      "chat": {
+        "title": "WhatsApp Chat",
+        "text": "a consultant just for you"
+      }
+    },
     "footer": {
       "payment": "Payment methods"
     },

@@ -343,6 +343,24 @@
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Imposte, sconti e <a href=\"{{ link }}\">spedizione</a> calcolati al check-out.",
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Imposte, sconti e spedizione calcolati al check-out."
     },
+    "terms": {
+      "delivery": {
+        "title": "Consegna gratuita a domicilio",
+        "text": "per ordini superiori a 79€"
+      },
+      "pick": {
+        "title": "Ritiro gratuito in negozio",
+        "text": "entro 4-5 giorni lavorativi"
+      },
+      "refound": {
+        "title": "Reso e Rimborsi",
+        "text": "60 giorni di tempo per il rimborso"
+      },
+      "chat": {
+        "title": "WhatsApp Chat",
+        "text": "un consulente per te"
+      }
+    },
     "footer": {
       "payment": "Metodi di pagamento"
     },
