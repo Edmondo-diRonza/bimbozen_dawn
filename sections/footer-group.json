@@ -39,7 +39,11 @@
           }
         }
       },
-      "block_order": ["image_miCxyk", "link_list_Udxp43", "link_list_6ARhNJ"],
+      "block_order": [
+        "image_miCxyk",
+        "link_list_Udxp43",
+        "link_list_6ARhNJ"
+      ],
       "settings": {
         "color_scheme": "scheme-5",
         "newsletter_enable": false,
@@ -56,8 +60,12 @@
       }
     },
     "terms": {
-      "type": "delivery-terms"
+      "type": "delivery-terms",
+      "settings": {}
     }
   },
-  "order": ["terms", "footer"]
+  "order": [
+    "terms",
+    "footer"
+  ]
 }
