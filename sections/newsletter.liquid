@@ -43,6 +43,8 @@
           >
             {{ block.settings.text }}
           </div>
+
+           
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
@@ -116,7 +118,18 @@
             {% endform %}
           </div>
       {%- endcase -%}
+      
     {%- endfor -%}
+    <div class="">
+                <input
+                  type="checkbox"
+                  id="PrivacyCheckbox--{{ section.id }}"
+                  name="privacy_policy"
+                  required>
+                <label for="PrivacyCheckbox--{{ section.id }}">
+                 Acconsento al trattamento dei dati personali  secondo quanto indicato <br> nella nostra <a href='/policies/privacy-policy' class='link'>Privacy Policy</a>.
+                </label>
+              </div>
   </div>
 </div>
 
