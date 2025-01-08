@@ -266,6 +266,11 @@
       "cart": "Carrello"
     },
     "contact": {
+      "h1Title": "Contattaci",
+      "paragraph": "Rispoderemo entro le 48h. Dal lun - sab, 9 - 18.",
+      "address": "Indirizzo",
+      "phoneNumber": "Numero di telefono",
+      "supportEmail": "Email di supporto",
       "form": {
         "name": "Nome",
         "email": "Indirizzo email",

@@ -266,15 +266,20 @@
       "cart": "Cart"
     },
     "contact": {
+      "h1Title": "Contact Us",
+      "paragraph": "We will respond within 48 hours. Monday to Saturday, 9 AM - 6 PM.",
+      "address": "Address",
+      "phoneNumber": "Phone Number",
+      "supportEmail": "Support Email",
       "form": {
-        "title": "Contact form",
         "name": "Name",
-        "email": "Email",
-        "phone": "Phone number",
+        "email": "Email Address",
+        "phone": "Phone Number",
         "comment": "Comment",
         "send": "Send",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "error_heading": "Please adjust the following:"
+        "post_success": "Thank you for contacting us. We will respond as soon as possible.",
+        "error_heading": "Please correct the following errors:",
+        "title": "Contact Form"
       }
     },
     "404": {
