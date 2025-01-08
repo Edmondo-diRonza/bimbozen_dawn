@@ -14,9 +14,43 @@
       "settings": {
         "image": "shopify://shop_images/negozio_1.jpg"
       }
+    },
+    "newsletter_iqLzLW": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_bKCAan": {
+          "type": "heading",
+          "settings": {
+            "heading": "Iscriviti alle nostre email",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_tJw7t4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.</p>"
+          }
+        },
+        "email_form_HXTxtb": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_bKCAan",
+        "paragraph_tJw7t4",
+        "email_form_HXTxtb"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "newsletter_iqLzLW"
   ]
 }
