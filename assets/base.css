@@ -37,6 +37,7 @@
   --text-alignment: var(--collection-card-text-alignment);
 }
 
+
 .article-card-wrapper .card,
 .contains-card--article {
   --border-radius: var(--blog-card-corner-radius);
