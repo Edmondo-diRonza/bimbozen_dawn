@@ -372,11 +372,11 @@
       },
       "pick": {
         "title": "Free In-Store Pickup",
-        "text": "ready within 4-5 business days"
+        "text": "same-day availability"
       },
       "refound": {
         "title": "Returns and Refunds",
-        "text": "60 days to request a refund"
+        "text": "14 days to request a refund"
       },
       "chat": {
         "title": "WhatsApp Chat",
@@ -384,6 +384,9 @@
       }
     },
     "footer": {
+      "customerSupport": "Customer Support",
+      "contacts": "Contacts",
+      "supportTime": "From 9:00 AM to 7:00 PM, Monday to Friday.",
       "payment": "Payment methods"
     },
     "featured_blog": {

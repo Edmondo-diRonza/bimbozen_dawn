@@ -350,11 +350,11 @@
       },
       "pick": {
         "title": "Ritiro gratuito in negozio",
-        "text": "entro 4-5 giorni lavorativi"
+        "text": "disponibilità in giornata"
       },
       "refound": {
         "title": "Reso e Rimborsi",
-        "text": "60 giorni di tempo per il rimborso"
+        "text": "14 giorni di tempo per il rimborso"
       },
       "chat": {
         "title": "WhatsApp Chat",
@@ -362,6 +362,9 @@
       }
     },
     "footer": {
+      "customerSupport": "Assistenza Clienti",
+      "contacts": "Contatti",
+      "supportTime": "Dalle 9:00 alle 19:00, dal lunedì al venerdì.",
       "payment": "Metodi di pagamento"
     },
     "secure": {
