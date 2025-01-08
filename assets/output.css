@@ -4690,8 +4690,8 @@ video {
   background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1)) !important;
 }
 
-.\!tw-bg-main\/20 {
-  background-color: rgb(58 63 76 / 0.2) !important;
+.\!tw-bg-main\/40 {
+  background-color: rgb(58 63 76 / 0.4) !important;
 }
 
 .tw-bg-\[\#BCC7E4\]\/20 {
@@ -4722,14 +4722,6 @@ video {
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.\!tw-bg-main\/50 {
-  background-color: rgb(58 63 76 / 0.5) !important;
-}
-
-.\!tw-bg-main\/40 {
-  background-color: rgb(58 63 76 / 0.4) !important;
 }
 
 .tw-object-contain {
@@ -5037,12 +5029,12 @@ video {
     height: 200px;
   }
 
-  .lg\:tw-h-screen {
-    height: 100vh;
-  }
-
   .lg\:tw-h-\[500px\] {
     height: 500px;
+  }
+
+  .lg\:tw-h-screen {
+    height: 100vh;
   }
 
   .lg\:tw-w-\[127px\] {
