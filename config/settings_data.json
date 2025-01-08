@@ -149,13 +149,26 @@
         "disabled": false,
         "settings": {}
       },
+<<<<<<< HEAD
+=======
+      "5846654113244447633": {
+        "type": "shopify://apps/xo-scroll-to-top/blocks/xo-scrolltop/ea52da47-6aa9-474c-8ff9-df181b3784b4",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": true,
+        "settings": {}
+      },
+>>>>>>> dc98cde32f1e2ad0bdefea65b5d7a48b762148d8
       "16963237191767492405": {
         "type": "shopify://apps/whatsapp-button/blocks/app-embed-block/96d80a63-e860-4262-a001-8b82ac4d00e6",
         "disabled": false,
         "settings": {}
       },
-      "5846654113244447633": {
-        "type": "shopify://apps/xo-scroll-to-top/blocks/xo-scrolltop/ea52da47-6aa9-474c-8ff9-df181b3784b4",
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {}
       },
@@ -172,6 +185,7 @@
           "swym_collections_product_link_selector": "-",
           "swym_collections_product_tile_selector": "-",
           "enable_variant_selector": false,
+<<<<<<< HEAD
           "swym_add_to_wishlist_title_color": "#333",
           "swym_variant_selector_font_size_1": 14,
           "swym_variant_selector_popup_bg_color": "#fff",
@@ -181,6 +195,17 @@
           "swym_variant_selector_wishlist_btn_bg_color": "#292929",
           "swym_variant_selector_wishlist_btn_color": "#fff",
           "swym_variant_selector_product_detail_font_color": "#fff",
+=======
+          "swym_add_to_wishlist_title_color": "#333333",
+          "swym_variant_selector_font_size_1": 14,
+          "swym_variant_selector_popup_bg_color": "#ffffff",
+          "swym_variant_selector_section_heading_color": "#000000",
+          "swym_variant_selector_section_heading_font_size_2": 12,
+          "swym_variant_selector_choose_create_text": "Choose or Create new Wishlist",
+          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
+          "swym_variant_selector_wishlist_btn_color": "#ffffff",
+          "swym_variant_selector_product_detail_font_color": "#ffffff",
+>>>>>>> dc98cde32f1e2ad0bdefea65b5d7a48b762148d8
           "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
           "swym_variant_selector_create_list_title": "Name Your Wishlist"
         }
