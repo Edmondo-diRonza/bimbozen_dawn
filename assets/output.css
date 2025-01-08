@@ -4534,6 +4534,10 @@ video {
   width: max-content;
 }
 
+.tw-w-\[150px\] {
+  width: 150px;
+}
+
 .\!tw-max-w-max {
   max-width: -moz-max-content !important;
   max-width: max-content !important;
@@ -5063,6 +5067,14 @@ video {
 
   .lg\:tw-w-full {
     width: 100%;
+  }
+
+  .lg\:tw-w-\[320px\] {
+    width: 320px;
+  }
+
+  .lg\:tw-w-\[230px\] {
+    width: 230px;
   }
 
   .lg\:tw-min-w-\[260px\] {
