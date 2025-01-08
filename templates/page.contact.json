@@ -59,13 +59,5 @@
       }
     }
   },
-<<<<<<< HEAD
-  "order": ["main"]
-=======
-  "order": [
-    "main",
-    "contact_form_MUDdnL",
-    "newsletter_iqLzLW"
-  ]
->>>>>>> 0cdb16cd0327908b21f5a1c5d4638daa6427e5e5
+  "order": ["main", "contact_form_MUDdnL", "newsletter_iqLzLW"]
 }
