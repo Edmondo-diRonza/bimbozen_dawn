@@ -109,7 +109,11 @@
                     </h2>
                   </a>
                   {% if settings['enable-wishlist'] %}
-                    <button class="wishlist_button" id="{{ product.id }}">
+                    <button
+                      class="wishlist_button"
+                      id="{{ product.id }}"
+                      data-product-title="{{ product.title }}"
+                    >
                       <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0" fill="none" width="24" height="24"/>
 
