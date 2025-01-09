@@ -6,7 +6,7 @@
           <img
             src="{{ block.settings.image | img_url: '1920x' }}"
             alt="Hero Image"
-            class="tw-object-cover tw-object-top tw-w-full tw-h-full"
+            class="tw-object-cover tw-object-right lg:tw-object-center tw-w-full tw-h-full"
             width="1920px"
             height="auto"
           >
@@ -17,37 +17,37 @@
             | placeholder_svg_tag: 'hero__image-wrapper tw-object-cover tw-object-top tw-w-full tw-h-full'
           }}
         {% endif %}
-        {% comment %} <div class="hero__overlay tw-absolute tw-inset-0 overlay tw-bg-main/70"> {% endcomment %}
-        <!-- Overlay -->
-        <div class="hero__message-wrapper tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
-          <!-- Testo Dinamico -->
-          <div class="tw-flex tw-flex-col  lg:tw-items-center lg:tw-justify-center tw-gap-6 tw-w-[95%] ">
-            <h1 class="tw-text-white tw-text-6xl lg:tw-text-8xl tw-font-bold">
-              {{ block.settings.text | default: 'Testo Predefinito' }}
-            </h1>
-            {% if block.settings.subtext %}
-              <p class="tw-text-white tw-text-xl lg:tw-text-3xl">
-                {{ block.settings.subtext }}
-              </p>
-            {% endif %}
+        <div class="hero__overlay tw-absolute tw-inset-0 overlay tw-bg-main/40">
+          <!-- Overlay -->
+          <div class="hero__message-wrapper tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
+            <!-- Testo Dinamico -->
+            <div class="tw-flex tw-flex-col  lg:tw-items-center lg:tw-justify-center tw-gap-6 tw-w-[95%] ">
+              <h1 class="tw-text-white tw-text-6xl lg:tw-text-8xl tw-font-bold">
+                {{ block.settings.text | default: 'Testo Predefinito' }}
+              </h1>
+              {% if block.settings.subtext %}
+                <p class="tw-text-white tw-text-xl lg:tw-text-3xl">
+                  {{ block.settings.subtext }}
+                </p>
+              {% endif %}
 
-            {%- if block.settings.button_text != blank -%}
-              <a
-                {% if block.settings.button_url == blank %}
-                  role="link"
-                  aria-disabled="true"
-                {% else %}
-                  href="{{ block.settings.button_url }}"
-                {% endif %}
-                class="tw-py-6 tw-px-10 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-white tw-uppercase tw-text-main tw-max-w-max tw-text-2xl tw-font-bold"
-              >
-                {{- block.settings.button_text | escape -}}
-              </a>
-            {%- endif -%}
+              {%- if block.settings.button_text != blank -%}
+                <a
+                  {% if block.settings.button_url == blank %}
+                    role="link"
+                    aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_url }}"
+                  {% endif %}
+                  class="tw-py-6 tw-px-10 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-white tw-uppercase tw-text-main tw-max-w-max tw-text-2xl tw-font-bold"
+                >
+                  {{- block.settings.button_text | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
           </div>
         </div>
       </div>
-      {% comment %} </div> {% endcomment %}
     {% endfor %}
     <div class="swiper-pagination"></div>
   </div>

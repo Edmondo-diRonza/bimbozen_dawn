@@ -4748,6 +4748,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.tw-bg-main\/40 {
+  background-color: rgb(58 63 76 / 0.4);
+}
+
 .tw-object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -4756,6 +4760,11 @@ video {
 .tw-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.tw-object-right {
+  -o-object-position: right;
+     object-position: right;
 }
 
 .tw-object-top {
@@ -5176,6 +5185,11 @@ video {
 
   .lg\:tw-gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:tw-object-center {
+    -o-object-position: center;
+       object-position: center;
   }
 
   .lg\:\!tw-px-0 {
