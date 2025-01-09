@@ -1,1 +1,18 @@
-node_modules
+# Node.js
+node_modules/
+
+# Log e file temporanei
+npm-debug.log*
+yarn-error.log
+*.log
+
+# Output generati
+assets/output.css
+dist/
+
+# Configurazione locale
+.env
+
+# Altri file temporanei
+.tmp/
+.DS_Store

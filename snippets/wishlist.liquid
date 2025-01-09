@@ -11,13 +11,13 @@
   .c-product {
     cursor: pointer;
     margin-bottom: 20px;
+    border: 1px solid #3a3f4c;
   }
 
   .c-product img {
     width: 100%;
     max-height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
+    object-fit: contain;
     transition: all 0.5s ease;
   }
 
@@ -28,12 +28,19 @@
   .c-product h3.c-product__title {
     margin-top: 10px;
     position: relative;
+    font-weight: bold;
   }
 </style>
+<div class="tw-py-20">
+  <div class="recently-title">
+    <h1 class="title inline-richtext h2 scroll-trigger animate--slide-in"><b>Wishlist</b></h1>
+  </div>
+  <div class="js-wishlistBlock">
+    <!-- Messaggio di default per wishlist vuota -->
+    <p class="wishlist-empty-message tw-text-main">
+      La tua wishlist è vuota. Inizia a esplorare e aggiungi i tuoi prodotti preferiti!
+    </p>
 
-<div class="recently-title">
-  <h2 class="title inline-richtext h2 scroll-trigger animate--slide-in"><b>Wishlist</b></h2>
-</div>
-<div class="js-wishlistBlock">
-  <!-- Wishlist items will be displayed here -->
+    <!-- I prodotti della wishlist saranno aggiunti qui dinamicamente -->
+  </div>
 </div>

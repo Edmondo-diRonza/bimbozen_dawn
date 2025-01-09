@@ -1470,10 +1470,6 @@
     "name": "Wishlist",
     "settings": [
       {
-        "type": "paragraph",
-        "content": "Subscribe our channel [websensepro](https://youtube.com/@websensepro?sub_confirmation=1)"
-      },
-      {
         "type": "checkbox",
         "id": "enable-wishlist",
         "label": "Enable Wishlist",
