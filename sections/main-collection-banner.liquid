@@ -13,19 +13,18 @@
   <div class="collection-hero__inner {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__image-container tw-relative">
       {%- if collection.handle == 'all'
-        or collection.handle == 'big-kids'
-        or collection.handle == 'neonati'
-        or collection.handle == 'kids'
-        or collection.handle == 'idee-regalo'
+ or collection.handle == 'big-kids'
+ or collection.handle == 'neonati'
+ or collection.handle == 'kids'
+ or collection.handle == 'idee-regalo'
       -%}
         <!-- Immagine statica specifica per le collezioni -->
         <img
           src="{{ 'banner.jpg' | asset_url }}"
           alt="{{ collection.title | escape }}"
-          class="tw-w-full tw-h-auto tw-relative"
+          class="tw-w-full tw-h-full tw-relative"
           width="100"
-          height="100"
-        >
+          height="100">
       {%- elsif section.settings.show_collection_image and collection.image -%}
         <!-- Immagine dinamica dalla collezione di Shopify -->
         <img
@@ -41,15 +40,15 @@
           src="{{ collection.image | image_url }}"
           sizes="100vw"
           alt="{{ collection.image.alt | escape }}"
-          class="tw-w-full tw-h-auto tw-relative"
+          class="tw-w-full tw-h-full tw-relative tw-object-cover"
           width="100"
-          height="100"
-        >
+          height="100">
       {%- endif -%}
 
       <!-- Titolo sopra l'immagine -->
-      <h1 class="tw-absolute tw-top-1/2 tw-left-1/2 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-text-white tw-text-center tw-text-4xl lg:tw-text-6xl tw-font-bold">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+      <h1 class="tw-absolute tw-top-1/2 tw-left-1/2 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-text-white tw-text-center tw-uppercase tw-text-4xl lg:tw-text-6xl tw-font-bold">
+        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}:
+        </span>
         {{- collection.title | escape -}}
       </h1>
     </div>
@@ -61,33 +60,30 @@
 </div>
 
 {% schema %}
-{
-  "name": "t:sections.main-collection-banner.name",
-  "class": "section",
-  "settings": [
-    {
-      "type": "paragraph",
-      "content": "t:sections.main-collection-banner.settings.paragraph.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_collection_description",
-      "default": true,
-      "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_collection_image",
-      "default": false,
-      "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
-      "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
-    }
-  ]
-}
+  {
+    "name": "t:sections.main-collection-banner.name",
+    "class": "section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:sections.main-collection-banner.settings.paragraph.content"
+      }, {
+        "type": "checkbox",
+        "id": "show_collection_description",
+        "default": true,
+        "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "default": false,
+        "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
+        "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      }
+    ]
+  }
 {% endschema %}

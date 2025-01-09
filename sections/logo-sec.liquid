@@ -1,68 +1,92 @@
 {% assign logos = 'goki.png,
-   little_dutch.jpeg,
-   BIBS_logo.svg,
-   officina-naturae_logo.jpg,
-   vilac_logo.webp,
-   logo-magna-tiles.jpg,
-   logo_taftoys.jpg,
-   logo_beaba.jpg'
-  | split: ','
+                                                                   little_dutch.jpeg,
+                                                                   BIBS_logo.svg,
+                                                                   officina-naturae_logo.jpg,
+                                                                   vilac_logo.webp,
+                                                                   logo-magna-tiles.jpg,
+                                                                   logo_taftoys.jpg,
+                                                                   logo_beaba.jpg'
+ | split: ','
 %}
 {% comment %} array dei loghi con stringa splittata {% endcomment %}
 
 <div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-text-center">
   <ul
-    class="hero__logo-wrapper tw-grid tw-grid-cols-2 lg:tw-hidden tw-gap-10 tw-place-items-center tw-mt-20 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="hero__logo-wrapper logo___mobile-view tw-grid tw-grid-cols-2 lg:tw-hidden tw-gap-10 tw-place-items-center tw-mt-20 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
-      data-cascade
-    {% endif %}
-  >
+    data-cascade
+    {% endif %}>
     {% for logo in logos %}
-      <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
-        <img
-          src="{{ logo | asset_url }}"
-          width="100px"
-          height="100px"
-          class="tw-w-[80px] lg:tw-w-[127px]"
-          alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}"
-        >
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+      {% if forloop.index == 2 or forloop.index == 6 %}
+        {% comment %} dimensioni diverse in px {% endcomment %}
+        <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
 
-<div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-my-20">
-  <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center">
-    {% for logo in logos %}
-      {% if forloop.index <= 5 %}
+          <img
+            src="{{ logo | asset_url }}"
+            width="150px"
+            height="100px"
+            class="tw-w-[150px]"
+            alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}"></li>
+      {% else %}
         <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
           <img
             src="{{ logo | asset_url }}"
             width="100px"
             height="100px"
-            class="tw-w-[127px]"
-            alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}"
-          >
+            class="tw-w-[80px] lg:tw-w-[127px]"
+            alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-my-20">
+  <ul class="hero__logo-wrapper logo__desktop lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center">
+    {% for logo in logos %}
+      {% if forloop.index <= 5 %}
+        <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
+          {% if forloop.index == 2 %}
+            {% comment %} dimensioni diverse in px {% endcomment %}
+            <img
+              src="{{ logo | asset_url }}"
+              width="320px"
+              height="100px"
+              class="tw-w-[80px] lg:tw-w-[320px]"
+              alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">
+          {% else %}
+            <img
+              src="{{ logo | asset_url }}"
+              width="100px"
+              height="100px"
+              class="tw-w-[127px]"
+              alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">{% endif %}
         </li>
       {% endif %}
     {% endfor %}
   </ul>
 
   <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-items-center tw-justify-center tw-mt-8">
-    <li
-      class="hero__logo-item tw-hidden lg:tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0"
-    ></li>
+    <li class="hero__logo-item tw-hidden lg:tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0"></li>
 
     {% for logo in logos %}
       {% if forloop.index > 5 and forloop.index <= 8 %}
         <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
-          <img
-            src="{{ logo | asset_url }}"
-            width="100px"
-            height="100px"
-            class="tw-w-[127px]"
-            alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}"
-          >
+          {% if forloop.index == 6 %}
+            {% comment %} dimensioni diverse in px {% endcomment %}
+            <img
+              src="{{ logo | asset_url }}"
+              width="280px"
+              height="100px"
+              class="tw-w-[80px] lg:tw-w-[230px]"
+              alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">
+          {% else %}
+            <img
+              src="{{ logo | asset_url }}"
+              width="100px"
+              height="100px"
+              class="tw-w-[127px]"
+              alt="{{ logo | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">{% endif %}
         </li>
       {% endif %}
     {% endfor %}

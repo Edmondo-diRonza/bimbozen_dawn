@@ -1,17 +1,8 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
+    "logo": "shopify:\/\/shop_images\/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
     "logo_width": 90,
-    "favicon": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
+    "favicon": "shopify:\/\/shop_images\/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
     "type_header_font": "fira_sans_n4",
     "heading_scale": 100,
     "type_body_font": "syne_n4",
@@ -41,7 +32,7 @@
     "inputs_radius": 0,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_vertical_offset": 0,
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
@@ -108,10 +99,10 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p></p>",
+    "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https://www.facebook.com/profile.php?id=61555792445388",
-    "social_instagram_link": "https://www.instagram.com/bimbozen/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=61555792445388",
+    "social_instagram_link": "https:\/\/www.instagram.com\/bimbozen\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -145,51 +136,24 @@
     "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "2367010369087667184": {
-        "type": "shopify://apps/customer-account-deluxe/blocks/cad/b059626d-05f0-44bc-b55f-d2fc6d268902",
-        "disabled": false,
-        "settings": {}
-      },
-      "13768625480086291342": {
-        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": false,
-        "settings": {}
-      },
-      "16963237191767492405": {
-        "type": "shopify://apps/whatsapp-button/blocks/app-embed-block/96d80a63-e860-4262-a001-8b82ac4d00e6",
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
       },
       "5846654113244447633": {
-        "type": "shopify://apps/xo-scroll-to-top/blocks/xo-scrolltop/ea52da47-6aa9-474c-8ff9-df181b3784b4",
+        "type": "shopify:\/\/apps\/xo-scroll-to-top\/blocks\/xo-scrolltop\/ea52da47-6aa9-474c-8ff9-df181b3784b4",
         "disabled": false,
         "settings": {}
       },
-      "384495262013941155": {
-        "type": "shopify://apps/advanced-wishlist/blocks/collection-btn/330d9272-08ea-4193-b3e0-475a69fa65fa",
+      "13768625480086291342": {
+        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": true,
-        "settings": {
-          "is_added_selector": false,
-          "collection_icon_selector": ".card__heading",
-          "collection_icon_type": "outline",
-          "collection_icon_background_type": "icon_no_background",
-          "collection_icon_size": 16,
-          "collection_icon_background_color": "#ffffff",
-          "collection_icon_fill_color": "#5c6ac4",
-          "collection_icon_border_color": "#5c6ac4",
-          "collection_icon_hover_color": "#f5f5f5",
-          "collection_selected_icon_fill_color": "#5c6ac4",
-          "collection_selected_icon_border_color": "#5c6ac4",
-          "custom_wishlist_icon": false,
-          "custom_wishlist_icon_right": "true",
-          "collection_count_layout": "top_count",
-          "collection_count_background_color": "#5c6ac4",
-          "collection_count_color": "#ffffff"
-        }
+        "settings": {}
+      },
+      "16963237191767492405": {
+        "type": "shopify:\/\/apps\/whatsapp-button\/blocks\/app-embed-block\/96d80a63-e860-4262-a001-8b82ac4d00e6",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -439,7 +403,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
