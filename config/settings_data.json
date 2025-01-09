@@ -130,6 +130,7 @@
     "cart_color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
     "enable-wishlist": true,
     "wishlist-floating-button-position": true,
+    "floating_button-position": "bottom-right",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
