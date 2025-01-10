@@ -167,7 +167,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    {% comment %} {%- liquid
+    {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
@@ -175,7 +175,7 @@
           render 'header-mega-menu'
         endif
       endif
-    %} {% endcomment %}
+    %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
