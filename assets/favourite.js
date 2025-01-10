@@ -149,6 +149,10 @@ const displayWishlist = () => {
 
   // Aggiungi la wishlist importata se ci sono dati
   if (wishlistDataImported.length > 0) {
+    const importedList = document.getElementById("imported__list");
+    if (importedList) {
+      importedList.style.display = "block";
+    } //visualizzo il titolo h2 della sezione
     if (wishlistBlock) {
       wishlistBlockIported.innerHTML = renderDom(
         wishlistDataImported,
