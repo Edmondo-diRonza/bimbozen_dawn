@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
-    "logo_width": 90,
+    "logo_width": 120,
     "favicon": "shopify://shop_images/logo_21d9d8d2-dc1d-45b2-a210-c7acba1ae428.png",
     "type_header_font": "fira_sans_n4",
     "heading_scale": 100,
@@ -129,7 +129,7 @@
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
     "enable-wishlist": true,
-    "wishlist-floating-button-position": false,
+    "wishlist-floating-button-position": true,
     "floating_button-position": "middle-right",
     "sections": {
       "main-password-header": {
