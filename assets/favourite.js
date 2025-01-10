@@ -74,7 +74,6 @@ const removeFromWishlist = (productId, list = "wishlist") => {
 const favouriteRefresh = () => {
   // Fetch the wishlist data from localStorage
   const wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
-  console.log(wishlistData);
   // Seleziona tutti i pulsanti della wishlist
   const wishlistButtons = document.querySelectorAll(".wishlist_button");
 
@@ -263,71 +262,8 @@ const encodeWishlistIdFromLocalStorage = () => {
 //   }
 // };
 
-// Prova a recuperare dal DOM se non presente fetch shopify api
-
-const getProductDataFromAPI = async (productId) => {
-  console.log("ricerca storefront", productId);
-  try {
-    const shopifyDomain =
-      "https://f3ba51-0b.myshopify.com/api/2025-01/graphql.json"; // Usa il tuo dominio effettivo https://{store_name}.myshopify.com/api/2025-01/graphql.json
-
-    const query = `
-      query getProductById($id: ID!) {
-        product(id: $id) {
-          id
-          title
-          images(first: 1) {
-            edges {
-              node {
-                src
-              }
-            }
-          }
-          variants(first: 1) {
-            edges {
-              node {
-                price
-              }
-            }
-          }
-          handle
-        }
-      }
-    `;
-
-    const response = await fetch(`${shopifyDomain}/api/2023-01/graphql.json`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json", // Nessun token necessario per Storefront API
-      },
-      body: JSON.stringify({
-        query,
-        variables: { id: `gid://shopify/Product/${productId}` }, // ID del prodotto in formato giusto
-      }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      throw new Error("Errore nella risposta dell'API");
-    }
-
-    const product = data.data.product;
-
-    return {
-      productId: product.id,
-      productTitle: product.title,
-      productImg: product.images.edges[0]?.node.src || "",
-      productPrice: product.variants.edges[0]?.node.price || "",
-      productUrl: `/products/${product.handle}`,
-    };
-  } catch (error) {
-    console.error("Errore durante la chiamata API:", error);
-    return null;
-  }
-};
-
-const decodeWishlistIdFromUrl = () => {
+const decodeWishlistIdFromUrl = (allProducts) => {
+  console.log("14680010096963", allProducts);
   // Legge il parametro 'text' dall'URL
   const urlParams = new URLSearchParams(window.location.search);
   const encodedText = urlParams.get("text");
@@ -339,48 +275,29 @@ const decodeWishlistIdFromUrl = () => {
 
     // Parsea la stringa JSON (array di productId)
     const decodedProductIds = JSON.parse(decodedJsonString);
-    console.log("decoded", decodedProductIds);
 
     // Crea un array per memorizzare la wishlist completa
     const wishlistData = [];
 
-    // Per ogni productId, cerca il prodotto nel DOM per ottenere i dati mancanti
-    decodedProductIds.forEach(async (productId) => {
-      // Trova l'elemento del DOM corrispondente al productId
-      const productElement = document.querySelector(
-        `[data-product-id="${productId}"]`
-      );
+    // Per ogni productId, cerca il prodotto nei dati disponibili in allProducts
+
+    decodedProductIds.forEach((productId) => {
+      // Trova il prodotto corrispondente nell'array allProducts
+      const product = allProducts.find((p) => p.id == productId);
 
       let productData;
 
-      if (productElement) {
-        // Estrai i dati mancanti dal DOM
-        const productTitle = productElement.getAttribute("data-product-title");
-        const productImg = productElement.getAttribute("data-product-img");
-        const productPrice = productElement.getAttribute("data-product-price");
-        const productUrl = productElement.getAttribute("data-product-url");
-
+      if (product) {
         // Crea un oggetto con tutti i dati del prodotto
         productData = {
-          productTitle,
-          productImg,
-          productPrice,
-          productUrl,
-          productId,
+          productTitle: product.title,
+          productImg: product.image,
+          productPrice: product.price,
+          productUrl: product.url,
+          productId: product.id,
         };
       } else {
-        console.log(`Elemento con ID ${productId} non trovato nel DOM.`);
-
-        // Fallback: recupera i dati tramite l'API Shopify
-        productData = await getProductDataFromAPI(productId);
-
-        if (productData) {
-          console.log(`Dati del prodotto ${productId} recuperati tramite API.`);
-        } else {
-          console.log(
-            `Prodotto con ID ${productId} non trovato nemmeno nell'API.`
-          );
-        }
+        console.log(`Prodotto con ID ${productId} non trovato in allProducts.`);
       }
 
       // Se sono stati trovati i dati, aggiungili alla wishlist
@@ -389,7 +306,7 @@ const decodeWishlistIdFromUrl = () => {
       }
 
       // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
-      if (wishlistData.length === decodedProductIds.length) {
+      if (wishlistData.length > 0) {
         localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
         console.log("Wishlist ripristinata nel localStorage.");
       }
