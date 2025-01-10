@@ -48,15 +48,10 @@
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
-<<<<<<< HEAD
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
-=======
-        "menu_type_desktop": "drawer",
         "sticky_header_type": "none",
->>>>>>> 69199530b488278dd73da8057316a8e53241fa42
         "show_line_separator": false,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "color_scheme": "scheme-5",
         "menu_color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
         "enable_country_selector": false,
         "enable_language_selector": false,
