@@ -14,21 +14,36 @@
   }
 {%- endstyle -%}
 
-<div class="customer account section-{{ section.id }}-padding">
-  <div>
-    <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
+<div class="customer account section-{{ section.id }}-padding ">
+  <div class="!tw-bg-main/70 tw-flex tw-flex-wrap tw-justify-center tw-py-10 tw-gap-4">
+    {% comment %} <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1> {% endcomment %}
+    <h1 class="customer__title !tw-text-white">Welcome {{ customer.name }}!</h1>
+    <div class="tw-flex tw-gap-10 tw-items-center">
 
-    <a href="{{ routes.account_logout_url }}">
-      <span class="svg-wrapper">
-        {{- 'icon-account.svg' | inline_asset_content -}}
-      </span>
-      {{ 'customer.log_out' | t }}
-    </a>
+      <div>
+        <a href="{{ routes.account_logout_url }}" class="!tw-flex !tw-items-center !tw-gap-1 !tw-text-white">
+          <span class="svg-wrapper">
+            {{- 'icon-account.svg' | inline_asset_content -}}
+          </span>
+          {{ 'customer.log_out' | t }}
+        </a>
+      </div>
+      {% if settings['enable-wishlist'] %}
+        <a href="/pages/wishlist" class="tw-flex tw-items-center tw-px-1 tw-text-main/80 !tw-text-white">
+
+          My wishlist
+
+        </a>
+
+      {% endif %}
+
+    </div>
+
   </div>
 
   <div>
     <div>
-      <h2>{{ 'customer.orders.title' | t }}</h2>
+      <h2 class="tw-text-main !tw-bg-main/20 tw-py-6 tw-px-10">{{ 'customer.orders.title' | t }}</h2>
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
@@ -36,29 +51,34 @@
             <caption class="visually-hidden">
               {{ 'customer.orders.title' | t }}
             </caption>
-            <thead role="rowgroup">
+            <thead role="rowgroup" class="tw-bg-main/5">
               <tr role="row">
                 <th
                   id="ColumnOrder"
                   scope="col"
+                  class="!tw-text-main !tw-font-bold"
                   role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
                 <th
                   id="ColumnDate"
                   scope="col"
+                  class="!tw-text-main !tw-font-bold"
                   role="columnheader">{{ 'customer.orders.date' | t }}</th>
                 <th
                   id="ColumnPayment"
                   scope="col"
+                  class="!tw-text-main !tw-font-bold"
                   role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                 <th
                   id="ColumnFulfillment"
                   scope="col"
+                  class="!tw-text-main !tw-font-bold"
                   role="columnheader">
                   {{ 'customer.orders.fulfillment_status' | t }}
                 </th>
                 <th
                   id="ColumnTotal"
                   scope="col"
+                  class="!tw-text-main !tw-font-bold"
                   role="columnheader">{{ 'customer.orders.total' | t }}</th>
               </tr>
             </thead>

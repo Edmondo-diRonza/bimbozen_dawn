@@ -10,20 +10,23 @@
 
 <details-modal class="header__search">
   <details>
-    <summary
-      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
-      aria-haspopup="dialog"
-      aria-label="{{ 'general.search.search' | t }}"
-    >
-      <span>
-        <span class="svg-wrapper !tw-w-28 !tw-h-28">
-          {{- 'icon-search.svg' | inline_asset_content -}}
-        </span>
-        <span class="svg-wrapper header__icon-close">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
-      </span>
-    </summary>
+   <summary
+  class=""
+  aria-haspopup="dialog"
+  aria-label="{{ 'general.search.search' | t }}"
+>
+  <div class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle !tw-flex !tw-items-center !tw-border !tw-border-white !tw-rounded-full tw-bg-transparent tw-px-4 tw-py-2 tw-w-full lg:tw-w-[400px]">
+    <!-- Icona Lente -->
+    <span class="svg-wrapper tw-w-5 tw-h-5 tw-mr-2 tw-text-white">
+      {{- 'icon-search.svg' | inline_asset_content -}}
+    </span>
+    <!-- Testo Segnaposto -->
+    <span class="tw-text-white tw-text-xl tw-uppercase tw-placeholder-white">
+      Cerca...
+    </span>
+  </div>
+</summary>
+
     <div
       class="search-modal modal__content gradient"
       role="dialog"

@@ -1,0 +1,42 @@
+<div class="tw-bg-main tw-py-6">
+  <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-items-center ">
+    <div class="tw-flex tw-items-center tw-gap-20">
+      <div class="tw-flex tw-gap-2 tw-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 24 24">
+
+          <path fill="#ffffff" d="m12.707 2.293l9 9c.63.63.184 1.707-.707 1.707h-1v6a3 3 0 0 1-3 3h-1v-7a3 3 0 0 0-2.824-2.995L13 12h-2a3 3 0 0 0-3 3v7H7a3 3 0 0 1-3-3v-6H3c-.89 0-1.337-1.077-.707-1.707l9-9a1 1 0 0 1 1.414 0M13 14a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883-.993L11 14z" />
+        </svg>
+        <div class="tw-text-white tw-leading-none">
+          <p class="tw-text-lg">Il nostro negozio</p>
+          <a href={{linklists['assistenza-cliente'].links[0].url}} class="tw-text-2xl tw-underline">
+            Dove trovarci
+          </a>
+        </div>
+      </div>
+      <div class="tw-flex tw-gap-2 tw-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="-6 -2 24 24">
+          <path fill="#ffffff" d="M3 0h6a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm3 15a1 1 0 1 1 0-2a1 1 0 0 1 0 2" />
+        </svg>
+        <div class="tw-text-white tw-leading-none">
+          <p class="tw-text-lg">Hai bisogno di aiuto?</p>
+          <a href="tel:+393283876719" class="tw-text-2xl tw-underline">
+            Chiamaci
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    {% render 'header-search'
+      , input_id: 'Search-In-Modal' %}
+  </div>
+
+</div>
