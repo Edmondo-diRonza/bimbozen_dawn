@@ -12,10 +12,13 @@
       {% endif %}
 
     </header>
-    <div class="lg:tw-hidden tw-flex">
+    <div class="lg:tw-hidden tw-flex tw-w-full">
+      <div class="tw-w-full">
 {% render 'header-search'
                                         
                                               , input_id: 'Search-In-Modal' %} 
+      </div>
+
     </div>
     
     <div class="tw-flex tw-items-center tw-gap-20">
@@ -60,7 +63,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.header.name",
+  "name": "header2",
   "class": "section-header",
   "max_blocks": 3,
   "settings": [

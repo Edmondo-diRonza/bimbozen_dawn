@@ -271,7 +271,7 @@
         </a> {% endcomment %}
         <a
   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-  class="!tw-no-underline !tw-mr-20 header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
+  class="!tw-no-underline !tw-mr-24 header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
   rel="nofollow"
 >
   {% comment %} {%- if section.settings.enable_customer_avatar -%}
@@ -289,11 +289,11 @@
   <!-- Iniziali del cliente -->
   <account-icon>
   {% if customer %}
-    <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-white tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all tw-text-main tw-font-bold tw-uppercase">
+    <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-white tw-px-10 tw-py-5 hover:tw-bg-[#E8CC56] hover:tw-border-[#E8CC56] hover:tw-transition-all tw-text-main tw-font-bold tw-uppercase">
       {{ customer.first_name }} <span>{{ customer.last_name  }}</span>
     </span>  
   {% else  %}
-  <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-transparent tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all tw-text-white tw-font-bold tw-uppercase"><span class="button__icon" role="img" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3333 19.25V17.4167C18.3333 16.4442 17.947 15.5116 17.2593 14.8239C16.5717 14.1363 15.6391 13.75 14.6666 13.75H7.33329C6.36083 13.75 5.4282 14.1363 4.74057 14.8239C4.05293 15.5116 3.66663 16.4442 3.66663 17.4167V19.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path><path d="M11 10.0833C13.0251 10.0833 14.6667 8.44171 14.6667 6.41667C14.6667 4.39162 13.0251 2.75 11 2.75C8.975 2.75 7.33337 4.39162 7.33337 6.41667C7.33337 8.44171 8.975 10.0833 11 10.0833Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path></svg></span> Account</span>
+  <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-transparent tw-px-10 tw-py-5 hover:tw-bg-[#BCC7E4] hover:tw-border-[#BCC7E4] hover:tw-transition-all tw-text-white tw-font-bold "><span class="button__icon" role="img" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3333 19.25V17.4167C18.3333 16.4442 17.947 15.5116 17.2593 14.8239C16.5717 14.1363 15.6391 13.75 14.6666 13.75H7.33329C6.36083 13.75 5.4282 14.1363 4.74057 14.8239C4.05293 15.5116 3.66663 16.4442 3.66663 17.4167V19.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path><path d="M11 10.0833C13.0251 10.0833 14.6667 8.44171 14.6667 6.41667C14.6667 4.39162 13.0251 2.75 11 2.75C8.975 2.75 7.33337 4.39162 7.33337 6.41667C7.33337 8.44171 8.975 10.0833 11 10.0833Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path></svg></span> Account</span>
 
   {% endif %}
   </account-icon>
@@ -327,7 +327,7 @@
 
        {% endif %} {% endcomment %}
  
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset !tw-flex lg:!tw-hidden" id="cart-icon-bubble">
           {% if cart == empty %}
             <span class=""><svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:-2px"><path class="circle" d="M9.5 20C9.77614 20 10 19.7761 10 19.5C10 19.2239 9.77614 19 9.5 19C9.22386 19 9 19.2239 9 19.5C9 19.7761 9.22386 20 9.5 20Z" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path class="circle" d="M18.5 20C18.7761 20 19 19.7761 19 19.5C19 19.2239 18.7761 19 18.5 19C18.2239 19 18 19.2239 18 19.5C18 19.7761 18.2239 20 18.5 20Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 3H6.27273L8.46545 13.7117C8.54027 14.08 8.7452 14.4109 9.04436 14.6464C9.34351 14.8818 9.71784 15.0069 10.1018 14.9997H18.0545C18.4385 15.0069 18.8129 14.8818 19.112 14.6464C19.4112 14.4109 19.6161 14.08 19.6909 13.7117L21 6.9999H7.09091" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none !important"></path></svg></span>
           {% else %}
@@ -343,6 +343,21 @@
           </div>
         {%- endif -%}
       </a>
+       
+
+<a  class="lg:!tw-flex tw-hidden tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-white tw-px-10 tw-py-4  hover:tw-transition-all tw-text-main tw-font-bold hover:tw-bg-[#E8CC56] hover:tw-border-[#E8CC56] "href="{{ routes.cart_url }}" title="Apri carrello" tabindex="0">
+          <span class="svg-wrapper" > <svg width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="circle" d="M9.5 20C9.77614 20 10 19.7761 10 19.5C10 19.2239 9.77614 19 9.5 19C9.22386 19 9 19.2239 9 19.5C9 19.7761 9.22386 20 9.5 20Z" fill="none" stroke="#3A3F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path class="circle" d="M18.5 20C18.7761 20 19 19.7761 19 19.5C19 19.2239 18.7761 19 18.5 19C18.2239 19 18 19.2239 18 19.5C18 19.7761 18.2239 20 18.5 20Z" fill="none" stroke="#3A3F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M3 3H6.27273L8.46545 13.7117C8.54027 14.08 8.7452 14.4109 9.04436 14.6464C9.34351 14.8818 9.71784 15.0069 10.1018 14.9997H18.0545C18.4385 15.0069 18.8129 14.8818 19.112 14.6464C19.4112 14.4109 19.6161 14.08 19.6909 13.7117L21 6.9999H7.09091" stroke="#3A3F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none !important"></path>
+</svg>
+</span>
+          <span data-header-cart-total="" aria-hidden="true">{{ cart.total_price | money }}</span>&nbsp;
+           {%- if cart.item_count < 100 -%}             
+               (<span data-header-cart-count="" aria-hidden="true">{{ cart.item_count }}</span>)
+            {%- endif -%}
+        </a>
+
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>

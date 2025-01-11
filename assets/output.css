@@ -4398,16 +4398,16 @@ video {
   margin-bottom: 5rem;
 }
 
+.\!tw-mr-24 {
+  margin-right: 6rem !important;
+}
+
 .tw-ml-4 {
   margin-left: 1rem;
 }
 
 .tw-mr-2 {
   margin-right: 0.5rem;
-}
-
-.tw-mr-20 {
-  margin-right: 5rem;
 }
 
 .tw-mr-8 {
@@ -4428,10 +4428,6 @@ video {
 
 .tw-mt-\[40px\] {
   margin-top: 40px;
-}
-
-.\!tw-mr-20 {
-  margin-right: 5rem !important;
 }
 
 .tw-line-clamp-1 {
@@ -4505,6 +4501,10 @@ video {
   width: 4rem !important;
 }
 
+.\!tw-w-full {
+  width: 100% !important;
+}
+
 .tw-w-10 {
   width: 2.5rem;
 }
@@ -4523,10 +4523,6 @@ video {
 
 .tw-w-\[150px\] {
   width: 150px;
-}
-
-.tw-w-\[200px\] {
-  width: 200px;
 }
 
 .tw-w-\[49\%\] {
@@ -4891,6 +4887,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.tw-py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .tw-py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -5108,9 +5109,29 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:tw-border-\[\#BCC7E4\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(188 199 228 / var(--tw-border-opacity, 1));
+}
+
+.hover\:tw-border-\[\#E8CC56\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 204 86 / var(--tw-border-opacity, 1));
+}
+
 .hover\:tw-border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.hover\:tw-bg-\[\#BCC7E4\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 199 228 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:tw-bg-\[\#E8CC56\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 204 86 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:tw-bg-main:hover {
@@ -5139,12 +5160,20 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:\!tw-flex {
+    display: flex !important;
+  }
+
   .lg\:tw-flex {
     display: flex;
   }
 
   .lg\:tw-grid {
     display: grid;
+  }
+
+  .lg\:\!tw-hidden {
+    display: none !important;
   }
 
   .lg\:tw-hidden {
@@ -5163,8 +5192,8 @@ video {
     height: 100vh;
   }
 
-  .lg\:\!tw-w-\[300px\] {
-    width: 300px !important;
+  .lg\:\!tw-w-\[80\%\] {
+    width: 80% !important;
   }
 
   .lg\:tw-w-\[127px\] {
