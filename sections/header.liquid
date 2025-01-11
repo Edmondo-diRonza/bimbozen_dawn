@@ -271,7 +271,7 @@
         </a> {% endcomment %}
         <a
   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-  class="!tw-no-underline header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
+  class="!tw-no-underline !tw-mr-20 header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
   rel="nofollow"
 >
   {% comment %} {%- if section.settings.enable_customer_avatar -%}
@@ -289,8 +289,8 @@
   <!-- Iniziali del cliente -->
   <account-icon>
   {% if customer %}
-    <span class="tw-block tw-uppercase  tw-text-lg tw-p-4  tw-mt-1 tw-font-bold tw-text-center tw-text-white tw-rounded-full !tw-w-14 !tw-h-14 tw-bg-main/80">
-      {{ customer.first_name | slice: 0, 1 }}{{ customer.last_name | slice: 0, 1 }}
+    <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-white tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all tw-text-main tw-font-bold tw-uppercase">
+      {{ customer.first_name }} <span>{{ customer.last_name  }}</span>
     </span>  
   {% else  %}
   <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
@@ -317,7 +317,7 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
-       {% if settings['enable-wishlist'] %}
+       {% comment %} {% if settings['enable-wishlist'] %}
      <a href="/pages/wishlist" class="tw-flex tw-items-center tw-px-1 tw-text-main/80">
         <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
 	<path fill="#3A3F4C" d="M4.24 12.25a4.2 4.2 0 0 1-1.24-3A4.25 4.25 0 0 1 7.25 5c1.58 0 2.96.86 3.69 2.14h1.12A4.24 4.24 0 0 1 15.75 5A4.25 4.25 0 0 1 20 9.25c0 1.17-.5 2.25-1.24 3L11.5 19.5zm15.22.71C20.41 12 21 10.7 21 9.25A5.25 5.25 0 0 0 15.75 4c-1.75 0-3.3.85-4.25 2.17A5.22 5.22 0 0 0 7.25 4A5.25 5.25 0 0 0 2 9.25c0 1.45.59 2.75 1.54 3.71l7.96 7.96z" />
@@ -325,7 +325,7 @@
         
       </a>
 
-       {% endif %}
+       {% endif %} {% endcomment %}
  
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
           {% if cart == empty %}
