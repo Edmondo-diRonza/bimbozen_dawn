@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_MTYLzi": {
-          "type": "announcement",
-          "settings": {
-            "text": "Ti diamo il benvenuto nel nostro negozio",
-            "link": ""
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -30,11 +23,10 @@
         }
       },
       "block_order": [
-        "announcement_MTYLzi",
         "announcement-bar-0"
       ],
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
         "show_line_separator": true,
         "show_social": true,
         "auto_rotate": true,
