@@ -206,6 +206,7 @@ const encodeWishlistIdFromLocalStorage = () => {
   }
 };
 
+// QUELLA CHE FUNZIONA MEGLIO
 // const decodeWishlistIdFromUrl = () => {
 //   // Legge il parametro 'text' dall'URL
 //   const urlParams = new URLSearchParams(window.location.search);
@@ -262,8 +263,62 @@ const encodeWishlistIdFromLocalStorage = () => {
 //   }
 // };
 
-const decodeWishlistIdFromUrl = (allProducts) => {
-  console.log("14680010096963", allProducts);
+// const decodeWishlistIdFromUrl = (allProducts) => {
+//   console.log("14680010096963", allProducts);
+//   // Legge il parametro 'text' dall'URL
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const encodedText = urlParams.get("text");
+
+//   // Verifica che esista un parametro 'text' nell'URL
+//   if (encodedText) {
+//     // Decodifica la stringa Base64 per ottenere gli ID dei prodotti
+//     const decodedJsonString = atob(encodedText);
+
+//     // Parsea la stringa JSON (array di productId)
+//     const decodedProductIds = JSON.parse(decodedJsonString);
+
+//     // Crea un array per memorizzare la wishlist completa
+//     const wishlistData = [];
+
+//     // Per ogni productId, cerca il prodotto nei dati disponibili in allProducts
+
+//     decodedProductIds.forEach((productId) => {
+//       fetchProductById(productId);
+//       // Trova il prodotto corrispondente nell'array allProducts
+//       const product = allProducts.find((p) => p.id == productId);
+
+//       let productData;
+
+//       if (product) {
+//         // Crea un oggetto con tutti i dati del prodotto
+//         productData = {
+//           productTitle: product.title,
+//           productImg: product.image,
+//           productPrice: product.price,
+//           productUrl: product.url,
+//           productId: product.id,
+//         };
+//       } else {
+//         console.log(`Prodotto con ID ${productId} non trovato in allProducts.`);
+//       }
+
+//       // Se sono stati trovati i dati, aggiungili alla wishlist
+//       if (productData) {
+//         wishlistData.push(productData);
+//       }
+
+//       // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
+//       if (wishlistData.length > 0) {
+//         localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
+//         console.log("Wishlist ripristinata nel localStorage.");
+//       }
+//     });
+//   } else {
+//     console.log("Nessun parametro 'text' trovato nell'URL.");
+//   }
+// };
+
+const decodeWishlistIdFromUrl = async () => {
   // Legge il parametro 'text' dall'URL
   const urlParams = new URLSearchParams(window.location.search);
   const encodedText = urlParams.get("text");
@@ -275,43 +330,186 @@ const decodeWishlistIdFromUrl = (allProducts) => {
 
     // Parsea la stringa JSON (array di productId)
     const decodedProductIds = JSON.parse(decodedJsonString);
+    console.log("Stringa ID decodificata", decodedProductIds);
 
     // Crea un array per memorizzare la wishlist completa
     const wishlistData = [];
 
-    // Per ogni productId, cerca il prodotto nei dati disponibili in allProducts
-
-    decodedProductIds.forEach((productId) => {
-      // Trova il prodotto corrispondente nell'array allProducts
-      const product = allProducts.find((p) => p.id == productId);
+    // Per ogni productId, cerca il prodotto nel DOM per ottenere i dati mancanti
+    for (const productId of decodedProductIds) {
+      // Trova l'elemento del DOM corrispondente al productId
+      const productElement = document.querySelector(
+        `[data-product-id="${productId}"]`
+      );
 
       let productData;
 
-      if (product) {
+      if (productElement) {
+        // Estrai i dati mancanti dal DOM
+        const productTitle = productElement.getAttribute("data-product-title");
+        const productImg = productElement.getAttribute("data-product-img");
+        const productPrice = productElement.getAttribute("data-product-price");
+        const productUrl = productElement.getAttribute("data-product-url");
+
         // Crea un oggetto con tutti i dati del prodotto
         productData = {
-          productTitle: product.title,
-          productImg: product.image,
-          productPrice: product.price,
-          productUrl: product.url,
-          productId: product.id,
+          productTitle,
+          productImg,
+          productPrice,
+          productUrl,
+          productId,
         };
+
+        console.log(`Prodotto con ID ${productId} trovato nel DOM.`);
       } else {
-        console.log(`Prodotto con ID ${productId} non trovato in allProducts.`);
+        console.log(
+          `Elemento con ID ${productId} non trovato nel DOM, recupero tramite fetch.`
+        );
+
+        // Se il prodotto non è nel DOM, fai una fetch per recuperarlo
+        const fetchedProduct = await fetchProductById(productId);
+
+        if (!!fetchedProduct) {
+          console.log("full", "/products/" + fetchedProduct.product?.handle);
+          productData = {
+            productTitle: fetchedProduct.product.title,
+            productImg: fetchedProduct.product.images.edges[0]?.node.url || "",
+            productPrice:
+              "€ " +
+                fetchedProduct.product.variants.edges[0]?.node.price.amount.replace(
+                  ".",
+                  ","
+                ) || "",
+            productUrl: "/products/" + fetchedProduct.product?.handle || "",
+            productId: parseInt(fetchedProduct.product.id.slice(22)),
+          };
+          // console.log(productData);
+        } else {
+          console.log(
+            `Prodotto con ID ${productId} non trovato tramite fetch.`
+          );
+        }
       }
 
       // Se sono stati trovati i dati, aggiungili alla wishlist
       if (productData) {
         wishlistData.push(productData);
       }
+    }
 
-      // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
-      if (wishlistData.length > 0) {
-        localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
-        console.log("Wishlist ripristinata nel localStorage.");
-      }
-    });
+    // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
+    if (wishlistData.length > 0) {
+      localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
+      console.log("Wishlist ripristinata nel localStorage.");
+    }
   } else {
     console.log("Nessun parametro 'text' trovato nell'URL.");
+  }
+};
+
+// Esempio di utilizzo
+const fetchProductById = async (productId) => {
+  const storefrontEndpoint =
+    "https://f3ba51-0b.myshopify.com/api/2023-01/graphql.json";
+  const storefrontAccessToken = "5b0a84d5183c92794ac2e3f0ea343529";
+
+  // Verifica se il productId è già un Global ID
+  const isGlobalId = productId.startsWith("gid://shopify/Product/");
+  const globalId = isGlobalId
+    ? productId
+    : btoa(`gid://shopify/Product/${productId}`);
+
+  const query = `
+    query getProductById($id: ID!) {
+      product(id: $id) {
+        id
+        title
+        descriptionHtml
+        handle
+        images(first: 5) {
+          edges {
+            node {
+              altText
+              url
+            }
+          }
+        }
+        variants(first: 5) {
+          edges {
+            node {
+              id
+              title
+              price {
+                amount
+                currencyCode
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  //     product(id: $id) {
+  //       id
+  //       title
+  //       descriptionHtml
+  //       handle  // Aggiungi il campo handle
+  //       images(first: 5) {
+  //         edges {
+  //           node {
+  //             altText
+  //             url
+  //           }
+  //         }
+  //       }
+  //       variants(first: 5) {
+  //         edges {
+  //           node {
+  //             id
+  //             title
+  //             price {
+  //               amount
+  //               currencyCode
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `;
+
+  const variables = {
+    id: globalId, // Passa il Global ID corretto
+  };
+
+  const headers = {
+    "Content-Type": "application/json",
+    "X-Shopify-Storefront-Access-Token": storefrontAccessToken,
+  };
+
+  try {
+    const response = await fetch(storefrontEndpoint, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ query, variables }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error fetching product: ${response.statusText}`);
+    }
+
+    const { data, errors } = await response.json();
+
+    // Se ci sono errori nella risposta GraphQL, stampa e restituisci null
+    if (errors) {
+      console.error("GraphQL Errors:", errors);
+      return null;
+    }
+
+    return data; // Restituisci i dati solo se non ci sono errori
+  } catch (error) {
+    console.error("Error fetching product:", error);
+    return null;
   }
 };
