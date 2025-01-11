@@ -1,10 +1,12 @@
 {%- if section.settings.menu_type_desktop == 'mega' -%}
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="tw-bg-main tw-py-6">
+
+<div class="tw-bg-main tw-py-6 !tw-relative">
   <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-items-center ">
-    <header class="tw-hidden lg:tw-flex !tw-text-white">
+    <header class="tw-hidden lg:tw-flex !tw-text-white ">
       
       {% if section.settings.menu_type_desktop == 'mega' %}
 
@@ -12,9 +14,15 @@
       {% endif %}
 
     </header>
-    {% render 'header-search'
+    <div class="lg:tw-hidden tw-flex tw-w-full">
+      <div class="tw-w-full">
+{% render 'header-search'
                                         
                                               , input_id: 'Search-In-Modal' %} 
+      </div>
+
+    </div>
+    
     <div class="tw-flex tw-items-center tw-gap-20">
       <div class="tw-flex tw-gap-2 tw-items-center">
         <svg
@@ -57,7 +65,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.header.name",
+  "name": "Header2",
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
@@ -88,6 +96,18 @@
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "menu_color_scheme",
+      "label": "t:sections.header.settings.menu_color_scheme.label",
+      "default": "scheme-1"
     },
    
     {
