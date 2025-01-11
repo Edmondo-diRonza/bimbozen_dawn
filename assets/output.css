@@ -4386,6 +4386,14 @@ video {
   z-index: 999999 !important;
 }
 
+.tw-z-10 {
+  z-index: 10;
+}
+
+.\!tw-z-10 {
+  z-index: 10 !important;
+}
+
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -4967,6 +4975,16 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.\!tw-text-3xl {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+}
+
+.\!tw-text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
 }
 
 .\!tw-font-bold {
