@@ -2883,6 +2883,9 @@ details[open] > .header__submenu {
 
 .header__menu-item {
   padding: 1.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2975,10 +2978,10 @@ details[open] > .header__menu-item .icon-caret {
   position: static;
 }
 
-header-menu > details,
+/* header-menu > details,
 details-disclosure > details {
   position: relative;
-}
+} */
 
 @keyframes animateMenuOpen {
   0% {
@@ -5037,6 +5040,11 @@ video {
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.\!tw-text-\[\#BCC7E4\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(188 199 228 / var(--tw-text-opacity, 1)) !important;
 }
 
 .tw-underline {
