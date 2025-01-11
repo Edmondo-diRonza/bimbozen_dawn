@@ -3,8 +3,8 @@
 {%- endif -%}
 
 <div class="tw-bg-main tw-py-6">
-  <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-items-center ">
-    <header class="tw-hidden lg:tw-flex !tw-text-white">
+  <div class="tw-w-[85%] tw-mx-auto tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-items-center ">
+    <header class="tw-hidden lg:tw-flex !tw-text-white tw-relative">
       
       {% if section.settings.menu_type_desktop == 'mega' %}
 
@@ -12,9 +12,12 @@
       {% endif %}
 
     </header>
-    {% render 'header-search'
+    <div class="lg:tw-hidden tw-flex">
+{% render 'header-search'
                                         
                                               , input_id: 'Search-In-Modal' %} 
+    </div>
+    
     <div class="tw-flex tw-items-center tw-gap-20">
       <div class="tw-flex tw-gap-2 tw-items-center">
         <svg
