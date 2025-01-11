@@ -12,6 +12,9 @@
       {% endif %}
 
     </header>
+    {% render 'header-search'
+                                        
+                                              , input_id: 'Search-In-Modal' %} 
     <div class="tw-flex tw-items-center tw-gap-20">
       <div class="tw-flex tw-gap-2 tw-items-center">
         <svg
@@ -46,9 +49,7 @@
       </div>
     </div>
 
-  {% comment %} {% render 'header-search'
-                                        
-                                              , input_id: 'Search-In-Modal' %} {% endcomment %}
+
   </div>
 
 </div>

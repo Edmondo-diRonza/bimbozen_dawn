@@ -208,10 +208,10 @@
        
      
     {%- endif -%}
-    <div class=" lg:tw-hidden tw-block tw-my-10">
+    {% comment %} <div class=" lg:tw-hidden tw-flex">
   {% render 'header-search', input_id: 'Search-In-Modal' %} 
 
-      </div>
+      </div> {% endcomment %}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
@@ -237,7 +237,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <div class="tw-hidden lg:tw-block">
+      <div class="tw-hidden lg:tw-flex">
   {% render 'header-search', input_id: 'Search-In-Modal' %} 
 
       </div>
