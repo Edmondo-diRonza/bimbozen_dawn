@@ -241,7 +241,7 @@
         {%- endif -%}
       </div>
       
-     
+     <div class="lg:tw-grid tw-grid-cols-2">
       {%- if shop.customer_accounts_enabled -%}
         {% comment %} <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -271,7 +271,7 @@
         </a> {% endcomment %}
         <a
   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-  class="!tw-no-underline !tw-mr-24 header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
+  class="!tw-no-underline header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
   rel="nofollow"
 >
   {% comment %} {%- if section.settings.enable_customer_avatar -%}
@@ -289,7 +289,7 @@
   <!-- Iniziali del cliente -->
   <account-icon>
   {% if customer %}
-    <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-white tw-px-10 tw-py-5 hover:tw-bg-[#E8CC56] hover:tw-border-[#E8CC56] hover:tw-transition-all tw-text-main tw-font-bold tw-uppercase">
+    <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-[#BCC7E4] tw-px-10 tw-py-5 hover:tw-bg-[#E8CC56] hover:tw-border-[#E8CC56] hover:tw-transition-all tw-text-main tw-font-bold tw-uppercase">
       {{ customer.first_name }} <span>{{ customer.last_name  }}</span>
     </span>  
   {% else  %}
@@ -357,7 +357,7 @@
                (<span data-header-cart-count="" aria-hidden="true">{{ cart.item_count }}</span>)
             {%- endif -%}
         </a>
-
+</div>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
