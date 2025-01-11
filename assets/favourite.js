@@ -360,17 +360,18 @@ const decodeWishlistIdFromUrl = async () => {
           productId,
         };
 
-        console.log(`Prodotto con ID ${productId} trovato nel DOM.`);
+        console.log(
+          `Prodotto con ID ${productId} trovato nel DOM, risparmierai una fetch!`
+        );
       } else {
         console.log(
-          `Elemento con ID ${productId} non trovato nel DOM, recupero tramite fetch.`
+          `Spiacente: elemento con ID ${productId} non trovato nel DOM, recupero tramite fetch.`
         );
 
         // Se il prodotto non è nel DOM, fai una fetch per recuperarlo
         const fetchedProduct = await fetchProductById(productId);
 
         if (!!fetchedProduct) {
-          console.log("full", "/products/" + fetchedProduct.product?.handle);
           productData = {
             productTitle: fetchedProduct.product.title,
             productImg: fetchedProduct.product.images.edges[0]?.node.url || "",
@@ -383,10 +384,13 @@ const decodeWishlistIdFromUrl = async () => {
             productUrl: "/products/" + fetchedProduct.product?.handle || "",
             productId: parseInt(fetchedProduct.product.id.slice(22)),
           };
-          // console.log(productData);
+          console.log(
+            "Questo prodotto è stato recuperato tramite fetch, sei stato comunque fortunato!",
+            productData
+          );
         } else {
           console.log(
-            `Prodotto con ID ${productId} non trovato tramite fetch.`
+            `Spiacente, il prodotto con ID ${productId} non trovato tramite fetch.`
           );
         }
       }
@@ -400,10 +404,8 @@ const decodeWishlistIdFromUrl = async () => {
     // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
     if (wishlistData.length > 0) {
       localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
-      console.log("Wishlist ripristinata nel localStorage.");
+      console.log("Ripristino della wishlist completato nel localStorage.");
     }
-  } else {
-    console.log("Nessun parametro 'text' trovato nell'URL.");
   }
 };
 
