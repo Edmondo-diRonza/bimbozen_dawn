@@ -141,11 +141,15 @@ const displayWishlist = () => {
   );
 
   // Aggiungi la wishlist principale se ci sono dati
-  if (wishlistData.length >= 0) {
+  if (wishlistData.length > 0) {
     if (wishlistBlock) {
       wishlistBlock.innerHTML = renderDom(wishlistData);
     } else {
       console.log('Non trovo la classe "js-wishlistBlock"');
+    }
+  } else {
+    if (!!wishlistBlock) {
+      wishlistBlock.innerHTML = "";
     }
   }
 
@@ -162,6 +166,10 @@ const displayWishlist = () => {
       );
     } else {
       console.log('Element with class "js-wishlistBlock" not found');
+    }
+  } else {
+    if (!!wishlistBlockIported) {
+      wishlistBlockIported.innerHTML = "";
     }
   }
 };
