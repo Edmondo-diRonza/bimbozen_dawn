@@ -63,7 +63,9 @@ const toggleWishlist = (title, featured_image, price, url, id) => {
 const removeFromWishlist = (productId, list = "wishlist") => {
   productId = productId;
   let wishlistData = JSON.parse(localStorage.getItem(list)) || [];
+  console.log("array originale", wishlistData);
   wishlistData = wishlistData.filter((item) => item.productId !== productId);
+  console.log("array elemento eliminato da salvare", wishlistData);
   localStorage.setItem(list, JSON.stringify(wishlistData));
   // console.log(wishlistData);
   // Update the display after removing from the wishlist
@@ -87,11 +89,6 @@ const favouriteRefresh = () => {
     node.innerHTML = isFavorite ? getHeartFilledSVG() : getHeartOutlineSVG();
     node.classList.toggle("favorite", isFavorite);
   });
-
-  if (!wishlistButtons.length) {
-    console.error('Element with class "wishlist_button" not found');
-  }
-
   // Display wishlist items
   displayWishlist();
 };
@@ -105,9 +102,15 @@ const displayWishlist = () => {
 
   // Se non ci sono dati da renderizzare, esci dalla funzione
   if (wishlistData.length === 0 && wishlistDataImported.length === 0) {
-    console.log("Both wishlists are empty");
-    return;
+    console.log("Entrambe le liste sono vuote");
   }
+  console.log(
+    "Rigenero lista preferiti, tramite funzione displayWishList ci sono: ",
+    wishlistData.length,
+    "elemento/i wishlist ed imported:",
+    wishlistDataImported.length,
+    "elemento/i"
+  );
 
   const cardComponent = (item, localstorage = "wishlist") => {
     return `
@@ -120,7 +123,7 @@ const displayWishlist = () => {
                     <a class="full-unstyled-link" href="${item.productUrl}">${item.productTitle}</a>
                 </h3>
                 <p>${item.productPrice}</p>
-                <button onclick="removeFromWishlist('${item.productId}','${localstorage}' )">Remove</button>
+                <button onclick="removeFromWishlist('${item.productId}','${localstorage}' )">Elimina </button>
             </div>
         </div>
       `;
@@ -138,11 +141,11 @@ const displayWishlist = () => {
   );
 
   // Aggiungi la wishlist principale se ci sono dati
-  if (wishlistData.length > 0) {
+  if (wishlistData.length >= 0) {
     if (wishlistBlock) {
       wishlistBlock.innerHTML = renderDom(wishlistData);
     } else {
-      console.error('Element with class "js-wishlistBlock" not found');
+      console.log('Non trovo la classe "js-wishlistBlock"');
     }
   }
 
@@ -158,7 +161,7 @@ const displayWishlist = () => {
         "wishlist_imported"
       );
     } else {
-      console.error('Element with class "js-wishlistBlock" not found');
+      console.log('Element with class "js-wishlistBlock" not found');
     }
   }
 };
@@ -178,10 +181,58 @@ const getHeartOutlineSVG = () => `
 	<path fill="#3A3F4C" d="M4.24 12.25a4.2 4.2 0 0 1-1.24-3A4.25 4.25 0 0 1 7.25 5c1.58 0 2.96.86 3.69 2.14h1.12A4.24 4.24 0 0 1 15.75 5A4.25 4.25 0 0 1 20 9.25c0 1.17-.5 2.25-1.24 3L11.5 19.5zm15.22.71C20.41 12 21 10.7 21 9.25A5.25 5.25 0 0 0 15.75 4c-1.75 0-3.3.85-4.25 2.17A5.22 5.22 0 0 0 7.25 4A5.25 5.25 0 0 0 2 9.25c0 1.45.59 2.75 1.54 3.71l7.96 7.96z" />
 </svg>`;
 
-// Encode solo degli ID
+const cardComponent = (item, localstorage = "wishlist") => {
+  return `
+        <div class="wishlist-product__list">
+  <div class="c-product card-wrapper product-card-wrapper underline-links-hover">
+    <div class="card card--standard card--media" style="--ratio-percent: 100%;">
+      <div class="card__inner gradient ratio" style="--ratio-percent: 100%;">
+        <div class="card__media media media--transparent media--hover-effect">
+          <a href="${item.productUrl}">
+            <img src="${item.productImg}" alt="${item.productTitle}" class="motion-reduce" loading="lazy">
+          </a>
+        </div>
+        <div class="card__content">
+          <div class="card__information !tw-bg-main/30">
+            <h3 class="card__heading">
+              <a href="${item.productUrl}" class="full-unstyled-link tw-font-bold tw-text-2xl" aria-labelledby="product-title">
+                ${item.productTitle}
+              </a>
+            </h3>
+            <div class="price">
+              <span class="price__regular price-item--regular">${item.productPrice}</span>
+            </div>
+          </div>
+          <div class="quick-add">
+            <button onclick="removeFromWishlist('${item.productId}', '${localstorage}')" class="quick-add__submit button button--secondary">
+              Elimina
+            </button>
+          </div>
+        </div>
+        <div class="wishlist__button">
+          <button class="wishlist_button favorite" data-product-title="${item.productTitle}" data-product-img="${item.productImg}" data-product-price="${item.productPrice}" data-product-url="${item.productUrl}" data-product-id="${item.productId}">
+            ❤️
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      `;
+};
+
+// Encode degli ID memorizzati nel localstorage per poterli condivere con whatsapplinkshare
 const encodeWishlistIdFromLocalStorage = () => {
+  // Da cambiare per mettere in produzione
+  const DOMAIN = "http://bimbozen.it/?text=";
+
   // Recupera la wishlist dal localStorage
   const wishlist = JSON.parse(localStorage.getItem("wishlist"));
+  if (wishlist.length == 0) {
+    console.log("localstorage vuoto", wishlist.length);
+    return null;
+  }
 
   // Verifica che la wishlist esista
   if (wishlist) {
@@ -199,124 +250,12 @@ const encodeWishlistIdFromLocalStorage = () => {
     const encodedWishlist = btoa(String.fromCharCode.apply(null, uint8Array));
 
     // Restituisci il link con gli ID dei prodotti codificati
-    return `http://localhost:9292/?text=${encodedWishlist}`;
+    return DOMAIN + encodedWishlist;
   } else {
     console.log("Nessuna wishlist salvata nel localStorage.");
     return null;
   }
 };
-
-// QUELLA CHE FUNZIONA MEGLIO
-// const decodeWishlistIdFromUrl = () => {
-//   // Legge il parametro 'text' dall'URL
-//   const urlParams = new URLSearchParams(window.location.search);
-//   const encodedText = urlParams.get("text");
-
-//   // Verifica che esista un parametro 'text' nell'URL
-//   if (encodedText) {
-//     // Decodifica la stringa Base64 per ottenere gli ID dei prodotti
-//     const decodedJsonString = atob(encodedText);
-
-//     // Parsea la stringa JSON (array di productId)
-//     const decodedProductIds = JSON.parse(decodedJsonString);
-//     console.log("decoded", decodedProductIds);
-
-//     // Crea un array per memorizzare la wishlist completa
-//     const wishlistData = [];
-
-//     // Per ogni productId, cerca il prodotto nel DOM per ottenere i dati mancanti
-//     decodedProductIds.forEach((productId) => {
-//       // Trova l'elemento del DOM corrispondente al productId
-//       const productElement = document.querySelector(
-//         `[data-product-id="${productId}"]`
-//       );
-
-//       if (productElement) {
-//         // Estrai i dati mancanti dal DOM
-//         const productTitle = productElement.getAttribute("data-product-title");
-//         const productImg = productElement.getAttribute("data-product-img");
-//         const productPrice = productElement.getAttribute("data-product-price");
-//         const productUrl = productElement.getAttribute("data-product-url");
-
-//         // Crea un oggetto con tutti i dati del prodotto
-//         const productData = {
-//           productTitle,
-//           productImg,
-//           productPrice,
-//           productUrl,
-//           productId,
-//         };
-
-//         // Aggiungi il prodotto alla wishlist
-//         wishlistData.push(productData);
-//       } else {
-//         console.log(`Elemento con ID ${productId} non trovato nel DOM.`);
-//       }
-//     });
-
-//     // Salva la nuova wishlist nel localStorage
-//     localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
-
-//     console.log("Wishlist ripristinata nel localStorage.");
-//   } else {
-//     console.log("Nessun parametro 'text' trovato nell'URL.");
-//   }
-// };
-
-// const decodeWishlistIdFromUrl = (allProducts) => {
-//   console.log("14680010096963", allProducts);
-//   // Legge il parametro 'text' dall'URL
-//   const urlParams = new URLSearchParams(window.location.search);
-//   const encodedText = urlParams.get("text");
-
-//   // Verifica che esista un parametro 'text' nell'URL
-//   if (encodedText) {
-//     // Decodifica la stringa Base64 per ottenere gli ID dei prodotti
-//     const decodedJsonString = atob(encodedText);
-
-//     // Parsea la stringa JSON (array di productId)
-//     const decodedProductIds = JSON.parse(decodedJsonString);
-
-//     // Crea un array per memorizzare la wishlist completa
-//     const wishlistData = [];
-
-//     // Per ogni productId, cerca il prodotto nei dati disponibili in allProducts
-
-//     decodedProductIds.forEach((productId) => {
-//       fetchProductById(productId);
-//       // Trova il prodotto corrispondente nell'array allProducts
-//       const product = allProducts.find((p) => p.id == productId);
-
-//       let productData;
-
-//       if (product) {
-//         // Crea un oggetto con tutti i dati del prodotto
-//         productData = {
-//           productTitle: product.title,
-//           productImg: product.image,
-//           productPrice: product.price,
-//           productUrl: product.url,
-//           productId: product.id,
-//         };
-//       } else {
-//         console.log(`Prodotto con ID ${productId} non trovato in allProducts.`);
-//       }
-
-//       // Se sono stati trovati i dati, aggiungili alla wishlist
-//       if (productData) {
-//         wishlistData.push(productData);
-//       }
-
-//       // Salva la nuova wishlist nel localStorage quando tutti i dati sono stati recuperati
-//       if (wishlistData.length > 0) {
-//         localStorage.setItem("wishlist_imported", JSON.stringify(wishlistData));
-//         console.log("Wishlist ripristinata nel localStorage.");
-//       }
-//     });
-//   } else {
-//     console.log("Nessun parametro 'text' trovato nell'URL.");
-//   }
-// };
 
 const decodeWishlistIdFromUrl = async () => {
   // Legge il parametro 'text' dall'URL
@@ -325,6 +264,8 @@ const decodeWishlistIdFromUrl = async () => {
 
   // Verifica che esista un parametro 'text' nell'URL
   if (encodedText) {
+    console.log("Inizio decodifica stringa...");
+
     // Decodifica la stringa Base64 per ottenere gli ID dei prodotti
     const decodedJsonString = atob(encodedText);
 
@@ -382,7 +323,7 @@ const decodeWishlistIdFromUrl = async () => {
                   ","
                 ) || "",
             productUrl: "/products/" + fetchedProduct.product?.handle || "",
-            productId: parseInt(fetchedProduct.product.id.slice(22)),
+            productId: fetchedProduct.product.id.slice(22),
           };
           console.log(
             "Questo prodotto è stato recuperato tramite fetch, sei stato comunque fortunato!",
@@ -409,7 +350,7 @@ const decodeWishlistIdFromUrl = async () => {
   }
 };
 
-// Esempio di utilizzo
+// Fetch storefront API
 const fetchProductById = async (productId) => {
   const storefrontEndpoint =
     "https://f3ba51-0b.myshopify.com/api/2023-01/graphql.json";
@@ -514,4 +455,19 @@ const fetchProductById = async (productId) => {
     console.error("Error fetching product:", error);
     return null;
   }
+};
+
+const whatsappLinkShare = () => {
+  const wishlistLink = encodeWishlistIdFromLocalStorage();
+  //controllo che il link esista
+  if (!wishlistLink) {
+    alert("La wishlist è vuota!");
+    return;
+  }
+  // Testo da condividere
+  const shareText = `Guarda la mia wishlist: ${wishlistLink}`;
+  // Genera il link per WhatsApp
+  const whatsappLink = `https://wa.me/?text=${shareText}`;
+  // Apri il link su WhatsApp
+  window.open(whatsappLink, "_blank");
 };
