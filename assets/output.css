@@ -4383,6 +4383,10 @@ video {
   z-index: 999999 !important;
 }
 
+.tw-z-50 {
+  z-index: 50;
+}
+
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto;
