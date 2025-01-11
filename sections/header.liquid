@@ -293,7 +293,7 @@
       {{ customer.first_name }} <span>{{ customer.last_name  }}</span>
     </span>  
   {% else  %}
-  <span class="svg-wrapper !tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-transparent tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all tw-text-white tw-font-bold tw-uppercase">{{ 'icon-account.svg' | inline_asset_content }} Account</span>
+  <span class="!tw-flex tw-gap-2 tw-items-center tw-border tw-border-white/40  tw-rounded-full tw-bg-transparent tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all tw-text-white tw-font-bold tw-uppercase"><span class="button__icon" role="img" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3333 19.25V17.4167C18.3333 16.4442 17.947 15.5116 17.2593 14.8239C16.5717 14.1363 15.6391 13.75 14.6666 13.75H7.33329C6.36083 13.75 5.4282 14.1363 4.74057 14.8239C4.05293 15.5116 3.66663 16.4442 3.66663 17.4167V19.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path><path d="M11 10.0833C13.0251 10.0833 14.6667 8.44171 14.6667 6.41667C14.6667 4.39162 13.0251 2.75 11 2.75C8.975 2.75 7.33337 4.39162 7.33337 6.41667C7.33337 8.44171 8.975 10.0833 11 10.0833Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none!important"></path></svg></span> Account</span>
 
   {% endif %}
   </account-icon>
