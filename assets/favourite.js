@@ -112,7 +112,7 @@ const displayWishlist = () => {
     wishlistDataImported.length,
     "elemento/i"
   );
-
+  //componente Card
   const cardComponent = (item, localstorage = "wishlist") => {
     return `
           <div class="card-wrapper product-card-wrapper underline-links-hover">
