@@ -1,7 +1,8 @@
 <style>
   /* Style for product display can be added based on your design requirements */
   @media only screen and (min-width: 750px) {
-    .js-wishlistBlock {
+    .js-wishlistBlock,
+    .js-wishlistBlockImported {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: var(--grid-desktop-horizontal-spacing);
@@ -55,7 +56,7 @@
   <!-- I prodotti della wishlist saranno aggiunti qui dinamicamente -->
   </div>
   <h2 class="tw-hidden" id="imported__list">Preferiti Importati</h2>
-  <div class="js-wishlistBlockImported tw-grid tw-grid-cols-4">
+  <div class="js-wishlistBlockImported ">
     <!-- I prodotti della wishlist importata saranno aggiunti qui dinamicamente -->
   </div>
 

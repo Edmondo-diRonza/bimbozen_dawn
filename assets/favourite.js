@@ -78,6 +78,7 @@ const favouriteRefresh = () => {
   const wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
   // Seleziona tutti i pulsanti della wishlist
   const wishlistButtons = document.querySelectorAll(".wishlist_button");
+  console.log(wishlistButtons);
 
   // Itera sui pulsanti e aggiorna lo stato in base alla wishlist
   wishlistButtons.forEach((node) => {
@@ -114,19 +115,88 @@ const displayWishlist = () => {
 
   const cardComponent = (item, localstorage = "wishlist") => {
     return `
-        <div class="wishlist-product__list">
-            <div class="c-product">
-            <a href="${item.productUrl}">
-                <img src="${item.productImg}" alt="${item.productTitle}">
-                </a>
-                <h3 class="c-product__title card__heading h5">
-                    <a class="full-unstyled-link" href="${item.productUrl}">${item.productTitle}</a>
-                </h3>
-                <p>${item.productPrice}</p>
-                <button onclick="removeFromWishlist('${item.productId}','${localstorage}' )">Elimina </button>
-            </div>
-        </div>
-      `;
+          <div class="card-wrapper product-card-wrapper underline-links-hover">
+            <div class="!tw-relative card card--standard card--media" style="--ratio-percent: 100%;">
+              <div class="card__inner color-scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043 gradient ratio" style="--ratio-percent: 100%;">
+                <div class="card__media">  
+                  <div class="media media--transparent media--hover-effect" style="position:unset">
+                    <img src="${item.productImg}" alt="${
+      item.productTitle
+    }" class="motion-reduce" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="card__content !tw-bg-main/10 !tw-p-6">
+                <div class="card__information tw-py-6">
+                  <h3 class="card__heading h5">
+                    <a class="tw-font-bold tw-text-2xl full-unstyled-link" href="${
+                      item.productUrl
+                    }">${item.productTitle}
+                    </a>
+                  </h3>                
+                  <div class="card__information tw-py-4">
+                    <span class="visually-hidden"> Produttore:</span>
+                    <div class="caption-with-letter-spacing light">Vilac</div>
+                    <span class="caption-large light"></span>
+                    <div class="price">
+                      <div class="price__container">
+                        <div class="price__regular">
+                          <span class="visually-hidden visually-hidden--inline">Prezzo di listino</span>
+                          <span class="price-item price-item--regular">${
+                            item.productPrice
+                          }</span>
+                        </div>                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quick-add no-js-hidden">
+                  <product-form data-section-id="template--24310269280579__featured_collection">
+                    <form method="post" action="/cart/add" id="quick-add-template--24310269280579__featured_collection14672267247939" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+                      <input type="hidden" name="form_type" value="product">
+                      <input type="hidden" name="utf8" value="✓">
+                      <input type="hidden" name="id" value="51857429233987" class="product-variant-id">
+                      <button id="quick-add-template--24310269280579__featured_collection14672267247939-submit" type="submit" name="add" class="cacca quick-add__submit button button--full-width button--secondary" aria-haspopup="dialog" aria-labelledby="quick-add-template--24310269280579__featured_collection14672267247939-submit title-template--24310269280579__featured_collection-14672267247939" aria-live="polite" data-sold-out-message="true">
+                        <span class="tw-flex tw-items-center tw-gap-2 !tw-pb-6">Aggiungi al carrello 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 32 32">
+                          <path fill="#3A3F4C" d="M4 7a1 1 0 0 0 0 2h2.22l2.624 10.5c.223.89 1.02 1.5 1.937 1.5h12.47c.903 0 1.67-.6 1.907-1.47L27.75 10h-2.094l-2.406 9H10.78L8.157 8.5A1.984 1.984 0 0 0 6.22 7zm18 14c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3m-9 0c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3m3-14v5h-3l4 4l4-4h-3V7zm-3 16c.564 0 1 .436 1 1s-.436 1-1 1s-1-.436-1-1s.436-1 1-1m9 0c.564 0 1 .436 1 1s-.436 1-1 1s-1-.436-1-1s.436-1 1-1"></path>
+                          </svg>
+                        </span>
+                        <span class="hidden sold-out-message">
+                          Esaurito
+                        </span>
+                        <div class="loading__spinner hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                          <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+                          </svg>
+                        </div>
+                      </button>
+                      <input type="hidden" name="product-id" value="${
+                        item.productId
+                      }">
+                      <input type="hidden" name="section-id" value="template--24310269280579__featured_collection">
+                    </form>
+                  </product-form>
+                </div>
+                <div class="wishlist__button  !tw-absolute !tw-top-2 !tw-right-2 !tw-z-[999999]" onclick="removeFromWishlist('${
+                  item.productId
+                }','${localstorage}' )">
+                  <button class="wishlist_button" id='${
+                    item.productId
+                  }' data-product-title="${
+      item.productTitle
+    }" data-product-img="${item.productImg}" data-product-price="${
+      item.productPrice
+    }" data-product-url="${item.productUrl}" data-product-id="${
+      item.productId
+    }">
+                    ${getHeartFilledSVG()}
+                  </button>
+                </div>             
+              </div>              
+            </div>               
+          </div>           
+    `;
   };
 
   // Funzione per generare l'HTML dalla wishlist
@@ -188,47 +258,6 @@ const getHeartOutlineSVG = () => `
           <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
 	<path fill="#3A3F4C" d="M4.24 12.25a4.2 4.2 0 0 1-1.24-3A4.25 4.25 0 0 1 7.25 5c1.58 0 2.96.86 3.69 2.14h1.12A4.24 4.24 0 0 1 15.75 5A4.25 4.25 0 0 1 20 9.25c0 1.17-.5 2.25-1.24 3L11.5 19.5zm15.22.71C20.41 12 21 10.7 21 9.25A5.25 5.25 0 0 0 15.75 4c-1.75 0-3.3.85-4.25 2.17A5.22 5.22 0 0 0 7.25 4A5.25 5.25 0 0 0 2 9.25c0 1.45.59 2.75 1.54 3.71l7.96 7.96z" />
 </svg>`;
-
-const cardComponent = (item, localstorage = "wishlist") => {
-  return `
-        <div class="wishlist-product__list">
-  <div class="c-product card-wrapper product-card-wrapper underline-links-hover">
-    <div class="card card--standard card--media" style="--ratio-percent: 100%;">
-      <div class="card__inner gradient ratio" style="--ratio-percent: 100%;">
-        <div class="card__media media media--transparent media--hover-effect">
-          <a href="${item.productUrl}">
-            <img src="${item.productImg}" alt="${item.productTitle}" class="motion-reduce" loading="lazy">
-          </a>
-        </div>
-        <div class="card__content">
-          <div class="card__information !tw-bg-main/30">
-            <h3 class="card__heading">
-              <a href="${item.productUrl}" class="full-unstyled-link tw-font-bold tw-text-2xl" aria-labelledby="product-title">
-                ${item.productTitle}
-              </a>
-            </h3>
-            <div class="price">
-              <span class="price__regular price-item--regular">${item.productPrice}</span>
-            </div>
-          </div>
-          <div class="quick-add">
-            <button onclick="removeFromWishlist('${item.productId}', '${localstorage}')" class="quick-add__submit button button--secondary">
-              Elimina
-            </button>
-          </div>
-        </div>
-        <div class="wishlist__button">
-          <button class="wishlist_button favorite" data-product-title="${item.productTitle}" data-product-img="${item.productImg}" data-product-price="${item.productPrice}" data-product-url="${item.productUrl}" data-product-id="${item.productId}">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      `;
-};
 
 // Encode degli ID memorizzati nel localstorage per poterli condivere con whatsapplinkshare
 const encodeWishlistIdFromLocalStorage = () => {

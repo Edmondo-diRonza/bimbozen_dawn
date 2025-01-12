@@ -4382,16 +4382,16 @@ video {
   top: 50%;
 }
 
-.\!tw-z-\[999999\] {
-  z-index: 999999 !important;
+.\!tw-z-0 {
+  z-index: 0 !important;
 }
 
 .\!tw-z-10 {
   z-index: 10 !important;
 }
 
-.\!tw-z-0 {
-  z-index: 0 !important;
+.\!tw-z-\[999999\] {
+  z-index: 999999 !important;
 }
 
 .tw-mx-auto {
