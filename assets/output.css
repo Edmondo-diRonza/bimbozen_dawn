@@ -2950,7 +2950,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__submenu .header__submenu {
-  background-color: rgba(var(--color-foreground), 0.03);
+  /* background-color: rgba(var(--color-foreground), 0.03); */
   padding: 1rem 0;
   margin: 1rem 0;
 }
@@ -4382,16 +4382,24 @@ video {
   top: 50%;
 }
 
-.\!tw-z-\[999999\] {
-  z-index: 999999 !important;
-}
-
-.\!tw-z-10 {
-  z-index: 10 !important;
+.tw-top-full {
+  top: 100%;
 }
 
 .\!tw-z-0 {
   z-index: 0 !important;
+}
+
+.\!tw-z-\[999999\] {
+  z-index: 999999 !important;
+}
+
+.tw-z-0 {
+  z-index: 0;
+}
+
+.tw-z-50 {
+  z-index: 50;
 }
 
 .tw-mx-auto {
@@ -4407,10 +4415,6 @@ video {
 .tw-my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.tw-ml-4 {
-  margin-left: 1rem;
 }
 
 .tw-mr-2 {
@@ -4448,10 +4452,6 @@ video {
   -webkit-line-clamp: 1;
 }
 
-.tw-block {
-  display: block;
-}
-
 .tw-inline-block {
   display: inline-block;
 }
@@ -4468,6 +4468,10 @@ video {
   display: grid;
 }
 
+.\!tw-grid {
+  display: grid !important;
+}
+
 .tw-hidden {
   display: none;
 }
@@ -4478,10 +4482,6 @@ video {
 
 .tw-aspect-video {
   aspect-ratio: 16 / 9;
-}
-
-.\!tw-h-16 {
-  height: 4rem !important;
 }
 
 .tw-h-10 {
@@ -4508,8 +4508,12 @@ video {
   height: 100%;
 }
 
-.\!tw-w-16 {
-  width: 4rem !important;
+.tw-h-4 {
+  height: 1rem;
+}
+
+.tw-h-\[0\.02rem\] {
+  height: 0.02rem;
 }
 
 .\!tw-w-full {
@@ -4617,6 +4621,10 @@ video {
 
 .tw-grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.\!tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .\!tw-flex-col {
@@ -4792,13 +4800,17 @@ video {
   background-color: rgb(58 63 76 / 0.5);
 }
 
-.tw-bg-main\/80 {
-  background-color: rgb(58 63 76 / 0.8);
-}
-
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.tw-bg-main\/0 {
+  background-color: rgb(58 63 76 / 0);
+}
+
+.tw-bg-main\/20 {
+  background-color: rgb(58 63 76 / 0.2);
 }
 
 .tw-object-contain {
@@ -4977,6 +4989,21 @@ video {
   line-height: 1.75rem;
 }
 
+.\!tw-text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.\!tw-text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.\!tw-text-3xl {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+}
+
 .\!tw-font-bold {
   font-weight: 700 !important;
 }
@@ -5003,10 +5030,6 @@ video {
 
 .tw-italic {
   font-style: italic;
-}
-
-.\!tw-leading-\[4rem\] {
-  line-height: 4rem !important;
 }
 
 .tw-leading-none {

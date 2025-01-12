@@ -14,8 +14,8 @@
   }
 {%- endstyle -%}
 
-<div class="customer account section-{{ section.id }}-padding ">
-  <div class="!tw-bg-main/70 tw-flex tw-flex-wrap tw-justify-center tw-py-10 tw-gap-4">
+<div class="customer account section-{{ section.id }}-padding !tw-w-full">
+  <div class="!tw-bg-main/70 tw-flex tw-flex-wrap tw-text-center tw-justify-center tw-items-center tw-py-10 tw-gap-4">
     {% comment %} <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1> {% endcomment %}
     <h1 class="customer__title !tw-text-white">Welcome {{ customer.name }}!</h1>
     <div class="tw-flex tw-gap-10 tw-items-center">
@@ -41,9 +41,9 @@
 
   </div>
 
-  <div>
-    <div>
-      <h2 class="tw-text-main !tw-bg-main/20 tw-py-6 tw-px-10">{{ 'customer.orders.title' | t }}</h2>
+  <div class="tw-w-[95%] tw-mx-auto  lg:tw-w-full">
+    <div class="lg:tw-w-full">
+      <h2 class="tw-text-main !tw-bg-main/20 tw-py-6 tw-px-10 ">{{ 'customer.orders.title' | t }}</h2>
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
@@ -177,7 +177,7 @@
       {% endpaginate %}
     </div>
 
-    <div>
+    <div class="tw-w-[95%] tw-mx-auto lg:tw-w-full">
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
