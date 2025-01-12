@@ -406,8 +406,8 @@
 :is(.account, .order) {
   margin: 0 auto;
   max-width: var(--page-width);
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (min-width: 750px) {

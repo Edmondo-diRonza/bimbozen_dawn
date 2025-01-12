@@ -5,7 +5,7 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu ">
+<nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li >
@@ -27,22 +27,24 @@
               </summary>
               <ul
                 id="HeaderMenu-MenuList-{{ forloop.index }}"
-                class="header__submenu list-menu list-menu--disclosure motion-reduce global-settings-popup tw-bg-main "
+                class="header__submenu tw-absolute tw-top-full tw-left-0 tw-z-50 !tw-grid !tw-grid-cols-2 tw-gap-10 list-menu list-menu--disclosure motion-reduce global-settings-popup tw-bg-white"
                 role="list"
                 tabindex="-1"
               >
                 {%- for childlink in link.links -%}
-                  <li class="">
+                  <li class="tw-w-full ">
                     {%- if childlink.links == blank -%}
+                      <a  id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                        href="{{ childlink.url }}"></a>
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        class="header__menu-item !tw-text-white list-menu__item  link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
+                        class="header__menu-item !tw-text-main tw-uppercase !tw-bg-main/20 tw-font-bold list-menu__item  link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
                       >
-                        {{ childlink.title | escape }}
+                        {{ childlink.title | escape }} 
                       </a>
                     {%- else -%}
                       {% comment %} <details id="Details-HeaderSubMenu-{{ link.handle }}-{{ childlink.handle }}">
@@ -74,19 +76,20 @@
                         </ul>
                       </details> {% endcomment %}
                       <div id="HeaderSubMenu-{{ link.handle }}-{{ childlink.handle }}">
-  <h3 class="header__menu-item !tw-text-white link link--text list-menu__item focus-inset caption-large tw-font-bold !tw-text-2xl tw-uppercase">
+  <h3 class="header__menu-item !tw-text-main   link link--text list-menu__item focus-inset caption-large tw-font-bold !tw-text-2xl tw-uppercase">
     <span>{{ childlink.title | escape }}</span>
   </h3>
+  <div class="tw-bg-main/30 tw-w-full tw-h-[0.02rem]"></div>
   <ul
     id="HeaderMenu-SubMenuList-{{ link.handle }}-{{ childlink.handle }}"
-    class="header__submenu list-menu motion-reduce !tw-font-bold"
+    class="header__submenu list-menu "
   >
     {%- for grandchildlink in childlink.links -%}
       <li class="list-menu__item">
         <a
           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
           href="{{ grandchildlink.url }}"
-          class="header__menu-item link !tw-text-white link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+          class="header__menu-item link !tw-text-main  !tw-text-2xl link--text caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
           {% if grandchildlink.current %}
             aria-current="page"
           {% endif %}
@@ -108,7 +111,7 @@
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
-            class=" tw-font-bold header__menu-item list-menu__item link link--text focus-inset !tw-text-2xl !tw-text-white tw-uppercase tw-mr-6"
+            class=" tw-font-bold header__menu-item list-menu__item  link link--text focus-inset !tw-text-2xl !tw-text-white tw-uppercase tw-mr-6"
             {% if link.current %}
               aria-current="page"
             {% endif %}

@@ -2950,7 +2950,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__submenu .header__submenu {
-  background-color: rgba(var(--color-foreground), 0.03);
+  /* background-color: rgba(var(--color-foreground), 0.03); */
   padding: 1rem 0;
   margin: 1rem 0;
 }
@@ -4382,16 +4382,24 @@ video {
   top: 50%;
 }
 
+.tw-top-full {
+  top: 100%;
+}
+
 .\!tw-z-0 {
   z-index: 0 !important;
 }
 
-.\!tw-z-10 {
-  z-index: 10 !important;
-}
-
 .\!tw-z-\[999999\] {
   z-index: 999999 !important;
+}
+
+.tw-z-0 {
+  z-index: 0;
+}
+
+.tw-z-50 {
+  z-index: 50;
 }
 
 .tw-mx-auto {
@@ -4407,10 +4415,6 @@ video {
 .tw-my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.tw-ml-4 {
-  margin-left: 1rem;
 }
 
 .tw-mr-2 {
@@ -4448,10 +4452,6 @@ video {
   -webkit-line-clamp: 1;
 }
 
-.tw-block {
-  display: block;
-}
-
 .tw-inline-block {
   display: inline-block;
 }
@@ -4462,6 +4462,10 @@ video {
 
 .tw-flex {
   display: flex;
+}
+
+.\!tw-grid {
+  display: grid !important;
 }
 
 .tw-grid {
@@ -4480,16 +4484,16 @@ video {
   aspect-ratio: 16 / 9;
 }
 
-.\!tw-h-16 {
-  height: 4rem !important;
-}
-
 .tw-h-10 {
   height: 2.5rem;
 }
 
 .tw-h-5 {
   height: 1.25rem;
+}
+
+.tw-h-\[0\.02rem\] {
+  height: 0.02rem;
 }
 
 .tw-h-\[120px\] {
@@ -4506,10 +4510,6 @@ video {
 
 .tw-h-full {
   height: 100%;
-}
-
-.\!tw-w-16 {
-  width: 4rem !important;
 }
 
 .\!tw-w-full {
@@ -4607,16 +4607,16 @@ video {
   list-style-type: disc;
 }
 
+.\!tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
 .tw-grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .tw-grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.tw-grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .\!tw-flex-col {
@@ -4790,10 +4790,6 @@ video {
 
 .tw-bg-main\/50 {
   background-color: rgb(58 63 76 / 0.5);
-}
-
-.tw-bg-main\/80 {
-  background-color: rgb(58 63 76 / 0.8);
 }
 
 .tw-bg-white {
@@ -5003,10 +4999,6 @@ video {
 
 .tw-italic {
   font-style: italic;
-}
-
-.\!tw-leading-\[4rem\] {
-  line-height: 4rem !important;
 }
 
 .tw-leading-none {
