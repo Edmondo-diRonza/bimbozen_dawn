@@ -3,5 +3,6 @@
     "main": {
       "type": "template-faq"
     }
-  }
+  },
+  "order": ["main"]
 }
