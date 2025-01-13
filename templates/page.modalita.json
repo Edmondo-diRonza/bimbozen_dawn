@@ -46,12 +46,6 @@
             "method_title": "Altri",
             "method_icon": "shopify://shop_images/altri.png"
           }
-        },
-        "method_dBCYra": {
-          "type": "method",
-          "settings": {
-            "method_title": "Pagamento tramite fattura"
-          }
         }
       },
       "block_order": [
@@ -59,8 +53,7 @@
         "section_PaHaC3",
         "method_jEQKTW",
         "method_PrqnHm",
-        "method_93f4LG",
-        "method_dBCYra"
+        "method_93f4LG"
       ],
       "settings": {}
     }
