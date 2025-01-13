@@ -60,13 +60,9 @@
       {% elsif block.type == "method" %}
         <div class="payment-method">
           <h2 class="method-title tw-flex tw-items-center tw-gap-2"><span>&dot;</span> {{ block.settings.method_title }}</h2>
-          <p class="method-description">{{ block.settings.method_description }}</p>
-          {% if block.settings.method_icons %}
-            <div class="method-icons">
-              {% for image in block.settings.method_icons %}
-                <img width="100px" height="auto" src="{{ image | img_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
-              {% endfor %}
-            </div>
+          <p class="method-description ">{{ block.settings.method_description }}</p>
+          {% if block.settings.method_icon %}
+            <img width="20px" height="20px" src="{{ block.settings.method_icon | img_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
           {% endif %}
         </div>
       {% endif %}
@@ -78,6 +74,7 @@
   .payment-page {
     max-width: 1280px;
     margin: 0 auto;
+   
     line-height: 1.6;
   }
   .payment-section {
@@ -109,13 +106,9 @@
     color: #666;
     margin-bottom: 10px;
   }
-  .method-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
   .method-icon {
-    width: 50px;
+    width: 100px;
     height: auto;
+    margin-top: 10px;
   }
 </style>

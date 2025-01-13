@@ -4472,10 +4472,6 @@ video {
   display: grid;
 }
 
-.tw-list-item {
-  display: list-item;
-}
-
 .tw-hidden {
   display: none;
 }
