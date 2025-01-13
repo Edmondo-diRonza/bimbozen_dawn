@@ -20,7 +20,7 @@
       ]
     },
     {
-      "type": "method",
+      "type": "image_block",
       "name": "Metodo di Pagamento",
       "settings": [
         {
@@ -28,15 +28,17 @@
           "id": "method_title",
           "label": "Titolo Metodo"
         },
+        
         {
-          "type": "textarea",
-          "id": "method_description",
-          "label": "Descrizione"
-        },
-        {
-          "type": "image_picker",
-          "id": "method_icon",
-          "label": "Icona Metodo (opzionale)"
+          
+          "settings":[
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Seleziona Immagine"
+          }
+          ]
+
         }
       ]
     }
