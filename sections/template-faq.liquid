@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "FAQ Page",
+  "name": "FAQ Accordion Page",
   "settings": [],
   "blocks": [
     {
@@ -22,8 +22,8 @@
   ],
   "presets": [
     {
-      "name": "Pagina FAQ",
-     
+      "name": "Pagina FAQ con Accordion",
+      "category": "Pagine"
     }
   ]
 }
@@ -34,8 +34,13 @@
   <div class="faq-items">
     {% for block in section.blocks %}
       <div class="faq-item">
-        <h2 class="faq-question">{{ block.settings.question }}</h2>
-        <p class="faq-answer">{{ block.settings.answer }}</p>
+        <button class="faq-question" aria-expanded="false">
+          {{ block.settings.question }}
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>{{ block.settings.answer }}</p>
+        </div>
       </div>
     {% endfor %}
   </div>
@@ -43,29 +48,86 @@
 
 <style>
   .faq-page {
-    max-width: 800px;
+    
     margin: 0 auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
   }
   .faq-title {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    margin: 40px 0;
+    font-size: 4rem;
     color: #333;
   }
   .faq-item {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
   }
   .faq-question {
+    width: 100%;
+    text-align: left;
+    background: #f9f9f9;
+    border: none;
+    padding: 15px;
+    font-size: 1.8rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #555;
   }
+  .faq-question[aria-expanded="true"] {
+   font-weight: bold;
+  }
+  .faq-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
   .faq-answer {
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 1.5rem;
     color: #666;
+    background: #f1f1f1;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 768px) {
+     .faq-title {
+    
+    font-size: 2.5rem;
+   
+  }
+
+   .faq-question {
+   
+    font-size: 1.6rem;
+   
+  }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+
+      question.addEventListener("click", () => {
+        const expanded = question.getAttribute("aria-expanded") === "true" || false;
+
+        // Close all other accordions
+        document.querySelectorAll(".faq-question[aria-expanded='true']").forEach(btn => {
+          btn.setAttribute("aria-expanded", "false");
+          btn.nextElementSibling.hidden = true;
+        });
+
+        // Toggle current accordion
+        question.setAttribute("aria-expanded", !expanded);
+        answer.hidden = expanded;
+      });
+    });
+  });
+</script>
