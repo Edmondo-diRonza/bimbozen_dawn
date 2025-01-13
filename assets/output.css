@@ -4619,6 +4619,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.tw-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .\!tw-flex-col {
   flex-direction: column !important;
 }
