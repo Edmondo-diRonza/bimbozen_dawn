@@ -35,21 +35,22 @@
         },
         {
           "type": "image_picker",
-          "id": "method_icon",
-          "label": "Icona Metodo (opzionale)"
+          "id": "method_icons",
+          "label": "Icone Metodo (opzionale)",
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Metodi di Pagamento",
+      "name": "Metodi di Pagamento"
     }
   ]
 }
+
 {% endschema %}
 
-<div class="payment-page">
+<div class="payment-page tw-py-20">
   <div class="payment-sections">
     {% for block in section.blocks %}
       {% if block.type == "section" %}
@@ -59,10 +60,14 @@
         </div>
       {% elsif block.type == "method" %}
         <div class="payment-method">
-          <h2 class="method-title">{{ block.settings.method_title }}</h2>
+          <h2 class="method-title tw-flex tw-items-center tw-gap-2"><span>&dot;</span> {{ block.settings.method_title }}</h2>
           <p class="method-description">{{ block.settings.method_description }}</p>
-          {% if block.settings.method_icon %}
-            <img width="20px" height="20px" src="{{ block.settings.method_icon | file_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
+          {% if block.settings.method_icons %}
+            <div class="method-icons">
+              {% for image in block.settings.method_icons %}
+                <img width="100px" height="auto" src="{{ image | img_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
+              {% endfor %}
+            </div>
           {% endif %}
         </div>
       {% endif %}
@@ -72,10 +77,8 @@
 
 <style>
   .payment-page {
-    max-width: 800px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
     line-height: 1.6;
   }
   .payment-section {
@@ -97,7 +100,7 @@
     border-left: 3px solid #ddd;
   }
   .method-title {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #555;
     margin-bottom: 10px;
@@ -107,9 +110,13 @@
     color: #666;
     margin-bottom: 10px;
   }
-  .method-icon {
-    width: 100px;
-    height: auto;
+  .method-icons {
+    display: flex;
+    gap: 10px;
     margin-top: 10px;
+  }
+  .method-icon {
+    width: 50px;
+    height: auto;
   }
 </style>

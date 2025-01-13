@@ -2,8 +2,65 @@
   "sections": {
     "main": {
       "type": "template-modalita",
+      "blocks": {
+        "section_tyLYPx": {
+          "type": "section",
+          "settings": {
+            "title": "Pagamenti",
+            "content": "Il pagamento deve essere effettuato in anticipo acquistando il prodotto o il servizio di cui hai bisogno tramite il nostro carrello sicuro. In tal modo, gli ordini saranno gestiti con la medesima attenzione e sicurezza e si garantisce un flusso di lavoro più produttivo.\n\nUna volta ricevuto il pagamento, il tuo acquisto verrà programmato per essere completato e riceverai un'e-mail di conferma.\n\nEffettuando l'ordine sul nostro sito web, accetti i nostri termini e che tutte le vendite sono irrevocabili."
+          }
+        },
+        "section_PaHaC3": {
+          "type": "section",
+          "settings": {
+            "title": "Metodi di pagamento:",
+            "content": "Per comodità, Bimbo Zen si avvale dei seguenti metodi di pagamento"
+          }
+        },
+        "method_jEQKTW": {
+          "type": "method",
+          "settings": {
+            "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
+            "method_description": "",
+            "method_icon": "shopify:\/\/shop_images\/creditcards.png"
+          }
+        },
+        "method_PrqnHm": {
+          "type": "method",
+          "settings": {
+            "method_title": "PayPal",
+            "method_description": "",
+            "method_icon": "shopify:\/\/shop_images\/paypal.png"
+          }
+        },
+        "method_93f4LG": {
+          "type": "method",
+          "settings": {
+            "method_title": "Altri",
+            "method_description": "",
+            "method_icon": "shopify:\/\/shop_images\/altri.png"
+          }
+        },
+        "method_dBCYra": {
+          "type": "method",
+          "settings": {
+            "method_title": "Pagamento tramite fattura",
+            "method_description": "Se il pagamento con PayPal o carta di credito non dovesse funzionare a causa di problemi tecnici o se si ordina una quantità maggiore di prodotti. Per richiedere la fattura, contatta bimbozen.store@gmail.com."
+          }
+        }
+      },
+      "block_order": [
+        "section_tyLYPx",
+        "section_PaHaC3",
+        "method_jEQKTW",
+        "method_PrqnHm",
+        "method_93f4LG",
+        "method_dBCYra"
+      ],
       "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
