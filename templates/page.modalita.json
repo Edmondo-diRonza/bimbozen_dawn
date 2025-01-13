@@ -1,11 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "template-modalita",
       "settings": {}
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
