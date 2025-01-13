@@ -1,1 +1,71 @@
-<h1>faqs</h1>
+{% schema %}
+{
+  "name": "FAQ Page",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Domanda"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Risposta"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pagina FAQ",
+     
+    }
+  ]
+}
+{% endschema %}
+
+<div class="faq-page">
+  <h1 class="faq-title">Domande Frequenti</h1>
+  <div class="faq-items">
+    {% for block in section.blocks %}
+      <div class="faq-item">
+        <h2 class="faq-question">{{ block.settings.question }}</h2>
+        <p class="faq-answer">{{ block.settings.answer }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .faq-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  .faq-question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .faq-answer {
+    font-size: 1rem;
+    color: #666;
+  }
+</style>
