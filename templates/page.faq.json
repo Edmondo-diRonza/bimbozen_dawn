@@ -1,7 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "template-faq",
+      "blocks": {
+        "faq_AzXV7t": {
+          "type": "faq",
+          "settings": {
+            "question": "Quali sono i tempi e le spese di spedizione?",
+            "answer": "Solitamente i nostri tempi di spedizione sono di 5-7 giorni lavorativi in tutta Italia. Per ciascun prodotto, è possibile visualizzare i tempi di consegna stimati nelle pagine dei prodotti e nel carrello. Talvolta possono verificarsi ritardi nella consegna. Informazioni più dettagliate sui tempi e sulle spese di spedizione sono disponibili nella nostra pagina Pagamenti e Spedizione."
+          }
+        }
+      },
+      "block_order": [
+        "faq_AzXV7t"
+      ],
       "settings": {}
     }
   },
