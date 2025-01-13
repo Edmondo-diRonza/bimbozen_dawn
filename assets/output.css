@@ -2826,6 +2826,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   visibility: visible;
   opacity: 1;
   transform: scale(1.07);
+  z-index: 999999999999 !important;
 }
 
 .js details > .header__submenu {
@@ -4388,10 +4389,6 @@ video {
 
 .\!tw-z-0 {
   z-index: 0 !important;
-}
-
-.\!tw-z-50 {
-  z-index: 50 !important;
 }
 
 .\!tw-z-\[999999\] {

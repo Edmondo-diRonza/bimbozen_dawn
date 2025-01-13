@@ -1,19 +1,16 @@
-{%- if section.settings.menu_type_desktop == 'mega' -%}
-  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-{%- endif -%}
-<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 
 
 <div class="relative tw-bg-main tw-py-6 tw">
   <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-items-center ">
-    <header class="tw-hidden lg:tw-flex !tw-text-white">
+   <div class="tw-hidden lg:tw-flex !tw-text-white">
       
-      {% if section.settings.menu_type_desktop == 'mega' %}
+      {% comment %} {% if section.settings.menu_type_desktop == 'mega' %} {% endcomment %}
 
         {% render 'header-dropdown-menu' %}
-      {% endif %}
+      {% comment %} {% endif %} {% endcomment %}
 
-    </header>
+    </div> 
+    
     <div class="lg:tw-hidden tw-flex tw-w-full">
       <div class="tw-w-full">
 {% render 'header-search'

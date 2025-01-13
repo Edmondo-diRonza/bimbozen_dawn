@@ -175,7 +175,7 @@
           render 'header-mega-menu'
         endif
       endif
-    %} {% endcomment %}
+    %}  {% endcomment %}
 <div class="tw-hidden lg:tw-flex">
   {% render 'header-search', input_id: 'Search-In-Modal' %} 
 
@@ -522,7 +522,6 @@
 {% schema %}
 {
   "name": "t:sections.header.name",
-  "class": "section-header",
   "max_blocks": 3,
   "settings": [
     {

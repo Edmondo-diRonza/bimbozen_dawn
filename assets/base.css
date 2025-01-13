@@ -2786,6 +2786,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   visibility: visible;
   opacity: 1;
   transform: scale(1.07);
+  z-index: 999999999999 !important;
 }
 
 .js details > .header__submenu {
