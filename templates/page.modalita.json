@@ -30,29 +30,27 @@
           "type": "method",
           "settings": {
             "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
-            "method_description": ""
+            "method_icon": "shopify://shop_images/creditcards.png"
           }
         },
         "method_PrqnHm": {
           "type": "method",
           "settings": {
             "method_title": "PayPal",
-            "method_description": ""
+            "method_icon": "shopify://shop_images/paypal.png"
           }
         },
         "method_93f4LG": {
           "type": "method",
           "settings": {
             "method_title": "Altri",
-            "method_description": ""
+            "method_icon": "shopify://shop_images/altri.png"
           }
         },
         "method_dBCYra": {
           "type": "method",
           "settings": {
-            "method_title": "Pagamento tramite fattura",
-            "method_description": "Se il pagamento con PayPal o carta di credito non dovesse funzionare a causa di problemi tecnici o se si ordina una quantità maggiore di prodotti. Per richiedere la fattura, contatta bimbozen.store@gmail.com.",
-            "method_icon": "shopify://shop_images/creditcards.png"
+            "method_title": "Pagamento tramite fattura"
           }
         }
       },
