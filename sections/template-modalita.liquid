@@ -20,7 +20,7 @@
       ]
     },
     {
-      "type": "image_block",
+      "type": "method",
       "name": "Metodo di Pagamento",
       "settings": [
         {
@@ -28,15 +28,11 @@
           "id": "method_title",
           "label": "Titolo Metodo"
         },         
-         
         {
             "type": "image_picker",
-            "id": "image",
+            "id": "method_icon",
             "label": "Seleziona Immagine"
-        }
-          
-
-        
+        }        
       ]
     }
   ],
@@ -59,7 +55,6 @@
       {% elsif block.type == "method" %}
         <div class="payment-method">
           <h2 class="method-title tw-flex tw-items-center tw-gap-2"><span>&dot;</span> {{ block.settings.method_title }}</h2>
-          <p class="method-description ">{{ block.settings.method_description }}</p>
           {% if block.settings.method_icon %}
             <img width="20px" height="20px" src="{{ block.settings.method_icon | img_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
           {% endif %}
@@ -68,6 +63,7 @@
     {% endfor %}
   </div>
 </div>
+
 
 <style>
   .payment-page {

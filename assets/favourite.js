@@ -506,5 +506,6 @@ const whatsappLinkShare = () => {
   // Genera il link per WhatsApp
   const whatsappLink = `https://wa.me/?text=${shareText}`;
   // Apri il link su WhatsApp
+  console.log(wishlistLink);
   window.open(whatsappLink, "_blank");
 };
