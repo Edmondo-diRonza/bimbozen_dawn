@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -22,7 +31,11 @@
           "settings": {
             "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
             "method_description": "",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/creditcards.png"
+=======
+            "method_icon": "shopify://shop_images/creditcards.png"
+>>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_PrqnHm": {
@@ -30,7 +43,11 @@
           "settings": {
             "method_title": "PayPal",
             "method_description": "",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/paypal.png"
+=======
+            "method_icon": "shopify://shop_images/paypal.png"
+>>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_93f4LG": {
@@ -38,7 +55,11 @@
           "settings": {
             "method_title": "Altri",
             "method_description": "",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/altri.png"
+=======
+            "method_icon": "shopify://shop_images/altri.png"
+>>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_dBCYra": {
