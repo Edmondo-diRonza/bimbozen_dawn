@@ -2836,7 +2836,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 details[open] > .header__submenu {
   animation: animateMenuOpen var(--duration-default) ease;
   animation-fill-mode: forwards;
-  z-index: 1;
+  z-index: 999999999999 !important;
 }
 
 @media (prefers-reduced-motion) {
@@ -4390,16 +4390,16 @@ video {
   z-index: 0 !important;
 }
 
+.\!tw-z-50 {
+  z-index: 50 !important;
+}
+
 .\!tw-z-\[999999\] {
   z-index: 999999 !important;
 }
 
 .tw-z-0 {
   z-index: 0;
-}
-
-.tw-z-50 {
-  z-index: 50;
 }
 
 .tw-mx-auto {
@@ -4730,6 +4730,10 @@ video {
 .tw-border-main {
   --tw-border-opacity: 1;
   border-color: rgb(58 63 76 / var(--tw-border-opacity, 1));
+}
+
+.tw-border-main\/40 {
+  border-color: rgb(58 63 76 / 0.4);
 }
 
 .tw-border-white\/40 {
