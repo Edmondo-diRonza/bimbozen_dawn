@@ -31,11 +31,7 @@
           "settings": {
             "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
             "method_description": "",
-<<<<<<< HEAD
-            "method_icon": "shopify:\/\/shop_images\/creditcards.png"
-=======
             "method_icon": "shopify://shop_images/creditcards.png"
->>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_PrqnHm": {
@@ -43,11 +39,7 @@
           "settings": {
             "method_title": "PayPal",
             "method_description": "",
-<<<<<<< HEAD
-            "method_icon": "shopify:\/\/shop_images\/paypal.png"
-=======
             "method_icon": "shopify://shop_images/paypal.png"
->>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_93f4LG": {
@@ -55,11 +47,7 @@
           "settings": {
             "method_title": "Altri",
             "method_description": "",
-<<<<<<< HEAD
-            "method_icon": "shopify:\/\/shop_images\/altri.png"
-=======
             "method_icon": "shopify://shop_images/altri.png"
->>>>>>> c63692892b5958705d3bb16b5be40faf22f4711c
           }
         },
         "method_dBCYra": {
@@ -81,7 +69,5 @@
       "settings": {}
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
