@@ -1,5 +1,6 @@
 // attacca i listner su ogni cuore con classe .wishlist_button
 const attachWishlistListeners = () => {
+  console.log("funzione di attacco eventlistner");
   document.querySelectorAll(".wishlist_button").forEach((card) => {
     card.addEventListener("click", (e) => {
       const productTitle = card.getAttribute("data-product-title");

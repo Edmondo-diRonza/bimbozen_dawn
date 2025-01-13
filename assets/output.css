@@ -2792,7 +2792,7 @@ details[open] .modal-overlay::after {
 
 @media screen and (min-width: 990px) {
   .search-modal__form {
-    max-width: 74.2rem;
+    width: 100%;
   }
 
   .search-modal__close-button {
@@ -4652,6 +4652,10 @@ video {
   justify-content: flex-start;
 }
 
+.\!tw-justify-center {
+  justify-content: center !important;
+}
+
 .tw-justify-center {
   justify-content: center;
 }
@@ -4915,6 +4919,10 @@ video {
 
 .tw-pt-6 {
   padding-top: 1.5rem;
+}
+
+.\!tw-text-center {
+  text-align: center !important;
 }
 
 .tw-text-center {
