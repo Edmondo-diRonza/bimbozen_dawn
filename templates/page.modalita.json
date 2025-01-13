@@ -21,21 +21,33 @@
           "type": "method",
           "settings": {
             "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/creditcards.png"
+=======
+            "method_icon": "shopify://shop_images/creditcards.png"
+>>>>>>> 7a75786095e152efa4b61241288c066f9328d671
           }
         },
         "method_PrqnHm": {
           "type": "method",
           "settings": {
             "method_title": "PayPal",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/paypal.png"
+=======
+            "method_icon": "shopify://shop_images/paypal.png"
+>>>>>>> 7a75786095e152efa4b61241288c066f9328d671
           }
         },
         "method_93f4LG": {
           "type": "method",
           "settings": {
             "method_title": "Altri",
+<<<<<<< HEAD
             "method_icon": "shopify:\/\/shop_images\/altri.png"
+=======
+            "method_icon": "shopify://shop_images/altri.png"
+>>>>>>> 7a75786095e152efa4b61241288c066f9328d671
           }
         }
       },
