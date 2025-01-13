@@ -1,11 +1,11 @@
 {% schema %}
 {
-  "name": "Informazioni Pagamenti",
+  "name": "Pagamenti e Metodi",
   "settings": [],
   "blocks": [
     {
-      "type": "text_section",
-      "name": "Sezione Testo",
+      "type": "section",
+      "name": "Sezione",
       "settings": [
         {
           "type": "text",
@@ -15,54 +15,54 @@
         {
           "type": "textarea",
           "id": "content",
-          "label": "Testo"
+          "label": "Descrizione"
         }
       ]
     },
     {
-      "type": "payment_methods",
-      "name": "Metodi di Pagamento",
+      "type": "method",
+      "name": "Metodo di Pagamento",
       "settings": [
         {
           "type": "text",
-          "id": "payment_title",
-          "label": "Titolo Metodo di Pagamento"
+          "id": "method_title",
+          "label": "Titolo Metodo"
         },
         {
           "type": "textarea",
-          "id": "payment_description",
+          "id": "method_description",
           "label": "Descrizione"
         },
         {
           "type": "image_picker",
-          "id": "payment_icon",
-          "label": "Icona Metodo di Pagamento"
+          "id": "method_icon",
+          "label": "Icona Metodo (opzionale)"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Pagina Informativa",
+      "name": "Metodi di Pagamento",
     }
   ]
 }
 {% endschema %}
 
-<div class="info-page">
-  <div class="info-sections">
+<div class="payment-page">
+  <div class="payment-sections">
     {% for block in section.blocks %}
-      {% if block.type == "text_section" %}
-        <div class="info-section">
-          <h2 class="info-title">{{ block.settings.title }}</h2>
-          <p class="info-content">{{ block.settings.content }}</p>
+      {% if block.type == "section" %}
+        <div class="payment-section">
+          <h1 class="section-title">{{ block.settings.title }}</h1>
+          <p class="section-content">{{ block.settings.content }}</p>
         </div>
-      {% elsif block.type == "payment_methods" %}
+      {% elsif block.type == "method" %}
         <div class="payment-method">
-          <h3 class="payment-title">{{ block.settings.payment_title }}</h3>
-          <p class="payment-description">{{ block.settings.payment_description }}</p>
-          {% if block.settings.payment_icon %}
-            <img width="20px" height="20px" src="{{ block.settings.payment_icon | file_url }}" alt="{{ block.settings.payment_title }}" class="payment-icon" />
+          <h2 class="method-title">{{ block.settings.method_title }}</h2>
+          <p class="method-description">{{ block.settings.method_description }}</p>
+          {% if block.settings.method_icon %}
+            <img width="20px" height="20px" src="{{ block.settings.method_icon | file_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
           {% endif %}
         </div>
       {% endif %}
@@ -71,43 +71,45 @@
 </div>
 
 <style>
-  .info-page {
+  .payment-page {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
   }
-  .info-section {
+  .payment-section {
     margin-bottom: 40px;
   }
-  .info-title {
-    font-size: 1.5rem;
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
-  .info-content {
+  .section-content {
     font-size: 1rem;
     color: #666;
   }
   .payment-method {
-    display: flex;
-    align-items: center;
-    gap: 20px;
     margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #ddd;
   }
-  .payment-title {
+  .method-title {
     font-size: 1.2rem;
     font-weight: bold;
     color: #555;
+    margin-bottom: 10px;
   }
-  .payment-description {
+  .method-description {
     font-size: 1rem;
     color: #666;
-    flex-grow: 1;
+    margin-bottom: 10px;
   }
-  .payment-icon {
-    width: 50px;
+  .method-icon {
+    width: 100px;
     height: auto;
+    margin-top: 10px;
   }
 </style>
