@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -6,37 +15,37 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider-1.webp",
+            "image": "shopify://shop_images/Slider-1.webp",
             "text": "Gioca, Immagina, Cresci!",
             "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri ora",
-            "button_url": "shopify:\/\/collections\/giocattoli"
+            "button_text": "Acquista ora",
+            "button_url": "shopify://collections/giocattoli"
           }
         },
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/baby-toys-bottles-products.jpg",
+            "image": "shopify://shop_images/baby-toys-bottles-products.jpg",
             "text": "La Cura che Ogni Bambino Merita",
             "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri ora",
-            "button_url": "shopify:\/\/collections\/puericultura"
+            "button_text": "Acquista ora",
+            "button_url": "shopify://collections/puericultura"
           }
         },
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Slider-2.webp",
+            "image": "shopify://shop_images/Slider-2.webp",
             "text": "La Magia di un Regalo Speciale",
             "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
             "subtext_size": 16,
-            "button_text": "Scopri ora",
-            "button_url": "shopify:\/\/collections\/idee-regalo"
+            "button_text": "Acquista ora",
+            "button_url": "shopify://collections/baby-party"
           }
         }
       },
@@ -58,12 +67,12 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "I nostri prodotti",
+        "title": "In primo piano",
         "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.<\/p>",
+        "description": "<p>I migliori prodotti scelti per te!</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "home",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
@@ -89,11 +98,12 @@
     },
     "video_RfmP9J": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/8779921-uhd_3840_2160_25fps.mp4",
+        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
         "video_url": "",
         "description": "",
         "full_width": true,
@@ -102,22 +112,22 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection_FWWKWP": {
+    "featured_collection_FxTbmp": {
       "type": "featured-collection",
       "settings": {
-        "title": "I nostri Handmade",
+        "title": "Idee regalo",
         "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.<\/p>",
+        "description": "<p>Il tuo primo baby shower? Scopri la nostra selezione</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "handmade",
-        "products_to_show": 6,
+        "collection": "baby-shower",
+        "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -143,7 +153,7 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
-            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze<\/p>",
+            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze</p>",
             "text_style": "body"
           }
         },
@@ -151,7 +161,7 @@
           "type": "button",
           "settings": {
             "button_label": "scopri i nostri giochi",
-            "button_link": "shopify:\/\/collections\/giocattoli",
+            "button_link": "shopify://collections/giocattoli",
             "button_style_secondary": false
           }
         }
@@ -162,7 +172,7 @@
         "button_pDbMWn"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/giochi_banner_1.jpg",
+        "image": "shopify://shop_images/giochi_banner_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -177,13 +187,41 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_FWWKWP": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "I nostri Handmade",
+        "heading_size": "h1",
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "handmade",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage_4gxTGL": {
       "type": "collage",
       "blocks": {
         "image_CFm3Bw": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img.jpg"
+            "image": "shopify://shop_images/img.jpg"
           }
         },
         "product_CpUwM7": {
@@ -206,12 +244,13 @@
         "product_CpUwM7",
         "product_rBN9Yf"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
         "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "none",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "padding_top": 36,
         "padding_bottom": 36
@@ -230,7 +269,7 @@
         "paragraph_pLdgeP": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.<\/p>"
+            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.</p>"
           }
         },
         "email_form_aB446b": {
@@ -258,8 +297,9 @@
     "featured_collection",
     "logo-sec",
     "video_RfmP9J",
-    "featured_collection_FWWKWP",
+    "featured_collection_FxTbmp",
     "image_with_text_Q3Laq6",
+    "featured_collection_FWWKWP",
     "collage_4gxTGL",
     "newsletter_LbCLHm"
   ]

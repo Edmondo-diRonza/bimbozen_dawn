@@ -1,13 +1,13 @@
 {% assign colors = '#BCC7E4, #E8CC56, #B1D0DF, #DFA2B4, #d6853f' | split: ', ' %}
-{% assign categorieVar = collections.size | minus: 5 %}
+{% assign categorieVar = collections.size | minus: 6 %}
 {% assign catPercentage = 100 | divided_by: categorieVar %}
 {% assign adjustment = catPercentage | times: 0.02 %}
 {% assign adjusted_percentage = catPercentage | minus: adjustment %}
 {% assign integer_percentage = adjusted_percentage | floor %}
 {% assign nonstocapendo = 'tw-flex tw-justify-between tw-flex-wrap' %}
-{% if integer_percentage < 19 %}
-  {% assign integer_percentage = 19 %}
-  {% assign nonstocapendo = 'tw-flex tw-justify-between tw-flex-wrap lg:tw-grid lg:tw-grid-cols-5 lg:tw-justify-items-center ' %}
+{% if integer_percentage < 15 %}
+  {% assign integer_percentage = 15 %}
+  {% assign nonstocapendo = 'tw-flex tw-justify-between tw-flex-wrap lg:tw-grid lg:tw-grid-cols-6 lg:tw-justify-items-center ' %}
 {% endif %}
 
 <div class="tw-w-[95%] tw-mx-auto tw-flex tw-flex-col tw-gap-10">
@@ -18,13 +18,13 @@
     {% endif %}>
     {% assign count = 0 %}
     {% for collection in collections %}
-      {% unless collection.handle == 'home' or collection.handle == 'neonati' or collection.handle == 'big-kids' or collection.handle == 'kids' or collection.handle == 'idee-regalo'
+      {% unless collection.handle == 'home' or collection.handle == 'neonati' or collection.handle == 'big-kids' or collection.handle == 'kids' or collection.handle == 'idee-regalo' or collection.handle == 'baby-shower' or collection.handle == 'nascita' or collection.handle == 'baby-party' or collection.handle == 'gift-cards'
       %}
         <a
           href="{{ collection.url }}"
-          class="tw-w-[49%] lg:tw-w-[{{integer_percentage}}%]  tw-py-6 tw-px-[22px] tw-rounded-[300px] lg:tw-min-w-[260px] fxl:tw-min-w-[350px] tw-transition tw-flex tw-justify-center tw-items-center  tw-bg-main tw-uppercase tw-text-main tw-duration-500 hover:-tw-translate-y-2 tw-opacity-[0.8] hover:tw-opacity-100 "
+          class="tw-w-[49%] lg:tw-w-[{{integer_percentage}}%]  tw-py-6 tw-px-[22px] tw-rounded-[300px] lg:tw-min-w-[240px] fxl:tw-min-w-[320px] tw-transition tw-flex tw-justify-center tw-items-center  tw-bg-main tw-uppercase tw-text-main tw-duration-500 hover:-tw-translate-y-2 tw-opacity-[0.8] hover:tw-opacity-100 "
           style="background-color: {{ colors[count] }};">
-          <h2 class="tw-line-clamp-1 tw-text-[11px] lg:tw-text-[16px]">{{ collection.title }}</h2>
+          <h2 class="tw-line-clamp-1 tw-text-[15px] lg:tw-text-[16px]">{{ collection.title }}</h2>
         </a>
         {% assign count = count | plus: 1 %}
         {% if count == colors.size %}

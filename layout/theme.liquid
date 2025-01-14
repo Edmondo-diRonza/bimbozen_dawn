@@ -402,7 +402,12 @@ body {
 {% endif %}
     {% endstyle %}
 
-    {{ 'output.css' | asset_url | stylesheet_tag }}
+    
+    <link
+      rel="stylesheet"
+      href="{{ 'output.css' | asset_url }}"
+     >
+     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link
       rel="stylesheet"
       href="{{ 'component-cart-items.css' | asset_url }}"
@@ -562,6 +567,7 @@ body {
 
       // Eventlistner gestione preferiti vedi il file favourite.js
         document.addEventListener('DOMContentLoaded', () => {
+        console.log("dom caricato");
         attachWishlistListeners(); //attacco gli eventListner su ogni cuore con la classe .wishlist_button 
         favouriteRefresh(); //refresho i cuori ogni volta che viene ricaricato il DOM 
         // decodeAndStoreWishlistFromUrl(); //funzione di decoding stringa preferiti
