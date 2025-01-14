@@ -18,7 +18,7 @@
     {% endif %}>
     {% assign count = 0 %}
     {% for collection in collections %}
-      {% unless collection.handle == 'home' or collection.handle == 'neonati' or collection.handle == 'big-kids' or collection.handle == 'kids' or collection.handle == 'idee-regalo' or collection.handle == 'baby-shower' or collection.handle == 'nascita' or collection.handle == 'baby-party' or collection.handle == 'gift-cards'
+      {% unless collection.handle == 'in-primo-piano' or collection.handle == 'neonati' or collection.handle == 'big-kids' or collection.handle == 'kids' or collection.handle == 'idee-regalo' or collection.handle == 'baby-shower' or collection.handle == 'nascita' or collection.handle == 'baby-party' or collection.handle == 'gift-cards'
       %}
         <a
           href="{{ collection.url }}"
