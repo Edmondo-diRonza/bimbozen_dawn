@@ -141,7 +141,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading ">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a title="{{ shop.name }}" href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
               <div class="header__heading-logo-wrapper">
                 {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
@@ -184,7 +184,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading ">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a title="{{ shop.name }} | Homepage" href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
               <div class="header__heading-logo-wrapper">
                 {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
@@ -270,6 +270,7 @@
           </span>
         </a> {% endcomment %}
         <a
+        title="Login"
   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
   class="!tw-no-underline header__icon header__icon--account link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}"
   rel="nofollow"

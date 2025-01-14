@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-gift-card",
+
+      "block_order": ["faq_AzXV7t"],
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

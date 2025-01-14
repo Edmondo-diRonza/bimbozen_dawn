@@ -26,9 +26,9 @@ Usage:
             <li class="tw-w-full ">
               {%- if childlink.links == blank -%}
 
-              <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}" href="{{ childlink.url }}"
+              <a title="{{ childlink.title }}" id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}" href="{{ childlink.url }}"
                 class="header__menu-item !tw-text-main tw-uppercase  tw-font-bold list-menu__item  link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
-                {% if childlink.current %} aria-current="page" {% endif %}>
+                {% if childlink.current %} aria-current="page" {% endif %} >
                 {{ childlink.title | escape }}
               </a>
               {%- else -%}
@@ -62,10 +62,10 @@ Usage:
                   class="header__submenu list-menu ">
                   {%- for grandchildlink in childlink.links -%}
                   <li class="list-menu__item">
-                    <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                    <a title="{{ grandchildlink.title }}" id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                       href="{{ grandchildlink.url }}"
                       class="header__menu-item link !tw-text-main  !tw-text-2xl link--text caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
-                      {% if grandchildlink.current %} aria-current="page" {% endif %}>
+                      {% if grandchildlink.current %} aria-current="page" {% endif %} >
                       {{ grandchildlink.title | escape }}
                     </a>
                   </li>
@@ -80,7 +80,7 @@ Usage:
         </details>
       </header-menu>
       {%- else -%}
-      <a id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}"
+      <a title="{{ link.title }}" id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}"
         class=" tw-font-bold header__menu-item list-menu__item  link link--text focus-inset !tw-text-2xl !tw-text-white tw-uppercase tw-mr-6"
         {% if link.current %} aria-current="page" {% endif %}>
         <span {%- if link.current %} class="menu_dropdown header__active-menu-item !tw-text-[#BCC7E4] " {% endif %}>

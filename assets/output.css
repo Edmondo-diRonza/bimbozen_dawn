@@ -4785,6 +4785,10 @@ video {
   background-color: rgb(58 63 76 / var(--tw-bg-opacity, 1));
 }
 
+.tw-bg-main\/10 {
+  background-color: rgb(58 63 76 / 0.1);
+}
+
 .tw-bg-main\/30 {
   background-color: rgb(58 63 76 / 0.3);
 }
@@ -4800,14 +4804,6 @@ video {
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.tw-bg-main\/20 {
-  background-color: rgb(58 63 76 / 0.2);
-}
-
-.tw-bg-main\/10 {
-  background-color: rgb(58 63 76 / 0.1);
 }
 
 .tw-object-contain {
@@ -4881,11 +4877,6 @@ video {
 .tw-py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.tw-py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .tw-py-20 {
@@ -5398,6 +5389,10 @@ video {
 @media (min-width: 1500px) {
   .\32xl\:tw-min-w-\[240px\] {
     min-width: 240px;
+  }
+
+  .\32xl\:tw-min-w-\[230px\] {
+    min-width: 230px;
   }
 }
 

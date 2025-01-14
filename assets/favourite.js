@@ -138,8 +138,7 @@ const displayWishlist = () => {
                     </a>
                   </h3>                
                   <div class="card__information tw-py-4">
-                    <span class="visually-hidden"> Produttore:</span>
-                    <div class="caption-with-letter-spacing light">Vilac</div>
+                    
                     <span class="caption-large light"></span>
                     <div class="price">
                       <div class="price__container">

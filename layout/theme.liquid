@@ -566,8 +566,7 @@ body {
       
 
       // Eventlistner gestione preferiti vedi il file favourite.js
-        document.addEventListener('DOMContentLoaded', () => {
-        console.log("dom caricato");
+        document.addEventListener('DOMContentLoaded', () => {        
         attachWishlistListeners(); //attacco gli eventListner su ogni cuore con la classe .wishlist_button 
         favouriteRefresh(); //refresho i cuori ogni volta che viene ricaricato il DOM 
         // decodeAndStoreWishlistFromUrl(); //funzione di decoding stringa preferiti
