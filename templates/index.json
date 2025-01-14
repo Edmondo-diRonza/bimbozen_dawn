@@ -140,34 +140,6 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_FWWKWP": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "I nostri Handmade",
-        "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "handmade",
-        "products_to_show": 6,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_Q3Laq6": {
       "type": "image-with-text",
       "blocks": {
@@ -215,6 +187,34 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_FWWKWP": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "I nostri Handmade",
+        "heading_size": "h1",
+        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "handmade",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-89cf8fc1-b543-4c56-a924-ddd63f75d043",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage_4gxTGL": {
       "type": "collage",
       "blocks": {
@@ -248,8 +248,8 @@
         "heading": "",
         "heading_size": "h2",
         "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "none",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "padding_top": 36,
         "padding_bottom": 36
@@ -297,8 +297,8 @@
     "logo-sec",
     "video_RfmP9J",
     "featured_collection_FxTbmp",
-    "featured_collection_FWWKWP",
     "image_with_text_Q3Laq6",
+    "featured_collection_FWWKWP",
     "collage_4gxTGL",
     "newsletter_LbCLHm"
   ]
