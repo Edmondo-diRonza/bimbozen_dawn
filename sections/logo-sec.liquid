@@ -1,12 +1,12 @@
 <div class="hero__logo-container tw-w-[95%] tw-mx-auto tw-my-20">
-  <ul class="hero__logo-wrapper lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-gap-10 tw-items-center tw-justify-center">
+  <ul class="hero__logo-wrapper tw-grid-cols-2 lg:tw-grid tw-hidden lg:tw-grid-cols-5 tw-gap-10 tw-items-center tw-justify-center">
     {% assign logo_count = 0 %}
     {% for block in section.blocks %}
       <li class="hero__logo-item tw-flex tw-justify-center tw-grayscale tw-opacity-50 hover:tw-grayscale-0">
         {% if block.settings.logo_image %}
           <img src="{{ block.settings.logo_image | img_url: 'medium' }}" 
                width="{{ block.settings.logo_width | default: '100' }}px" 
-               height="{{ block.settings.logo_height | default: '100' }}px" 
+               height="auto" 
                class="tw-w-[{{ block.settings.logo_width | default: '100' }}px]" 
                alt="{{ block.settings.logo_image | split: '/' | last | remove: '.png' | remove: '.jpeg' | remove: '.svg' | remove: '.jpg' | remove: '.webp' }}">
         {% else %}
@@ -38,13 +38,7 @@
           "id": "logo_width",
           "label": "Width (px)",
           "default": "100"
-        },
-        {
-          "type": "text",
-          "id": "logo_height",
-          "label": "Height (px)",
-          "default": "100"
-        }
+        }        
       ]
     }
   ],
