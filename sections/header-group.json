@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -54,11 +63,35 @@
         "menu_color_scheme": "scheme-5",
         "show_line_separator": false
       }
+    },
+    "17368632535d3b384c": {
+      "type": "apps",
+      "blocks": {
+        "track123_product_recommendations_bULMNf": {
+          "type": "shopify://apps/track123/blocks/product-recommendations/60c49c11-a7c0-49a0-861e-2f84d2f294e6",
+          "settings": {
+            "product_recommendations_layout": "slider",
+            "product_recommendations_nums": 4,
+            "product_recommendations_source": "newest",
+            "collection_list": [],
+            "product_image_format": "fit",
+            "produce_action_type": "buyNow",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "track123_product_recommendations_bULMNf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "preHeader"
+    "preHeader",
+    "17368632535d3b384c"
   ]
 }
