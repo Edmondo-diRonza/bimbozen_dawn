@@ -72,7 +72,7 @@
         "description": "<p>I migliori prodotti scelti per te!</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "home",
+        "collection": "in-primo-piano",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
