@@ -15,7 +15,7 @@ const attachWishlistListeners = () => {
         productUrl,
         productId
       );
-      favouriteRefresh(); // Aggiungo un refresh dei cuori perchè nella pagina potrebbero essere presenti altre card con lo stesso prodotto
+      favouriteRefresh(); // Aggiungo un refresh dei cuori perchè nella pagina potrebbero essere presenti tante altre card con lo stesso prodotto
     });
   });
 };
