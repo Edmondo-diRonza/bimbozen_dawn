@@ -522,3 +522,18 @@ const whatsappLinkShare = () => {
   console.log(wishlistLink);
   window.open(whatsappLink, "_blank");
 };
+
+// fuzione che copia un link nella clipboard
+const copyToClipboard = (text) => {
+  if (text == "linkshare") {
+    text = encodeWishlistIdFromLocalStorage();
+  }
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      alert("Testo copiato negli appunti!");
+    })
+    .catch((err) => {
+      console.error("Errore durante la copia: ", err);
+    });
+};

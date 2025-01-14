@@ -33,29 +33,29 @@
   }
 </style>
 <div class="tw-py-20"> 
-  <div class="wishlist__share tw-py-8 tw-flex tw-flex-col" id="favourite__share-div">
-    <h2>Condivi Wishlist</h2>
-    <p class="tw-py-2">Utilizza questo indirizzo per condividere la wishlist con chi vuoi</p>
-    <a
-      href="#"
+  <div class="wishlist__share tw-py-8 tw-flex tw-flex-col tw-gap-4 !tw-text-main" id="favourite__share-div">
+    <h2 class="!tw-text-main tw-font-bold">Condivi Wishlist</h2>
+    <p class="!tw-text-main" >Utilizza questo indirizzo per condividere la wishlist con chi vuoi</p>
+    <a href="#"        
       id="share__link"
-      class="tw-py-2">https://bimbozen.it/sharelist</a>
+      class="!tw-text-main" onclick="copyToClipboard('linkshare')">https://bimbozen.it/sharelist
+    </a>
     <a
       href="#"
-      class="button tw-flex tw-item-center tw-justify-center tw-py-4 tw-max-w-max"
-      id="system-share">CONDIVIDI
-      <svg
+      class="button tw-flex tw-items-center tw-justify-center tw-py-4 tw-px-2 tw-max-w-max !tw-bg-main"
+      id="system-share"><span>CONDIVIDI</span>
+      <span><svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
         onclick="whatsappLinkShare()">
         <path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z" />
-      </svg>
+      </svg></span>
     </a>
   </div>
    <div class="recently-title ">
-    <h1 class="title inline-richtext h2 scroll-trigger animate--slide-in tw-flex">
+    <h1 class="title inline-richtext h2 scroll-trigger animate--slide-in tw-flex !tw-text-main">
       <b>Wishlist</b>
     </h1>
   </div>
@@ -77,6 +77,8 @@
   </div>
 
 </div>
+
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const shareButton = document.querySelector("#system-share");
@@ -103,4 +105,5 @@
       });
     }
   });
+  
 </script>

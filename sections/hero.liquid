@@ -17,12 +17,13 @@
         {% endif %}
         <div class="hero__overlay tw-absolute tw-inset-0 overlay tw-bg-main/30">
           <!-- Overlay -->
+           <h1 class="tw-hidden">Bimbo Zen - crescere in armonia</h1>
           <div class="hero__message-wrapper tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-text-2xl tw-text-white">
             <!-- Testo Dinamico -->
             <div class="tw-flex tw-flex-col  lg:tw-items-center lg:tw-justify-center tw-gap-6 tw-w-[95%] ">
-              <h1 class="tw-text-white tw-text-6xl lg:tw-text-8xl tw-font-bold">
+              <h2 class="tw-text-white tw-text-6xl lg:tw-text-8xl tw-font-bold">
                 {{ block.settings.text | default: 'Testo Predefinito' }}
-              </h1>
+              </h2>
               {% if block.settings.subtext %}
                 <p class="tw-text-white tw-text-xl lg:tw-text-3xl">
                   {{ block.settings.subtext }}
