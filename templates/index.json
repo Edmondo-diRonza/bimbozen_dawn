@@ -94,6 +94,100 @@
     },
     "logo-sec": {
       "type": "logo-sec",
+      "blocks": {
+        "logo_TiJwQw": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/little_dutch.jpg",
+            "logo_width": "400",
+            "logo_height": ""
+          }
+        },
+        "logo_7eEYFR": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/BIBS_logo.svg",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_P9FwMz": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/officina-naturae_logo.png",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_Vn6ghT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/vilac_logo.webp",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_k77gWT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/logo-magna-tiles.jpg",
+            "logo_width": "180",
+            "logo_height": "100"
+          }
+        },
+        "logo_L4N4ij": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/logo_taftoys.jpg",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_YtgUyH": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/logo_beaba.jpg",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_bJTtYE": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/stokke.svg",
+            "logo_width": "100",
+            "logo_height": "100"
+          }
+        },
+        "logo_BA99kJ": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/brand_newlogo_3-570x320.jpg",
+            "logo_width": "180",
+            "logo_height": "100"
+          }
+        },
+        "logo_NJnXNF": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/EGMONT-TOYS-LOGO.webp",
+            "logo_width": "150",
+            "logo_height": "100"
+          }
+        }
+      },
+      "block_order": [
+        "logo_TiJwQw",
+        "logo_7eEYFR",
+        "logo_P9FwMz",
+        "logo_Vn6ghT",
+        "logo_k77gWT",
+        "logo_L4N4ij",
+        "logo_YtgUyH",
+        "logo_bJTtYE",
+        "logo_BA99kJ",
+        "logo_NJnXNF"
+      ],
       "settings": {}
     },
     "video_RfmP9J": {
