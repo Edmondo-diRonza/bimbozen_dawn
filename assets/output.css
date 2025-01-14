@@ -5272,6 +5272,10 @@ video {
     min-width: 200px;
   }
 
+  .lg\:tw-min-w-\[240px\] {
+    min-width: 240px;
+  }
+
   .lg\:tw-max-w-5xl {
     max-width: 64rem;
   }
@@ -5386,5 +5390,13 @@ video {
 @media (min-width: 1920px) {
   .fxl\:tw-min-w-\[350px\] {
     min-width: 350px;
+  }
+
+  .fxl\:tw-min-w-\[300px\] {
+    min-width: 300px;
+  }
+
+  .fxl\:tw-min-w-\[250px\] {
+    min-width: 250px;
   }
 }
