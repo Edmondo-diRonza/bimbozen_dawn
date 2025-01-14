@@ -5387,10 +5387,6 @@ video {
 }
 
 @media (min-width: 1500px) {
-  .\32xl\:tw-min-w-\[240px\] {
-    min-width: 240px;
-  }
-
   .\32xl\:tw-min-w-\[230px\] {
     min-width: 230px;
   }
