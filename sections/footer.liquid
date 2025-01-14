@@ -74,7 +74,7 @@
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="footer-block__heading inline-richtext !tw-text-4xl">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -89,7 +89,7 @@
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
-                            <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                            <a href="{{ link.url }}" class="link link--text list-menu__item !tw-text-3xl lg:!tw-text-2xl list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                               {{ link.title | escape }}
                             </a>
                           </li>
@@ -100,16 +100,16 @@
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
- | divided_by: settings.brand_image.aspect_ratio
+                        | divided_by: settings.brand_image.aspect_ratio
                         -%}
                         <div class="footer-block__image-wrapper" style="max-width: min(100%, {{ settings.brand_image_width }}px);">
                           {{ settings.brand_image
- | image_url: width: 1100
- | image_tag:
- loading: 'lazy',
- widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
- height: brand_image_height,
- width: settings.brand_image_width
+                          | image_url: width: 1100
+                          | image_tag:
+                          loading: 'lazy',
+                          widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                          height: brand_image_height,
+                          width: settings.brand_image_width
                           }}
                         </div>
                       {%- endif -%}
@@ -138,7 +138,7 @@
                             height="{{ block.settings.image.height }}">
                         </div>
                         {% if block.settings.subtext %}
-                          <p class="footer-subtext">{{ block.settings.subtext }}</p>
+                          <p class="footer-subtext !tw-text-2xl">{{ block.settings.subtext }}</p>
                         {% endif %}
                         {% if block.settings.piva %}
                           <p class="footer-subtext">{{ block.settings.piva }}</p>
@@ -151,13 +151,13 @@
               </div>
             {%- endfor -%}
             <div class="footer-block">
-              <h2 class="footer-block__heading inline-richtext tw-font-bold">{{ 'sections.footer.customerSupport' | t }}</h2>
+              <h2 class="footer-block__heading inline-richtext tw-font-bold !tw-text-4xl lg:!tw-text-2xl">{{ 'sections.footer.customerSupport' | t }}</h2>
               <ul class="footer-block__details-content list-unstyled">
                 <li>
-                  <a href={{linklists['assistenza-cliente'].links[0].url}} class="link link--text list-menu__item list-menu__item--link">{{ 'sections.footer.contacts' | t }}</a>
+                  <a href={{linklists['assistenza-cliente'].links[0].url}} class="link link--text list-menu__item list-menu__item--link !tw-text-3xl lg:!tw-text-2xl">{{ 'sections.footer.contacts' | t }}</a>
                 </li>
                 <li>
-                  <p class="tw-text-[1.4rem] tw-py-[0.8rem]">{{ 'sections.footer.supportTime' | t }}</p>
+                  <p class="!tw-text-3xl lg:!tw-text-2xl tw-py-[0.8rem]">{{ 'sections.footer.supportTime' | t }}</p>
                 </li>
                 <li class="tw-flex">
                   {%- render 'social-icons'
