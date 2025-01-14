@@ -71,7 +71,7 @@
           "type": "shopify://apps/track123/blocks/product-recommendations/60c49c11-a7c0-49a0-861e-2f84d2f294e6",
           "settings": {
             "product_recommendations_layout": "slider",
-            "product_recommendations_nums": 4,
+            "product_recommendations_nums": 13,
             "product_recommendations_source": "newest",
             "collection_list": [],
             "product_image_format": "fit",
