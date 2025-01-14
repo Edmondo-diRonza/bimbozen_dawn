@@ -67,7 +67,11 @@ const removeFromWishlist = (productId, list = "wishlist") => {
   wishlistData = wishlistData.filter((item) => item.productId !== productId);
   console.log("array elemento eliminato da salvare", wishlistData);
   localStorage.setItem(list, JSON.stringify(wishlistData));
-  // console.log(wishlistData);
+  // if (wishlistData.length == 0) {
+  //   console.log("La lista è vuota e devo far apparire la frase del cazzo");
+  //   document.getElementById("wishlist__empty").style.display = "block";
+  // }
+
   // Update the display after removing from the wishlist
   displayWishlist();
 };
@@ -78,8 +82,6 @@ const favouriteRefresh = () => {
   const wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
   // Seleziona tutti i pulsanti della wishlist
   const wishlistButtons = document.querySelectorAll(".wishlist_button");
-  console.log(wishlistButtons);
-
   // Itera sui pulsanti e aggiorna lo stato in base alla wishlist
   wishlistButtons.forEach((node) => {
     const productTitle = node.getAttribute("data-product-title");
@@ -199,12 +201,12 @@ const displayWishlist = () => {
     `;
   };
 
-  // Funzione per generare l'HTML dalla wishlist
+  // Funzione per generare l'HTML dalla wishlist che inietta le cardComponent
   const renderDom = (wishlist, localstorage = "wishlist") => {
     return wishlist.map((item) => cardComponent(item, localstorage)).join("");
   };
 
-  // Seleziona il blocco di wishlist principale
+  // Seleziona i blocchi di wishlist standard ed importati
   const wishlistBlock = document.querySelector(".js-wishlistBlock");
   const wishlistBlockIported = document.querySelector(
     ".js-wishlistBlockImported"
@@ -214,12 +216,20 @@ const displayWishlist = () => {
   if (wishlistData.length > 0) {
     if (wishlistBlock) {
       wishlistBlock.innerHTML = renderDom(wishlistData);
+      document.getElementById("favourite__share-div").style.display = "flex"; // accendo il div di share perchè sto renderizzando le card
+      document.getElementById("favourite__share-div").style.flexDirection =
+        "column"; // uso il flex col
+      document.getElementById("wishlist__empty").style.display = "none"; // spengo il div di wishlist vuota
     } else {
-      console.log('Non trovo la classe "js-wishlistBlock"');
+      console.log('Non trovo la classe "js-wishlistBlock"'); // controllo che la classe dove iniettare html esista e che sono nei preferiti
     }
   } else {
     if (!!wishlistBlock) {
       wishlistBlock.innerHTML = "";
+      document.getElementById("favourite__share-div").style.display = "none"; // spengo il div di share perchè non c'è più niente nei preferiti
+      if (wishlistDataImported == 0) {
+        document.getElementById("wishlist__empty").style.display = "block"; // faccio apparire il messaggio solo se emtrambe sono a 0 per questo faccio altro controllo su array wishlistDataImported perchè nella condizione principale controllo solo array preferiti principale
+      }
     }
   }
 
@@ -228,8 +238,8 @@ const displayWishlist = () => {
     const importedList = document.getElementById("imported__list");
     if (importedList) {
       importedList.style.display = "block";
-    } //visualizzo il titolo h2 della sezione
-    if (wishlistBlock) {
+    } //visualizzo il titolo h2 della sezione della lista importata
+    if (wishlistBlockIported) {
       wishlistBlockIported.innerHTML = renderDom(
         wishlistDataImported,
         "wishlist_imported"
@@ -240,6 +250,7 @@ const displayWishlist = () => {
   } else {
     if (!!wishlistBlockIported) {
       wishlistBlockIported.innerHTML = "";
+      document.getElementById("imported__list").style.display = "none"; // spengo imported_list
     }
   }
 };
@@ -494,6 +505,7 @@ const fetchProductById = async (productId) => {
   }
 };
 
+// condivisione di fallback
 const whatsappLinkShare = () => {
   const wishlistLink = encodeWishlistIdFromLocalStorage();
   //controllo che il link esista
