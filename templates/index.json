@@ -67,9 +67,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "I nostri prodotti",
+        "title": "In primo piano",
         "heading_size": "h1",
-        "description": "<p>Our most popular styles right now that your little one will love.</p>",
+        "description": "<p>La nostra selezione scelta per te!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "home",
