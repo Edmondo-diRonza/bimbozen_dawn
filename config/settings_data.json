@@ -164,7 +164,7 @@
       "featured-collection": {
         "type": "featured-collection",
         "settings": {
-          "title": "Collezione in evidenza",
+          "title": "Suggeriti per voi",
           "heading_size": "h1",
           "description": "",
           "show_description": false,
@@ -175,7 +175,7 @@
           "full_width": true,
           "show_view_all": true,
           "view_all_style": "solid",
-          "enable_desktop_slider": false,
+          "enable_desktop_slider": true,
           "color_scheme": "",
           "image_ratio": "adapt",
           "image_shape": "default",
