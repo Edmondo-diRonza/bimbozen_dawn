@@ -69,7 +69,7 @@
       "settings": {
         "title": "In primo piano",
         "heading_size": "h1",
-        "description": "<p>La nostra selezione scelta per te!</p>",
+        "description": "<p>I migliori prodotti scelti per te!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "home",
