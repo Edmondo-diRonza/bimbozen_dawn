@@ -2,10 +2,47 @@
   "sections": {
     "main": {
       "type": "template-gift-card",
-
-      "block_order": ["faq_AzXV7t"],
       "settings": {}
+    },
+    "featured_product_q9yEyy": {
+      "type": "featured-product",
+      "blocks": {
+        "title_mQt6rH": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_Pifywj": {
+          "type": "text",
+          "settings": {
+            "text": "Una Gift Card Bimbozen per un regalo speciale!",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "title_mQt6rH",
+        "text_Pifywj"
+      ],
+      "settings": {
+        "product": "buono-prova",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "featured_product_q9yEyy"
+  ]
 }
