@@ -27,7 +27,7 @@ Usage:
               {%- if childlink.links == blank -%}
 
               <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}" href="{{ childlink.url }}"
-                class="header__menu-item !tw-text-main tw-uppercase !tw-bg-main/20 tw-font-bold list-menu__item  link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
+                class="header__menu-item !tw-text-main tw-uppercase  tw-font-bold list-menu__item  link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"
                 {% if childlink.current %} aria-current="page" {% endif %}>
                 {{ childlink.title | escape }}
               </a>
