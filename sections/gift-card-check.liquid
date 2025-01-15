@@ -26,7 +26,7 @@
     resultContainer.innerHTML = "<p>Caricamento in corso...</p>";
   
     // Ottieni i dati della gift card
-    const result = await fetchGiftCardBalance(giftCardCode, true);    
+    const result = await fetchGiftCardBalance(giftCardCode);    
   
     // Mostra i risultati nel DOM
     displayGiftCardResults(result, resultContainer);
