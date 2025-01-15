@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,9 +30,12 @@
           }
         }
       },
-      "block_order": ["title_mQt6rH", "text_Pifywj"],
+      "block_order": [
+        "title_mQt6rH",
+        "text_Pifywj"
+      ],
       "settings": {
-        "product": "buono-prova",
+        "product": "gift-card",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
@@ -42,5 +54,9 @@
       "settings": {}
     }
   },
-  "order": ["main", "featured_product_q9yEyy", "gift_card_check"]
+  "order": [
+    "main",
+    "featured_product_q9yEyy",
+    "gift_card_check"
+  ]
 }
