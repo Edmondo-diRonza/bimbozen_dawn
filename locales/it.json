@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "La tua password",
       "login_form_error": "Password errata!",
       "login_form_submit": "Accedi",
-      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"link underlined-link\">Accedi qui<\/a>",
+      "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"link underlined-link\">Accedi qui</a>",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
     "social": {
@@ -72,6 +72,66 @@
       "placeholder": "Cerca..."
     }
   },
+  "giftsection": {
+    "title": "Scegli la Carta Regalo Bimbo Zen",
+    "text": "Una Gift Card Bimbo Zen per un regalo speciale!",
+    "ctalink": "/products/gift-card",
+    "ctatext": "Acquista ora",
+    "giftrule1": {
+      "title": "Scegli il valore della card",
+      "text": "Selezione il valore della Gift Card che vuoi regalare, puoi scegliere a partire da 10 euro."
+    },
+    "giftrule2": {
+      "title": "Inserisci l'email del destinatario",
+      "text": "La Gift Card verrà inviata all'indirizzo indicato. Potrai abbinare il messaggio e scegliere il giorno che desideri per l'invio."
+    },
+    "giftrule3": {
+      "title": "Completa l'acquisto",
+      "text": "Aggiungi la Gift Card al carrello e completa l'acquisto. Il destinatario potrà acquistare ciò che vuole su bimbozen.it utilizzando il codice ricevuto."
+    },
+    "faq1": {
+      "question": "Per usare la tua Gift Card online su Bimbo Zen",
+      "answer": {
+        "list": {
+          "1": "1. Registrati su www.bimbozen.it o effettua il login",
+          "2": "2. Scegli i tuoi articoli preferiti e aggiungili nel carrello.",
+          "3": "3. Vai alla Cassa.",
+          "4": "4. Compila i dati per la spedizione.",
+          "5": "5. Inserisci il tuo codice nella sezione Codice sconto o buono regalo.",
+          "6": "6. Il valore della Gift Card viene scalato dall'importo totale dell’ordine. Se necessario, puoi integrare il pagamento con una Carta di Credito, PayPal, Bonifico bancario o pagamento alla consegna."
+        }
+      }
+    },
+    "faq2": {
+      "question": "Condizioni e termini di utilizzo Gift Card Bimbo Zen",
+      "answer": {
+        "list": {
+          "1": "1. Le singole Gift Card sono valide dodici mesi dalla data di acquisto e possono essere utilizzate in una o più soluzioni, fino ad esaurimento del credito. Non è ricaricabile.",
+          "2": "2. La data di scadenza e il saldo residuo sono verificabili in qualsiasi momento.",
+          "3": "3. Non può essere convertita in denaro, né rimborsata o sostituita in caso di smarrimento/ furto o in caso di mancato utilizzo, in tutto o in parte, entro la scadenza.",
+          "4": "4. Gift Card Bimbo Zen è spendibile su tutti prodotti, anche quelli in promozione ma non può essere utilizzata per l’acquisto di altre Gift Card Bimbo Zen.",
+          "5": "5. Se l'importo dell’ordine supera il valore della Gift Card, puoi pagare la differenza con una Carta di Credito, PayPal, Bonifico bancario o pagamento alla consegna.",
+          "6": "6. Acquistando la Gift Card Bimbo Zen questa potrà essere utilizzata solo ed esclusivamente sullo shop online bimbozen.it."
+        }
+      }
+    },
+    "balance": {
+      "title": "Hai già una gift card?",
+      "text": "Inserisci il codice di 16 cifre che hai ricevuto via email e controllo il saldo rimanente."
+    },
+    "balanceCard": {
+      "title": "Saldo della tua Gift Card",
+      "text": "Codice Gift Card senza spazi:",
+      "placeholder": "Inserisci il codice",
+      "button": "Controlla il tuo saldo"
+    }
+  },
+  "faqs": {
+    "title": "FAQs - Domande frequenti"
+  },
+  "spedizioni": {
+    "title": "Spedizioni & Pagamenti"
+  },
   "newsletter": {
     "label": "Indirizzo email",
     "success": "Grazie per l'iscrizione",
@@ -133,7 +193,7 @@
         "minimum_of": "Minimo di {{ quantity }}",
         "maximum_of": "Massimo di {{ quantity }}",
         "multiples_of": "Incrementi di {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> nel carrello",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> nel carrello",
         "note": "Visualizza regole sulla quantità",
         "min_of": "Min {{ quantity }}",
         "max_of": "Max {{ quantity }}"
@@ -155,8 +215,8 @@
         "view_store_info": "Visualizza i dettagli del negozio",
         "check_other_stores": "Verifica la disponibilità in altri negozi",
         "pick_up_available": "Ritiro disponibile",
-        "pick_up_available_at_html": "Ritiro disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Ritiro disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Impossibile caricare la disponibilità di ritiro",
         "refresh": "Aggiorna"
       },
@@ -171,13 +231,13 @@
         "image_available": "L'immagine {{ index }} è ora disponibile in visualizzazione galleria"
       },
       "view_full_details": "Visualizza dettagli completi",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
       "choose_options": "Scegli opzioni",
       "choose_product_options": "Scegli opzioni per {{ product_name }}",
       "value_unavailable": "{{ option_value }} - Non disponibile",
       "variant_sold_out_or_unavailable": "Variante esaurita o non disponibile",
       "inventory_in_stock": "Disponibile",
-      "inventory_in_stock_show_count": "{{ quantity }} disponibile\/i",
+      "inventory_in_stock_show_count": "{{ quantity }} disponibile/i",
       "inventory_low_stock": "Scorte ridotte",
       "inventory_low_stock_show_count": "Scorte ridotte: ne restano {{ quantity }}",
       "inventory_out_of_stock": "Esaurito",
@@ -187,7 +247,7 @@
         "title": "Prezzi basati sui volumi",
         "note": "Prezzi basati sui volumi disponibili",
         "minimum": "Più di {{ quantity }}",
-        "price_at_each": "a {{ price }}\/ciascuno",
+        "price_at_each": "a {{ price }}/ciascuno",
         "price_range": "{{ minimum }} - {{ maximum }}"
       },
       "product_variants": "Varianti di prodotto",
@@ -343,17 +403,17 @@
       "update": "Aggiorna",
       "login": {
         "title": "Hai un account?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Accedi<\/a> per un check-out più veloce."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Accedi</a> per un check-out più veloce."
       },
       "estimated_total": "Totale stimato",
       "new_estimated_total": "Nuovo totale stimato",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Dazi e imposte inclusi. Sconti e <a href=\"{{ link }}\">spedizione<\/a> calcolati al check-out.",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Dazi e imposte inclusi. Sconti e <a href=\"{{ link }}\">spedizione</a> calcolati al check-out.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Dazi e imposte inclusi. Sconti e spedizione calcolati al check-out.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Imposte incluse. Sconti e <a href=\"{{ link }}\">spedizione<\/a> calcolati al check-out.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Imposte incluse. Sconti e <a href=\"{{ link }}\">spedizione</a> calcolati al check-out.",
       "taxes_included_shipping_at_checkout_without_policy": "Imposte incluse. Sconti e spedizione calcolati al check-out.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Dazi inclusi. Imposte, sconti e <a href=\"{{ link }}\">spedizione<\/a> calcolati al check-out.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Dazi inclusi. Imposte, sconti e <a href=\"{{ link }}\">spedizione</a> calcolati al check-out.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Dazi inclusi. Imposte, sconti e spedizione calcolati al check-out.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Imposte, sconti e <a href=\"{{ link }}\">spedizione<\/a> calcolati al check-out.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Imposte, sconti e <a href=\"{{ link }}\">spedizione</a> calcolati al check-out.",
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Imposte, sconti e spedizione calcolati al check-out."
     },
     "terms": {
@@ -410,7 +470,7 @@
     "collection_template": {
       "title": "Collezione",
       "empty": "Nessun prodotto trovato",
-      "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">rimuovi tutto<\/a>"
+      "use_fewer_filters_html": "Utilizza meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">rimuovi tutto</a>"
     },
     "video": {
       "load_video": "Carica il video: {{ description }}"
@@ -437,7 +497,7 @@
     "quick_order_list": {
       "product_total": "Subtotale prodotto",
       "view_cart": "Visualizza carrello",
-      "each": "{{ money }}\/ciascuno",
+      "each": "{{ money }}/ciascuno",
       "product": "Prodotto",
       "variant": "Variante",
       "variant_total": "Totale varianti",
@@ -463,13 +523,13 @@
     }
   },
   "localization": {
-    "country_label": "Paese\/Area geografica",
+    "country_label": "Paese/Area geografica",
     "language_label": "Lingua",
     "update_language": "Aggiorna lingua",
-    "update_country": "Aggiorna paese\/area geografica",
+    "update_country": "Aggiorna paese/area geografica",
     "search": "Cerca",
-    "popular_countries_regions": "Paesi\/aree geografiche popolari",
-    "country_results_count": "{{ count }} paesi\/aree geografiche trovati"
+    "popular_countries_regions": "Paesi/aree geografiche popolari",
+    "country_results_count": "{{ count }} paesi/aree geografiche trovati"
   },
   "customer": {
     "account": {
@@ -498,7 +558,7 @@
       "address1": "Indirizzo - campo 1",
       "address2": "Indirizzo - campo 2",
       "city": "Città",
-      "country": "Paese\/Area geografica",
+      "country": "Paese/Area geografica",
       "province": "Provincia",
       "zip": "CAP",
       "phone": "Numero di telefono",

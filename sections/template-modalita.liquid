@@ -1,109 +1,132 @@
 {% schema %}
 {
-  "name": "Pagamenti e Metodi",
+  "name": "Spedizioni e pagamenti",
   "settings": [],
   "blocks": [
     {
-      "type": "section",
-      "name": "Sezione",
+      "type": "shipping",
+      "name": "accordion",
       "settings": [
         {
           "type": "text",
-          "id": "title",
-          "label": "Titolo"
+          "id": "question",
+          "label": "Domanda"
         },
         {
           "type": "textarea",
-          "id": "content",
-          "label": "Descrizione"
+          "id": "answer",
+          "label": "Risposta"
         }
-      ]
-    },
-    {
-      "type": "method",
-      "name": "Metodo di Pagamento",
-      "settings": [
-        {
-          "type": "text",
-          "id": "method_title",
-          "label": "Titolo Metodo"
-        },         
-        {
-            "type": "image_picker",
-            "id": "method_icon",
-            "label": "Seleziona Immagine"
-        }        
       ]
     }
   ],
   "presets": [
     {
-      "name": "Metodi di Pagamento",
+      "name": "Pagina FAQ con Accordion",
     }
   ]
 }
 {% endschema %}
 
-<div class="payment-page tw-py-20">
-  <div class="payment-sections">
+<div class="faq-page">
+  <h1 class="faq-title"> {{ 'spedizioni.title' | t }}</h1>
+  <div class="faq-items">
     {% for block in section.blocks %}
-      {% if block.type == "section" %}
-        <div class="payment-section">
-          <h1 class="section-title">{{ block.settings.title }}</h1>
-          <p class="section-content">{{ block.settings.content }}</p>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          {{ block.settings.question }}
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>{{ block.settings.answer }}</p>
         </div>
-      {% elsif block.type == "method" %}
-        <div class="payment-method">
-          <h2 class="method-title tw-flex tw-items-center tw-gap-2"><span>&dot;</span> {{ block.settings.method_title }}</h2>
-          {% if block.settings.method_icon %}
-            <img width="20px" height="20px" src="{{ block.settings.method_icon | img_url }}" alt="{{ block.settings.method_title }}" class="method-icon" />
-          {% endif %}
-        </div>
-      {% endif %}
+      </div>
     {% endfor %}
   </div>
 </div>
 
-
 <style>
-  .payment-page {
-    max-width: 1280px;
+  .faq-page {
+    
     margin: 0 auto;
-   
-    line-height: 1.6;
+    padding: 20px;
   }
-  .payment-section {
-    margin-bottom: 40px;
-  }
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
+  .faq-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 4rem;
     color: #333;
-    margin-bottom: 15px;
   }
-  .section-content {
-    font-size: 1rem;
-    color: #666;
-  }
-  .payment-method {
+  .faq-item {
     margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 3px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
-  .method-title {
-    font-size: 2rem;
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: #f9f9f9;
+    border: none;
+    padding: 15px;
+    font-size: 1.8rem;
     font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #555;
-    margin-bottom: 10px;
   }
-  .method-description {
-    font-size: 1rem;
+  .faq-question[aria-expanded="true"] {
+   font-weight: bold;
+  }
+  .faq-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .faq-answer {
+    padding: 15px;
+    font-size: 1.5rem;
     color: #666;
-    margin-bottom: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    line-height: 1.5;
   }
-  .method-icon {
-    width: 100px;
-    height: auto;
-    margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+     .faq-title {
+    
+    font-size: 2.5rem;
+   
+  }
+
+   .faq-question {
+   
+    font-size: 1.6rem;
+   
+  }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+
+      question.addEventListener("click", () => {
+        const expanded = question.getAttribute("aria-expanded") === "true" || false;
+
+        // Close all other accordions
+        document.querySelectorAll(".faq-question[aria-expanded='true']").forEach(btn => {
+          btn.setAttribute("aria-expanded", "false");
+          btn.nextElementSibling.hidden = true;
+        });
+
+        // Toggle current accordion
+        question.setAttribute("aria-expanded", !expanded);
+        answer.hidden = expanded;
+      });
+    });
+  });
+</script>
