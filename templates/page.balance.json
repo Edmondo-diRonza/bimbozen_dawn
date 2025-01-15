@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-gift-card-balance",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}
