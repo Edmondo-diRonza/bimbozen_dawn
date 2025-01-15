@@ -11,16 +11,16 @@
 <details-modal class="header__search !tw-w-full lg:!tw-w-[60%]">
   <details class="!tw-w-full ">
    <summary
-  class="tw-flex tw-items-center tw-border tw-border-white/40 tw-rounded-full tw-bg-transparent tw-px-10 tw-py-6 hover:tw-border-white hover:tw-transition-all"
+  class="tw-flex tw-items-center tw-border tw-border-white/40 lg:tw-border-main/40 tw-rounded-full tw-bg-transparent tw-px-10 tw-py-6 tw-border-white lg:hover:tw-border-main hover:tw-transition-all"
   aria-haspopup="dialog"
   aria-label="{{ 'general.search.search' | t }}"
 >
     <!-- Icona Lente -->
-    <span class="svg-wrapper tw-w-5 tw-h-5 tw-mr-2 tw-text-white">
+    <span class="svg-wrapper tw-w-5 tw-h-5 tw-mr-2 tw-text-white lg:tw-text-main">
       {{- 'icon-search.svg' | inline_asset_content -}}
     </span>
     <!-- Testo Segnaposto -->
-    <span class="tw-text-white tw-text-xl tw-uppercase tw-placeholder-white">
+    <span class="tw-text-white lg:tw-text-main tw-text-xl tw-uppercase tw-placeholder-white">
       {{ 'headerSection.cerca.placeholder' | t }}
     </span>
 </summary>

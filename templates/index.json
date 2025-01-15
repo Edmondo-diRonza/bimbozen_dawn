@@ -89,121 +89,71 @@
         "logo_TiJwQw": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/little_dutch.jpg",
-=======
-            "logo_image": "shopify://shop_images/little_dutch.jpg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "400",
-            "logo_height": ""
+            "logo_width": "400"
           }
         },
         "logo_7eEYFR": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/BIBS_logo.svg",
-=======
-            "logo_image": "shopify://shop_images/BIBS_logo.svg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_width": "100"
           }
         },
         "logo_P9FwMz": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/officina-naturae_logo.png",
-=======
-            "logo_image": "shopify://shop_images/officina-naturae_logo.png",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_width": "100"
           }
         },
         "logo_Vn6ghT": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/vilac_logo.webp",
-=======
-            "logo_image": "shopify://shop_images/vilac_logo.webp",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_width": "100"
           }
         },
         "logo_k77gWT": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/logo-magna-tiles.jpg",
-=======
-            "logo_image": "shopify://shop_images/logo-magna-tiles.jpg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "180",
-            "logo_height": "100"
+            "logo_width": "180"
           }
         },
         "logo_L4N4ij": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/logo_taftoys.jpg",
-=======
-            "logo_image": "shopify://shop_images/logo_taftoys.jpg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_width": "100"
           }
         },
         "logo_YtgUyH": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/logo_beaba.jpg",
-=======
-            "logo_image": "shopify://shop_images/logo_beaba.jpg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_width": "100"
           }
         },
         "logo_bJTtYE": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
-            "logo_image": "shopify:\/\/shop_images\/stokke.svg",
-=======
-            "logo_image": "shopify://shop_images/stokke.svg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "100",
-            "logo_height": "100"
+            "logo_image": "shopify:\/\/shop_images\/saro_logo.jpg",
+            "logo_width": "200"
           }
         },
         "logo_BA99kJ": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/brand_newlogo_3-570x320.jpg",
-=======
-            "logo_image": "shopify://shop_images/brand_newlogo_3-570x320.jpg",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "180",
-            "logo_height": "100"
+            "logo_width": "180"
           }
         },
         "logo_NJnXNF": {
           "type": "logo",
           "settings": {
-<<<<<<< HEAD
             "logo_image": "shopify:\/\/shop_images\/EGMONT-TOYS-LOGO.webp",
-=======
-            "logo_image": "shopify://shop_images/EGMONT-TOYS-LOGO.webp",
->>>>>>> 9ef6232a2389b53b29f51589243c930565e5dd26
-            "logo_width": "150",
-            "logo_height": "100"
+            "logo_width": "150"
           }
         }
       },

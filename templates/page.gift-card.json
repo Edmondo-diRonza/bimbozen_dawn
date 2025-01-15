@@ -21,9 +21,12 @@
           }
         }
       },
-      "block_order": ["title_mQt6rH", "text_Pifywj"],
+      "block_order": [
+        "title_mQt6rH",
+        "text_Pifywj"
+      ],
       "settings": {
-        "product": "buono-prova",
+        "product": "gift-card",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
@@ -42,5 +45,9 @@
       "settings": {}
     }
   },
-  "order": ["main", "featured_product_q9yEyy", "gift_card_check"]
+  "order": [
+    "main",
+    "featured_product_q9yEyy",
+    "gift_card_check"
+  ]
 }
