@@ -30,14 +30,22 @@
           "type": "shipping",
           "settings": {
             "question": "Notifiche di invio e pacchetti restituiti al mittenti",
-            "answer": ""
+            "answer": "Il giorno lavorativo successivo alla spedizione di ogni pacchetto, ti invieremo via e-mail il numero di tracciabilità. Se, dopo 3 giorni lavorativi dal pagamento del tuo ordine, non hai ricevuto la notifica di spedizione, ti preghiamo di contattarci.\n\nTi invitiamo a verificare sul sito del corriere lo stato del tuo pacchetto. Spesso, i corrieri non lasciano un avviso e il pacchetto potrebbe rimanere in giacenza, pronto per il ritiro presso il centro postale di riferimento. Se la giacenza scade, il pacchetto verrà restituito.\n\nBimbozen fornisce gli strumenti per tracciare la spedizione, ma declina ogni responsabilità in caso di restituzioni dovute a scadenza dei tempi di giacenza, irreperibilità del destinatario o indirizzi errati.\n\nAccettando i termini di acquisto, il cliente si impegna a coprire le spese di un secondo invio nel caso in cui il pacchetto non venga consegnato per cause a lui imputabili, come quelle sopra menzionate."
+          }
+        },
+        "shipping_hLqeii": {
+          "type": "shipping",
+          "settings": {
+            "question": "Metodi di pagamento",
+            "answer": "Carta di credito (VISA, MASTERCARD), PayPal e altri"
           }
         }
       },
       "block_order": [
         "shipping_i8N3Ya",
         "shipping_mEzdJG",
-        "shipping_Gp6Qa3"
+        "shipping_Gp6Qa3",
+        "shipping_hLqeii"
       ],
       "settings": {}
     },
