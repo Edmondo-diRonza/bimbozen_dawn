@@ -1,50 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "template-modalita",
       "blocks": {
-        "section_tyLYPx": {
-          "type": "section",
+        "shipping_i8N3Ya": {
+          "type": "shipping",
           "settings": {
-            "title": "Pagamenti",
-            "content": "Il pagamento deve essere effettuato in anticipo acquistando il prodotto o il servizio di cui hai bisogno tramite il nostro carrello sicuro. In tal modo, gli ordini saranno gestiti con la medesima attenzione e sicurezza e si garantisce un flusso di lavoro più produttivo.\n\nUna volta ricevuto il pagamento, il tuo acquisto verrà programmato per essere completato e riceverai un'e-mail di conferma.\n\nEffettuando l'ordine sul nostro sito web, accetti i nostri termini e che tutte le vendite sono irrevocabili."
-          }
-        },
-        "section_PaHaC3": {
-          "type": "section",
-          "settings": {
-            "title": "Metodi di pagamento:",
-            "content": "Per comodità, Bimbo Zen si avvale dei seguenti metodi di pagamento"
-          }
-        },
-        "method_jEQKTW": {
-          "type": "method",
-          "settings": {
-            "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
-            "method_icon": "shopify:\/\/shop_images\/creditcards.png"
-          }
-        },
-        "method_PrqnHm": {
-          "type": "method",
-          "settings": {
-            "method_title": "PayPal",
-            "method_icon": "shopify:\/\/shop_images\/paypal.png"
-          }
-        },
-        "method_93f4LG": {
-          "type": "method",
-          "settings": {
-            "method_title": "Altri",
-            "method_icon": "shopify:\/\/shop_images\/altri.png"
+            "question": "Politica di spedizione",
+            "answer": "Tutti gli ordini verranno personalizzati, confezionati e spediti dalla nostra sede logistica in Italia\n\nLe spedizioni verranno effettuate a mezzo corriere Nexive. La scelta del corriere potrà cambiare ad insindacabile discrezionalità di Akukù.\n\nI costi attuali sono i seguenti:\n<1 kg – EURO 5,20\n1-3 KG EURO 5,90\n3-5 KG EURO 6,90\n5-10 KG EURO 9,90\n10-20 KG EURO 12,90\nIl prezzo della spedizione dei pacchi spediti in Sardegna, Sicilia e Calabria verrà maggiorato del 10%.\n\nTali costi sono indicativi, non sono vincolanti per Akukù e potranno subire modifiche a seconda delle condizioni imposte dal corriere.\n\nIn ogni caso, i costi di spedizione vengono comunicati al cliente prima dell’accettazione finale dell’ordine e comunque prima dell’effettuazione del pagamento.\n\nL’ordine verrà preparato successivamente all’effettivo accredito del pagamento ed alla sua identificazione.\n\nIl tempo di consegna in Italia è stimato in 3-4 giorni lavorativi. I tempi indicati non sono tassativi e dipendono esclusivamente dal corriere.\nATTENZIONE! In alcuni periodi di maggiore transito, la consegna può richiedere maggior tempo."
           }
         }
       },
       "block_order": [
-        "section_tyLYPx",
-        "section_PaHaC3",
-        "method_jEQKTW",
-        "method_PrqnHm",
-        "method_93f4LG"
+        "shipping_i8N3Ya"
       ],
       "settings": {}
     }
