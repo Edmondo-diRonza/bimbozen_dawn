@@ -3,11 +3,6 @@
     "main": {
       "type": "template-gift-card",
       "settings": {}
-<<<<<<< HEAD
-    }
-  },
-  "order": ["main"]
-=======
     },
     "gift_card_check": {
       "type": "gift-card-check",
@@ -18,5 +13,4 @@
     "main",
     "gift_card_check"
   ]
->>>>>>> 965fa8119fe3f3668ddb361e401c46b72d2b87a6
 }

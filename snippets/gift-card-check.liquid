@@ -1,16 +1,35 @@
-<div id="gift-card-check-form">
-  <h2>Controlla il saldo della tua Gift Card</h2>
-  <form id="giftCardForm">
+<div id="gift-card-check-form" class="tw-border tw-border-main/10 tw-shadow-lg tw-flex tw-flex-col tw-p-6 tw-max-w-full tw-w-[600px]">
+  <div class="tw-flex tw-items-center tw-justify-between tw-p-6 tw-bg-main/5">
+  <h2 class="tw-text-xl tw-uppercase tw-font-bold">Saldo della tua Gift Card</h2>
+<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
+	<defs>
+		<mask id="solarCardBold0">
+			<g fill="none">
+				<path fill="#fff" d="M14 4h-4C6.229 4 4.343 4 3.172 5.172c-.844.843-1.08 2.057-1.146 4.078h19.948c-.066-2.021-.302-3.235-1.146-4.078C19.657 4 17.771 4 14 4m-4 16h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12q0-.662-.002-1.25H2.002Q1.999 11.338 2 12c0 3.771 0 5.657 1.172 6.828S6.229 20 10 20" />
+				<path fill="#000" fill-rule="evenodd" d="M5.25 16a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75m6.5 0a.75.75 0 0 1 .75-.75H14a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75" clip-rule="evenodd" />
+			</g>
+		</mask>
+	</defs>
+	<path fill="#3A3F4C" d="M0 0h24v24H0z" mask="url(#solarCardBold0)" />
+</svg>
+  </div>
+    <div class="tw-flex tw-items-center tw-justify-between tw-py-20 ">
+
+  <form id="giftCardForm" class="tw-flex tw-flex-col tw-gap-6 tw-w-full">
     <label for="giftCardCode">Codice Gift Card senza spazi:</label>
-    <input
-      type="text"
-      id="giftCardCode"
-      name="giftCardCode"
-      placeholder="Inserisci il codice della tua gift card"
-      required
-      minlength="19" />
-    <button class="button" type="submit">Controlla Saldo</button>
+   <input
+  type="text"
+  id="giftCardCode"
+  name="giftCardCode"
+  placeholder="Inserisci il codice "
+  required
+  minlength="19"
+  class="!tw-border tw-border-main/20 tw-rounded-md tw-p-6 tw-w-full"
+/>
+
+    <button class="tw-py-6 tw-px-10 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-main tw-uppercase tw-text-white tw-w-full tw-text-2xl" type="submit">Controlla il tuo Saldo</button>
   </form>
+  </div>
   <div id="giftCardResult"></div>
 </div>
 <script>

@@ -1,56 +1,196 @@
-<<<<<<< HEAD
 <div class="tw-my-20">
     <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-w-[95%] tw-mx-auto tw-items-center">
-=======
-<div class="tw-my-10">
-    <div class="tw-grid tw-grid-cols-2 tw-w-[95%] tw-mx-auto tw-items-center">
->>>>>>> 965fa8119fe3f3668ddb361e401c46b72d2b87a6
         <div>
             <img src="{{ " GIFT_CARD_BZ.png" | asset_url }}" id="babies-img" alt="Babies"
-                class="tw-object-contain timeline-img active tw-aspect-square " width="auto" height="auto">
+                class="tw-object-contain timeline-img active " width="auto" height="auto">
         </div>
-        <div class="tw-flex tw-flex-col tw-gap-6 ">
-            <h1 class="tw-text-main tw-text-6xl tw-font-bold">Scegli la carta regalo Bimbo Zen</h1>
+        <div class="tw-flex tw-flex-col tw-gap-6 tw-text-center tw-items-center tw-justify-center">
+            <h1 class="tw-text-main tw-text-4xl lg:tw-text-6xl tw-font-bold">Scegli la carta regalo Bimbo Zen</h1>
             <p class="tw-text-main tw-text-2xl">Una Gift Card Bimbo Zen per un regalo speciale!</p>
-            {% assign gift_card_product = all_products['products.gift-card'] %}
-            {% comment %} {% if gift_card_product %}
-            <a href="{{ products.gift-card | }}"
+
+            <a href=""
                 class="tw-py-6 tw-px-10 tw-rounded-[30px] tw-transition tw-duration-200 tw-bg-main tw-uppercase tw-text-white tw-max-w-max tw-text-2xl">Acquista
                 ora</a>
-            {% else %}
-            <p>Il prodotto non è disponibile.</p>
-            {% endif %} {% endcomment %}
+
         </div>
     </div>
-<<<<<<< HEAD
 
-    <div class="tw-grid tw-grid-cols-3 tw-w-[95%] tw-mx-auto">
-        <div class="tw-flex tw-flex-col tw-gap-4">
+ <div class="tw-grid lg:tw-grid-cols-3 tw-w-[95%] tw-mx-auto tw-gap-20 lg:tw-gap-6 tw-text-center tw-my-20 tw-bg-main/5 tw-p-20">
+    <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center tw-justify-between tw-h-full">
+        <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 20 20">
-	<path fill="#3A3F4C" d="M2 6.75A2.75 2.75 0 0 1 4.75 4h10.5A2.75 2.75 0 0 1 18 6.75v6.5A2.75 2.75 0 0 1 15.25 16H4.75A2.75 2.75 0 0 1 2 13.25zM3 10v3.25c0 .966.784 1.75 1.75 1.75H7v-4.293l-1.646 1.647a.5.5 0 0 1-.708-.708L6.293 10zm1.268-1A2 2 0 0 1 7 6.268V5H4.75A1.75 1.75 0 0 0 3 6.75V9zM6 9h1V8a1 1 0 1 0-1 1m2-1v1h1a1 1 0 1 0-1-1m2.732 1H17V6.75A1.75 1.75 0 0 0 15.25 5H8v1.268A2 2 0 0 1 10.732 9m-2.025 1l1.647 1.646a.5.5 0 0 1-.708.708L8 10.707V15h7.25A1.75 1.75 0 0 0 17 13.25V10z" />
-</svg>
-<h2>Scegli il valore della card</h2>
-<p>Selezione il valore della Gift Card che vuoi regalare, puoi scegliere a partire da 10 euro</p>
+                <path fill="#3A3F4C"
+                    d="M2 6.75A2.75 2.75 0 0 1 4.75 4h10.5A2.75 2.75 0 0 1 18 6.75v6.5A2.75 2.75 0 0 1 15.25 16H4.75A2.75 2.75 0 0 1 2 13.25zM3 10v3.25c0 .966.784 1.75 1.75 1.75H7v-4.293l-1.646 1.647a.5.5 0 0 1-.708-.708L6.293 10zm1.268-1A2 2 0 0 1 7 6.268V5H4.75A1.75 1.75 0 0 0 3 6.75V9zM6 9h1V8a1 1 0 1 0-1 1m2-1v1h1a1 1 0 1 0-1-1m2.732 1H17V6.75A1.75 1.75 0 0 0 15.25 5H8v1.268A2 2 0 0 1 10.732 9m-2.025 1l1.647 1.646a.5.5 0 0 1-.708.708L8 10.707V15h7.25A1.75 1.75 0 0 0 17 13.25V10z" />
+            </svg>
         </div>
-         <div class="tw-flex tw-flex-col tw-gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 20 20">
-	<path fill="#3A3F4C" d="M2 6.75A2.75 2.75 0 0 1 4.75 4h10.5A2.75 2.75 0 0 1 18 6.75v6.5A2.75 2.75 0 0 1 15.25 16H4.75A2.75 2.75 0 0 1 2 13.25zM3 10v3.25c0 .966.784 1.75 1.75 1.75H7v-4.293l-1.646 1.647a.5.5 0 0 1-.708-.708L6.293 10zm1.268-1A2 2 0 0 1 7 6.268V5H4.75A1.75 1.75 0 0 0 3 6.75V9zM6 9h1V8a1 1 0 1 0-1 1m2-1v1h1a1 1 0 1 0-1-1m2.732 1H17V6.75A1.75 1.75 0 0 0 15.25 5H8v1.268A2 2 0 0 1 10.732 9m-2.025 1l1.647 1.646a.5.5 0 0 1-.708.708L8 10.707V15h7.25A1.75 1.75 0 0 0 17 13.25V10z" />
-</svg>
-<h2>Scegli il valore della card</h2>
-<p>Selezione il valore della Gift Card che vuoi regalare, puoi scegliere a partire da 10 euro</p>
+        <h2>Scegli il valore della card</h2>
+        <p class="tw-flex-grow">Selezione il valore della Gift Card che vuoi regalare, puoi scegliere a partire da 10 euro.</p>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center tw-justify-between tw-h-full">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24">
+                <g fill="none" stroke="#3A3F4C" stroke-linecap="round" stroke-width="1.5">
+                    <path stroke-linejoin="round" d="m5 9l4.5 3L14 9" />
+                    <path d="M17 19H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v2" />
+                    <path stroke-linejoin="round" d="M17 14h6m0 0l-3-3m3 3l-3 3" />
+                </g>
+            </svg>
         </div>
-         <div class="tw-flex tw-flex-col tw-gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 20 20">
-	<path fill="#3A3F4C" d="M2 6.75A2.75 2.75 0 0 1 4.75 4h10.5A2.75 2.75 0 0 1 18 6.75v6.5A2.75 2.75 0 0 1 15.25 16H4.75A2.75 2.75 0 0 1 2 13.25zM3 10v3.25c0 .966.784 1.75 1.75 1.75H7v-4.293l-1.646 1.647a.5.5 0 0 1-.708-.708L6.293 10zm1.268-1A2 2 0 0 1 7 6.268V5H4.75A1.75 1.75 0 0 0 3 6.75V9zM6 9h1V8a1 1 0 1 0-1 1m2-1v1h1a1 1 0 1 0-1-1m2.732 1H17V6.75A1.75 1.75 0 0 0 15.25 5H8v1.268A2 2 0 0 1 10.732 9m-2.025 1l1.647 1.646a.5.5 0 0 1-.708.708L8 10.707V15h7.25A1.75 1.75 0 0 0 17 13.25V10z" />
-</svg>
-<h2>Scegli il valore della card</h2>
-<p>Selezione il valore della Gift Card che vuoi regalare, puoi scegliere a partire da 10 euro</p>
+        <h2>Inserisci l'email del destinatario</h2>
+        <p class="tw-flex-grow">La Gift Card verrà inviata all'indirizzo indicato. Potrai abbinare il messaggio e scegliere il giorno che desideri per l'invio.</p>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center tw-justify-between tw-h-full">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24">
+                <g fill="none" stroke="#3A3F4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    <path
+                        d="m11 10.242l1.034 1.181c.095.109.266.1.35-.016l2.1-2.907M16.5 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-8 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" />
+                    <path
+                        d="M3.71 5.4h15.214c1.378 0 2.373 1.27 1.995 2.548l-1.654 5.6C19.01 14.408 18.196 15 17.27 15H8.112c-.927 0-1.742-.593-1.996-1.452zm0 0L3 3" />
+                </g>
+            </svg>
+        </div>
+        <h2>Completa l'acquisto</h2>
+        <p class="tw-flex-grow">Aggiungi la Gift Card al carrello e completa l'acquisto. Il destinatario potrà acquistare ciò che vuole su bimbozen.it utilizzando il codice ricevuto.</p>
+    </div>
+</div>
+
+    <div class="tw-my-20 tw-w-[95%] tw-mx-auto tw-py-20">
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                Per usare la tua Gift Card online su Bimbo Zen
+                <span class="faq-icon">+</span>
+            </button>
+            <ul class="faq-answer" hidden>
+                <li>1. Registrati su www.simegarden.com o effettua il login</li>
+                <li>2. Scegli i tuoi articoli preferiti e aggiungili nel carrello.</li>
+                <li>3. Vai alla Cassa.</li>
+                <li>4. Compila i dati per la spedizione.</li>
+                <li>5. Inserisci il tuo codice nella sezione Codice sconto o buono regalo.</li>
+                <li>6. Il valore della Gift Card viene scalato dall'importo totale dell’ordine. Se necessario, puoi
+                    integrare il pagamento con una Carta di Credito, PayPal, Bonifico bancario o pagamento alla
+                    consegna.</li>
+            </ul>
+
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                Condizioni e termini di utilizzo Gift Card Bimbo Zen
+                <span class="faq-icon">+</span>
+            </button>
+            <ul class="faq-answer" hidden>
+                <li>1. Le singole Gift Card sono valide dodici mesi dalla data di acquisto e possono essere utilizzate
+                    in una o più soluzioni, fino ad esaurimento del credito. Non è ricaricabile.</li>
+                <li>2. La data di scadenza e il saldo residuo sono verificabili in qualsiasi momento.</li>
+                <li>3. Non può essere convertita in denaro, né rimborsata o sostituita in caso di smarrimento/ furto o
+                    in caso di mancato utilizzo, in tutto o in parte, entro la scadenza.</li>
+                <li>4. Gift Card Bimbo Zen è spendibile su tutti prodotti, anche quelli in promozione ma non può essere
+                    utilizzata per l’acquisto di altre Gift Card Bimbo Zen.</li>
+                <li>5. Se l'importo dell’ordine supera il valore della Gift Card, puoi pagare la differenza con una
+                    Carta di Credito, PayPal, Bonifico bancario o pagamento alla consegna.</li>
+                <li>6. Acquistando la Gift Card Bimbo Zen questa potrà essere utilizzata solo ed esclusivamente sullo
+                    shop online bimbozen.it</li>
+            </ul>
+
         </div>
     </div>
-<div class="tw-my-20 tw-w-[95%] tw-mx-auto tw-flex tw-justify-center">
-    {%  render 'gift-card-check' %}
+    <div class="tw-my-20 tw-max-w-full tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-10 tw-w-[95%] tw-mx-auto">
+        <h2 class="tw-text-main tw-text-4xl tw-font-bold">Hai già una gift card?</h2>
+        <p class="tw-text-main tw-text-2xl tw-text-center">Inserisci il codice di 16 cifre che hai ricevuto via email e controllo il saldo rimanente.</p>
+        <div class="tw-flex tw-items-center tw-justify-center tw-h-full tw-w-[95%] tw-mx-auto">
+            {% render 'gift-card-check' %}
+
+        </div>
+    </div>
 
 </div>
-=======
->>>>>>> 965fa8119fe3f3668ddb361e401c46b72d2b87a6
-</div>
+
+<style>
+    .faq-page {
+
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .faq-title {
+        text-align: center;
+        margin: 40px 0;
+        font-size: 4rem;
+        color: #333;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .faq-question {
+        width: 100%;
+        text-align: left;
+        border: none;
+        padding: 15px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #555;
+    }
+
+    .faq-question[aria-expanded="true"] {
+        font-weight: bold;
+    }
+
+    .faq-icon {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .faq-answer {
+        padding: 15px;
+        font-size: 1.5rem;
+        color: #666;
+        border-radius: 5px;
+        line-height: 1.5;
+    }
+
+    @media screen and (max-width: 768px) {
+        .faq-title {
+
+            font-size: 2.5rem;
+
+        }
+
+        .faq-question {
+
+            font-size: 1.6rem;
+
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+            const question = item.querySelector(".faq-question");
+            const answer = item.querySelector(".faq-answer");
+
+            question.addEventListener("click", () => {
+                const expanded = question.getAttribute("aria-expanded") === "true" || false;
+
+                // Close all other accordions
+                document.querySelectorAll(".faq-question[aria-expanded='true']").forEach(btn => {
+                    btn.setAttribute("aria-expanded", "false");
+                    btn.nextElementSibling.hidden = true;
+                });
+
+                // Toggle current accordion
+                question.setAttribute("aria-expanded", !expanded);
+                answer.hidden = expanded;
+            });
+        });
+    });
+</script>
