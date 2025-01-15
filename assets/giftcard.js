@@ -21,7 +21,14 @@ const fetchGiftCardBalance = async (giftCardCode, verbose = false) => {
 
   try {
     // Esegui la fetch per ottenere i dati
-    const response = await fetch(url); // Usa await per aspettare la risposta
+    const response = await fetch(url, {
+      method: "GET", // Specifica il metodo (facoltativo, GET è predefinito)
+      mode: "cors", // Abilita CORS
+      headers: {
+        "Content-Type": "application/json", // Facoltativo, dipende dall'API
+      },
+    });
+    // Usa await per aspettare la risposta
     const data = await response.json(); // Usa await per analizzare la risposta JSON
 
     if (data.success) {
