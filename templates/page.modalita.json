@@ -16,17 +16,62 @@
           "type": "shipping",
           "settings": {
             "question": "Politica di spedizione",
-            "answer": "Tutti gli ordini verranno personalizzati, confezionati e spediti dalla nostra sede logistica in Italia\n\nLe spedizioni verranno effettuate a mezzo corriere Nexive. La scelta del corriere potrà cambiare ad insindacabile discrezionalità di Akukù.\n\nI costi attuali sono i seguenti:\n<1 kg – EURO 5,20\n1-3 KG EURO 5,90\n3-5 KG EURO 6,90\n5-10 KG EURO 9,90\n10-20 KG EURO 12,90\nIl prezzo della spedizione dei pacchi spediti in Sardegna, Sicilia e Calabria verrà maggiorato del 10%.\n\nTali costi sono indicativi, non sono vincolanti per Akukù e potranno subire modifiche a seconda delle condizioni imposte dal corriere.\n\nIn ogni caso, i costi di spedizione vengono comunicati al cliente prima dell’accettazione finale dell’ordine e comunque prima dell’effettuazione del pagamento.\n\nL’ordine verrà preparato successivamente all’effettivo accredito del pagamento ed alla sua identificazione.\n\nIl tempo di consegna in Italia è stimato in 3-4 giorni lavorativi. I tempi indicati non sono tassativi e dipendono esclusivamente dal corriere.\nATTENZIONE! In alcuni periodi di maggiore transito, la consegna può richiedere maggior tempo."
+            "answer": "Tutti gli ordini verranno personalizzati, confezionati e spediti dalla nostra sede logistica in Italia\n\nLa scelta del corriere potrà cambiare ad insindacabile discrezionalità di Bimbo Zen.\n\nI costi di spedizione vengono comunicati al cliente prima dell’accettazione finale dell’ordine e comunque prima dell’effettuazione del pagamento.\n\nL’ordine verrà preparato successivamente all’effettivo accredito del pagamento ed alla sua identificazione.\n\nIl tempo di consegna in Italia è stimato in 5-7 giorni lavorativi. I tempi indicati non sono tassativi e dipendono esclusivamente dal corriere."
+          }
+        },
+        "shipping_mEzdJG": {
+          "type": "shipping",
+          "settings": {
+            "question": "Indirizzi sbagliati o incompleti",
+            "answer": "Nel caso in cui l'indirizzo di consegna non sia stato correttamente fornito dal cliente, gli ordini verranno automaticamente restituiti al mittente. Bimbozen non è responsabile per i tempi necessari alla restituzione e non si farà carico del costo di un secondo invio.\n\nTi invitiamo a verificare che l'indirizzo di consegna sia il più preciso e completo possibile. Assicurati che il cognome fornito sia visibile sul campanello. Per indirizzi particolarmente lunghi o necessità specifiche, puoi aggiungere una nota nel campo \"commenti\"."
+          }
+        },
+        "shipping_Gp6Qa3": {
+          "type": "shipping",
+          "settings": {
+            "question": "Notifiche di invio e pacchetti restituiti al mittenti",
+            "answer": ""
           }
         }
       },
       "block_order": [
-        "shipping_i8N3Ya"
+        "shipping_i8N3Ya",
+        "shipping_mEzdJG",
+        "shipping_Gp6Qa3"
       ],
       "settings": {}
+    },
+    "1736976349248fa88b": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_Vjkbg8": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_Vjkbg8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1736976349248fa88b"
   ]
 }
