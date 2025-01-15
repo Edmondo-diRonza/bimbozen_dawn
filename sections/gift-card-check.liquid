@@ -1,0 +1,40 @@
+<div id="gift-card-check-form">
+  <h2>Controlla il saldo della tua Gift Card</h2>
+  <form id="giftCardForm">
+    <label for="giftCardCode">Codice Gift Card senza spazi:</label>
+    <input
+      type="text"
+      id="giftCardCode"
+      name="giftCardCode"
+      placeholder="Inserisci il codice della tua gift card"
+      required
+      minlength="19" />
+    <button class="button" type="submit">Controlla Saldo</button>
+  </form>
+  <div id="giftCardResult"></div>
+</div>
+<script>
+    // Gestione della chiamata ajax nel form
+  document
+  .getElementById("giftCardForm")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault(); // Evita il refresh della pagina
+  
+    const giftCardCode = document.getElementById("giftCardCode").value;
+    const resultContainer = document.getElementById("giftCardResult");
+  
+    resultContainer.innerHTML = "<p>Caricamento in corso...</p>";
+  
+    // Ottieni i dati della gift card
+    const result = await fetchGiftCardBalance(giftCardCode);    
+  
+    // Mostra i risultati nel DOM
+    displayGiftCardResults(result, resultContainer);
+  });
+  
+   // Aggiungi l'evento di input per formattare l'ID
+  document.getElementById("giftCardCode").addEventListener("input", function() {
+    // Ottieni il valore dell'input e applica la formattazione
+    this.value = formatGiftCardCode(this.value);
+  });
+</script>
