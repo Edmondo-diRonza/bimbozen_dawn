@@ -216,6 +216,18 @@
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": false,
         "settings": {}
+      },
+      "9680287006772215557": {
+        "type": "shopify://apps/searchpie-seo-speed/blocks/sb-local-seo/29f6c508-9bb9-4e93-9f98-b637b62f3552",
+        "disabled": false,
+        "settings": {}
+      },
+      "1793219247286972479": {
+        "type": "shopify://apps/searchpie-seo-speed/blocks/sb-snippets/29f6c508-9bb9-4e93-9f98-b637b62f3552",
+        "disabled": false,
+        "settings": {
+          "review_app": "spr"
+        }
       }
     },
     "color_schemes": {
