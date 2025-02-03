@@ -3,48 +3,40 @@
     "main": {
       "type": "template-modalita",
       "blocks": {
-        "section_tyLYPx": {
-          "type": "section",
+        "shipping_i8N3Ya": {
+          "type": "shipping",
           "settings": {
-            "title": "Pagamenti",
-            "content": "Il pagamento deve essere effettuato in anticipo acquistando il prodotto o il servizio di cui hai bisogno tramite il nostro carrello sicuro. In tal modo, gli ordini saranno gestiti con la medesima attenzione e sicurezza e si garantisce un flusso di lavoro più produttivo.\n\nUna volta ricevuto il pagamento, il tuo acquisto verrà programmato per essere completato e riceverai un'e-mail di conferma.\n\nEffettuando l'ordine sul nostro sito web, accetti i nostri termini e che tutte le vendite sono irrevocabili."
+            "question": "Politica di spedizione",
+            "answer": "Tutti gli ordini verranno personalizzati, confezionati e spediti dalla nostra sede logistica in Italia\n\nLa scelta del corriere potrà cambiare ad insindacabile discrezionalità di Bimbo Zen.\n\nI costi di spedizione vengono comunicati al cliente prima dell’accettazione finale dell’ordine e comunque prima dell’effettuazione del pagamento.\n\nL’ordine verrà preparato successivamente all’effettivo accredito del pagamento ed alla sua identificazione.\n\nIl tempo di consegna in Italia è stimato in 5-7 giorni lavorativi. I tempi indicati non sono tassativi e dipendono esclusivamente dal corriere."
           }
         },
-        "section_PaHaC3": {
-          "type": "section",
+        "shipping_mEzdJG": {
+          "type": "shipping",
           "settings": {
-            "title": "Metodi di pagamento:",
-            "content": "Per comodità, Bimbo Zen si avvale dei seguenti metodi di pagamento"
+            "question": "Indirizzi sbagliati o incompleti",
+            "answer": "Nel caso in cui l'indirizzo di consegna non sia stato correttamente fornito dal cliente, gli ordini verranno automaticamente restituiti al mittente. Bimbozen non è responsabile per i tempi necessari alla restituzione e non si farà carico del costo di un secondo invio.\n\nTi invitiamo a verificare che l'indirizzo di consegna sia il più preciso e completo possibile. Assicurati che il cognome fornito sia visibile sul campanello. Per indirizzi particolarmente lunghi o necessità specifiche, puoi aggiungere una nota nel campo \"commenti\"."
           }
         },
-        "method_jEQKTW": {
-          "type": "method",
+        "shipping_Gp6Qa3": {
+          "type": "shipping",
           "settings": {
-            "method_title": "Credit cards (Visa, Maestro, Mastercard, American Express)",
-            "method_icon": "shopify:\/\/shop_images\/creditcards.png"
+            "question": "Notifiche di invio e pacchetti restituiti al mittenti",
+            "answer": "Il giorno lavorativo successivo alla spedizione di ogni pacchetto, ti invieremo via e-mail il numero di tracciabilità. Se, dopo 3 giorni lavorativi dal pagamento del tuo ordine, non hai ricevuto la notifica di spedizione, ti preghiamo di contattarci.\n\nTi invitiamo a verificare sul sito del corriere lo stato del tuo pacchetto. Spesso, i corrieri non lasciano un avviso e il pacchetto potrebbe rimanere in giacenza, pronto per il ritiro presso il centro postale di riferimento. Se la giacenza scade, il pacchetto verrà restituito.\n\nBimbozen fornisce gli strumenti per tracciare la spedizione, ma declina ogni responsabilità in caso di restituzioni dovute a scadenza dei tempi di giacenza, irreperibilità del destinatario o indirizzi errati.\n\nAccettando i termini di acquisto, il cliente si impegna a coprire le spese di un secondo invio nel caso in cui il pacchetto non venga consegnato per cause a lui imputabili, come quelle sopra menzionate."
           }
         },
-        "method_PrqnHm": {
-          "type": "method",
+        "shipping_hLqeii": {
+          "type": "shipping",
           "settings": {
-            "method_title": "PayPal",
-            "method_icon": "shopify:\/\/shop_images\/paypal.png"
-          }
-        },
-        "method_93f4LG": {
-          "type": "method",
-          "settings": {
-            "method_title": "Altri",
-            "method_icon": "shopify:\/\/shop_images\/altri.png"
+            "question": "Metodi di pagamento",
+            "answer": "Carta di credito (VISA, MASTERCARD), PayPal e altri"
           }
         }
       },
       "block_order": [
-        "section_tyLYPx",
-        "section_PaHaC3",
-        "method_jEQKTW",
-        "method_PrqnHm",
-        "method_93f4LG"
+        "shipping_i8N3Ya",
+        "shipping_mEzdJG",
+        "shipping_Gp6Qa3",
+        "shipping_hLqeii"
       ],
       "settings": {}
     }
