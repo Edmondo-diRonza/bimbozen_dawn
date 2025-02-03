@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -6,37 +15,49 @@
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
+<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/little_girl.jpg",
+=======
+            "image": "shopify://shop_images/little_girl.jpg",
+>>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "Gioca, Immagina, Cresci!",
             "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Acquista ora",
-            "button_url": "shopify:\/\/collections\/giocattoli"
+            "button_url": "shopify://collections/giocattoli"
           }
         },
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
+<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/little_boy.jpg",
+=======
+            "image": "shopify://shop_images/little_boy.jpg",
+>>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "La Cura che Ogni Bambino Merita",
             "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Acquista ora",
-            "button_url": "shopify:\/\/collections\/puericultura"
+            "button_url": "shopify://collections/puericultura"
           }
         },
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
+<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/strong-superhero-girl-with-superpowers-2023-11-27-05-11-04-utc_751ab12f-7890-4a0b-ae96-d4317285cc78.jpg",
+=======
+            "image": "shopify://shop_images/strong-superhero-girl-with-superpowers-2023-11-27-05-11-04-utc_751ab12f-7890-4a0b-ae96-d4317285cc78.jpg",
+>>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "La Magia di un Regalo Speciale",
             "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Acquista ora",
-            "button_url": "shopify:\/\/collections\/baby-party"
+            "button_url": "shopify://collections/baby-party"
           }
         }
       },
@@ -60,7 +81,7 @@
       "settings": {
         "title": "In primo piano",
         "heading_size": "h1",
-        "description": "<p>I migliori prodotti scelti per te!<\/p>",
+        "description": "<p>I migliori prodotti scelti per te!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "in-primo-piano",
@@ -89,70 +110,70 @@
         "logo_TiJwQw": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/little_dutch.jpg",
+            "logo_image": "shopify://shop_images/little_dutch.jpg",
             "logo_width": "400"
           }
         },
         "logo_7eEYFR": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/BIBS_logo.svg",
+            "logo_image": "shopify://shop_images/BIBS_logo.svg",
             "logo_width": "100"
           }
         },
         "logo_P9FwMz": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/officina-naturae_logo.png",
+            "logo_image": "shopify://shop_images/officina-naturae_logo.png",
             "logo_width": "100"
           }
         },
         "logo_Vn6ghT": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/vilac_logo.webp",
+            "logo_image": "shopify://shop_images/vilac_logo.webp",
             "logo_width": "100"
           }
         },
         "logo_k77gWT": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/logo-magna-tiles.jpg",
+            "logo_image": "shopify://shop_images/logo-magna-tiles.jpg",
             "logo_width": "180"
           }
         },
         "logo_L4N4ij": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/logo_taftoys.jpg",
+            "logo_image": "shopify://shop_images/logo_taftoys.jpg",
             "logo_width": "100"
           }
         },
         "logo_YtgUyH": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/logo_beaba.jpg",
+            "logo_image": "shopify://shop_images/logo_beaba.jpg",
             "logo_width": "100"
           }
         },
         "logo_bJTtYE": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/saro_logo.jpg",
+            "logo_image": "shopify://shop_images/saro_logo.jpg",
             "logo_width": "200"
           }
         },
         "logo_BA99kJ": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/brand_newlogo_3-570x320.jpg",
+            "logo_image": "shopify://shop_images/brand_newlogo_3-570x320.jpg",
             "logo_width": "180"
           }
         },
         "logo_NJnXNF": {
           "type": "logo",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/EGMONT-TOYS-LOGO.webp",
+            "logo_image": "shopify://shop_images/EGMONT-TOYS-LOGO.webp",
             "logo_width": "150"
           }
         }
@@ -178,7 +199,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/8779921-uhd_3840_2160_25fps.mp4",
+        "video": "shopify://files/videos/8779921-uhd_3840_2160_25fps.mp4",
         "video_url": "",
         "description": "",
         "full_width": true,
@@ -192,7 +213,7 @@
       "settings": {
         "title": "Idee regalo",
         "heading_size": "h1",
-        "description": "<p>Il tuo primo baby shower? Scopri la nostra selezione<\/p>",
+        "description": "<p>Il tuo primo baby shower? Scopri la nostra selezione</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "baby-shower",
@@ -228,7 +249,7 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
-            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze<\/p>",
+            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze</p>",
             "text_style": "body"
           }
         },
@@ -236,7 +257,7 @@
           "type": "button",
           "settings": {
             "button_label": "scopri i nostri giochi",
-            "button_link": "shopify:\/\/collections\/giocattoli",
+            "button_link": "shopify://collections/giocattoli",
             "button_style_secondary": false
           }
         }
@@ -247,7 +268,7 @@
         "button_pDbMWn"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/giochi_banner_1.jpg",
+        "image": "shopify://shop_images/giochi_banner_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -267,7 +288,11 @@
       "settings": {
         "title": "I nostri Handmade",
         "heading_size": "h1",
+<<<<<<< HEAD
         "description": "<p>Scopri la nostra selezione di prodotti fatti a mano, realizzati con passione e cura!<\/p>",
+=======
+        "description": "<p>Scopri la nostra selezione di prodotti fatti a mano, realizzati con passione e cura!</p>",
+>>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
         "show_description": false,
         "description_style": "body",
         "collection": "handmade",
@@ -296,7 +321,7 @@
         "image_CFm3Bw": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img.jpg"
+            "image": "shopify://shop_images/img.jpg"
           }
         },
         "product_CpUwM7": {
@@ -344,7 +369,7 @@
         "paragraph_pLdgeP": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.<\/p>"
+            "text": "<p>Sii tra i primi a scoprire le nuove collezioni e le offerte esclusive.</p>"
           }
         },
         "email_form_aB446b": {

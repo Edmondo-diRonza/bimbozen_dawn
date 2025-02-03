@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "about_page": {
       "type": "template-about",
       "settings": {
-        "image": "shopify:\/\/shop_images\/hero_chi_siamo.jpg"
+        "image": "shopify://shop_images/hero_chi_siamo.jpg"
       }
     },
     "collection-age": {
@@ -20,9 +29,9 @@
         "column_7jgrmn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/chi_siamo1_1.jpg",
-            "title": "<strong>Ogni cliente è speciale<\/strong>",
-            "text": "<p>A Bimbo Zen, ogni cliente è unico e speciale. Vogliamo che tu ti senta accolto e a tuo agio, proprio come a casa tua. Ogni visita è un’esperienza, e siamo qui per ascoltarti e aiutarti a trovare esattamente ciò di cui hai bisogno per il tuo bambino.<br\/><\/p>",
+            "image": "shopify://shop_images/chi_siamo1_1.jpg",
+            "title": "<strong>Ogni cliente è speciale</strong>",
+            "text": "<p>A Bimbo Zen, ogni cliente è unico e speciale. Vogliamo che tu ti senta accolto e a tuo agio, proprio come a casa tua. Ogni visita è un’esperienza, e siamo qui per ascoltarti e aiutarti a trovare esattamente ciò di cui hai bisogno per il tuo bambino.<br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -30,9 +39,9 @@
         "column_t67nem": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/placeholder.jpg",
-            "title": "<strong>Sostenibilità a Bimbo Zen<\/strong>",
-            "text": "<p>La nostra missione va oltre la vendita di prodotti. A Bimbo Zen, ci impegniamo per un futuro migliore, scegliendo articoli sostenibili e rispettosi dell'ambiente. Crediamo che ogni piccolo gesto verso il green possa fare una grande differenza per il mondo in cui cresceranno i nostri figli.<br\/><\/p>",
+            "image": "shopify://shop_images/placeholder.jpg",
+            "title": "<strong>Sostenibilità a Bimbo Zen</strong>",
+            "text": "<p>La nostra missione va oltre la vendita di prodotti. A Bimbo Zen, ci impegniamo per un futuro migliore, scegliendo articoli sostenibili e rispettosi dell'ambiente. Crediamo che ogni piccolo gesto verso il green possa fare una grande differenza per il mondo in cui cresceranno i nostri figli.<br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -40,9 +49,15 @@
         "column_ApyGEN": {
           "type": "column",
           "settings": {
+<<<<<<< HEAD
             "image": "shopify:\/\/shop_images\/accoglienza.jpg",
             "title": "<strong>Una Comunità Accogliente<\/strong>",
             "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.<\/p>",
+=======
+            "image": "shopify://shop_images/accoglienza.jpg",
+            "title": "<strong>Una Comunità Accogliente</strong>",
+            "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.</p>",
+>>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "link_label": "",
             "link": ""
           }
@@ -83,7 +98,7 @@
         "text_7xdBaY": {
           "type": "text",
           "settings": {
-            "text": "<p>A Bimbo Zen non offriamo solo prodotti per bambini, ma anche sostegno ai genitori. Nel nostro negozio a Molfetta organizziamo incontri dedicati ai neo-genitori, guidati da esperti qualificati, per affrontare temi importanti legati alla crescita e al benessere dei più piccoli.<br\/><br\/>Oltre a ricevere consigli utili, avrete l’opportunità di condividere esperienze con altri genitori e costruire una vera comunità. Passate a trovarci e scoprite come possiamo accompagnarvi nel meraviglioso viaggio della genitorialità!<\/p>",
+            "text": "<p>A Bimbo Zen non offriamo solo prodotti per bambini, ma anche sostegno ai genitori. Nel nostro negozio a Molfetta organizziamo incontri dedicati ai neo-genitori, guidati da esperti qualificati, per affrontare temi importanti legati alla crescita e al benessere dei più piccoli.<br/><br/>Oltre a ricevere consigli utili, avrete l’opportunità di condividere esperienze con altri genitori e costruire una vera comunità. Passate a trovarci e scoprite come possiamo accompagnarvi nel meraviglioso viaggio della genitorialità!</p>",
             "text_style": "body"
           }
         },
@@ -91,7 +106,7 @@
           "type": "button",
           "settings": {
             "button_label": "Scopri dove siamo",
-            "button_link": "shopify:\/\/pages\/contact",
+            "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
         }
@@ -102,7 +117,7 @@
         "button_yPFjde"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/chi_siamo_banner_1.jpg",
+        "image": "shopify://shop_images/chi_siamo_banner_1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -130,7 +145,7 @@
         "paragraph_JjU8Ni": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Iscriviti alla nostra newsletter per non perdere appuntamenti speciali, offerte e tutte le novità di Bimbozen!<\/p>"
+            "text": "<p>Iscriviti alla nostra newsletter per non perdere appuntamenti speciali, offerte e tutte le novità di Bimbozen!</p>"
           }
         },
         "email_form_iY7G6y": {
