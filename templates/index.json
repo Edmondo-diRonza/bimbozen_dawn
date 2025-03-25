@@ -12,14 +12,23 @@
     "hero_banner": {
       "type": "hero",
       "blocks": {
+        "image_block_7tQNpy": {
+          "type": "image_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/hero_chi_siamo.jpg",
+            "text": "missing translation: \"t:Testo Predefinito\" is not present in any of the [\"it\", \"en\"] schema locale files",
+            "subtext": "Testo predefinito",
+            "text_size": 96,
+            "subtext_size": 16,
+            "button_text": "Tutti i prodotti",
+            "button_url": "/"
+          }
+        },
         "image_block_bMGeCF": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
-            "image": "shopify:\/\/shop_images\/little_girl.jpg",
-=======
             "image": "shopify://shop_images/little_girl.jpg",
->>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "Gioca, Immagina, Cresci!",
             "subtext": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
             "text_size": 96,
@@ -31,11 +40,7 @@
         "image_block_tWPn8q": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
-            "image": "shopify:\/\/shop_images\/little_boy.jpg",
-=======
             "image": "shopify://shop_images/little_boy.jpg",
->>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "La Cura che Ogni Bambino Merita",
             "subtext": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
             "text_size": 96,
@@ -47,11 +52,7 @@
         "image_block_JKkpTn": {
           "type": "image_block",
           "settings": {
-<<<<<<< HEAD
-            "image": "shopify:\/\/shop_images\/strong-superhero-girl-with-superpowers-2023-11-27-05-11-04-utc_751ab12f-7890-4a0b-ae96-d4317285cc78.jpg",
-=======
             "image": "shopify://shop_images/strong-superhero-girl-with-superpowers-2023-11-27-05-11-04-utc_751ab12f-7890-4a0b-ae96-d4317285cc78.jpg",
->>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "text": "La Magia di un Regalo Speciale",
             "subtext": "Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
             "text_size": 96,
@@ -62,6 +63,7 @@
         }
       },
       "block_order": [
+        "image_block_7tQNpy",
         "image_block_bMGeCF",
         "image_block_tWPn8q",
         "image_block_JKkpTn"
@@ -249,7 +251,7 @@
         "text_tTmeEn": {
           "type": "text",
           "settings": {
-            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze</p>",
+            "text": "<p>Il gioco è essenziale per lo sviluppo dei bambini, specialmente nella prima fase della loro vita. Stimola la creatività, le capacità cognitive, motorie e sociali, favorendo l'apprendimento, l'interazione emotiva e la creazione di competenze.</p>",
             "text_style": "body"
           }
         },
@@ -288,11 +290,7 @@
       "settings": {
         "title": "I nostri Handmade",
         "heading_size": "h1",
-<<<<<<< HEAD
-        "description": "<p>Scopri la nostra selezione di prodotti fatti a mano, realizzati con passione e cura!<\/p>",
-=======
         "description": "<p>Scopri la nostra selezione di prodotti fatti a mano, realizzati con passione e cura!</p>",
->>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
         "show_description": false,
         "description_style": "body",
         "collection": "handmade",
