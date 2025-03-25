@@ -15,6 +15,49 @@
         "image": "shopify://shop_images/hero_chi_siamo.jpg"
       }
     },
+    "rich_text_Vk8tCf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_H4AjE4": {
+          "type": "heading",
+          "settings": {
+            "heading": "BIMBOZEN - Crescere in Armonia.",
+            "heading_size": "h1"
+          }
+        },
+        "text_jcBNNX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/><br/> Uno store dedicato ai bambini ed ai genitori ma non solo, un progetto che nasce da una nuova voglia di genitorialità, con uno sguardo al passato, ma anche al futuro in unottica di sostenibilità, efficacia e design.<br/><br/>Un punto dincontro per neo-mamme, genitori e chiunque vorrà realizzare unidea regalo che farà innamorare, il nostro assortimento comprendePUERICULTURA LEGGERA, GIOCHI EDUCATIVI ED IN LEGNO, LIBRI E ALBI ILLUSTRATI, FASCE e MARSUPI PORTABEBÈ e tanto altro.<br/><br/>Oltre a poter scegliere un regalo per i vostri bimbi, organizziamo incontri formativi ed informativi con esperti del settore quali pediatri, ostetriche, puericultrici e consulenti babywearing.BABYWEARING significa \"indossare il proprio bambino\".<br/><br/>Una pratica che rievoca nel piccolo emozioni e sensazioni provate nel grembo materno.<br/><br/> \"Portare\" è coccolarsi e sentirsi di nuovo in un corpo solo.<br/><br/> Essere a stretto contatto aiuta il genitore a percepire i bisogni del bambino e a soddisfarli.Potremo spiegarti secondo quali criteri si definisce la posizione ergonomica del<br/><br/> bambino portato, quali sono i supporti ergonomici di cui il mercato dispone, risponderemo a tutte le curiosità, i dubbi, le perplessità legate a questa pratica.<br/><br/>Passate a trovarci per conoscerci ed immergervi in questo meraviglioso mondo.'</p>"
+          }
+        },
+        "button_bLNrnL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Etichetta pulsante",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_H4AjE4",
+        "text_jcBNNX",
+        "button_bLNrnL"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collection-age": {
       "type": "main-category-age",
       "settings": {}
@@ -49,15 +92,9 @@
         "column_ApyGEN": {
           "type": "column",
           "settings": {
-<<<<<<< HEAD
-            "image": "shopify:\/\/shop_images\/accoglienza.jpg",
-            "title": "<strong>Una Comunità Accogliente<\/strong>",
-            "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.<\/p>",
-=======
             "image": "shopify://shop_images/accoglienza.jpg",
             "title": "<strong>Una Comunità Accogliente</strong>",
             "text": "<p>L'accoglienza è il nostro pilastro. A Bimbo Zen, non troverai solo un negozio, ma un luogo dove i genitori possono sentirsi supportati e parte di una comunità. Ogni prodotto scelto con cura e ogni consiglio offerto sono pensati per creare un ambiente dove tu e il tuo bambino possiate prosperare.</p>",
->>>>>>> 24c113924dade6cb39b47cec4b5210b6d4c068ca
             "link_label": "",
             "link": ""
           }
@@ -168,6 +205,7 @@
   },
   "order": [
     "about_page",
+    "rich_text_Vk8tCf",
     "collection-age",
     "secure",
     "multicolumn_inj4bL",
