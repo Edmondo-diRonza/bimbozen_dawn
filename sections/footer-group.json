@@ -30,6 +30,7 @@
     },
     "terms": {
       "type": "delivery-terms",
+      "disabled": true,
       "settings": {}
     },
     "footer": {
