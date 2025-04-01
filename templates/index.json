@@ -9,6 +9,80 @@
  */
 {
   "sections": {
+    "slideshow_rkamfU": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_hiwwjn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BimboZen_Cassa.png",
+            "heading": "Benvenuti in Bimbo Zen",
+            "heading_size": "h1",
+            "subheading": "Selezioniamo giochi educativi, libri, articoli per la prima infanzia e babywearing con cura, attenzione e uno sguardo al futuro. Qui trovi prodotti pensati per crescere insieme, con amore, qualità e consapevolezza.",
+            "button_label": "TUTTI I PRODOTTI",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_Nh77Ew": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/little_girl.jpg",
+            "heading": "Gioca, Immagina, Cresci!",
+            "heading_size": "h1",
+            "subheading": "Giocattoli e giochi per ogni piccolo eroe, pronti a ispirare grandi avventure.",
+            "button_label": "ACQUISTA ORA",
+            "link": "shopify://collections/giocattoli",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_hdAj4b": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/little_boy.jpg",
+            "heading": "La Cura che Ogni Bambino Merita",
+            "heading_size": "h1",
+            "subheading": "Tutto ciò di cui hai bisogno per accompagnare il tuo bambino nei primi passi della vita.",
+            "button_label": "ACQUISTA ORA",
+            "link": "shopify://collections/puericultura",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_hiwwjn",
+        "slide_Nh77Ew",
+        "slide_hdAj4b"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Presentazione sul nostro brand"
+      }
+    },
     "hero_banner": {
       "type": "hero",
       "blocks": {
@@ -17,7 +91,7 @@
           "settings": {
             "image": "shopify://shop_images/BimboZen_Cassa.png",
             "text": "Benvenuti in Bimbo Zen 🎈 Il punto d’incontro per genitori, bambini e idee regalo che fanno",
-            "subtext": "Selezioniamo giochi educativi, libri, articoli per la prima infanzia e babywearing con cura, attenzione e uno sguardo al futuro. Qui trovi prodotti pensati per crescere insieme, con amore, qualità e consapevolezza.",
+            "subtext": "",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
@@ -465,6 +539,7 @@
     }
   },
   "order": [
+    "slideshow_rkamfU",
     "hero_banner",
     "marquee",
     "main_category",
