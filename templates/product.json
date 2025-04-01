@@ -127,6 +127,27 @@
         "include_margins": true
       }
     },
+    "174349802587f133e5": {
+      "type": "apps",
+      "blocks": {
+        "tinyicons_icon_blocks_4erwpz": {
+          "type": "shopify://apps/tinyicons/blocks/icon-blocks/bc09a887-3864-462a-90ef-3be848234374",
+          "settings": {
+            "chicons_block_id": "084970efd5e30eff8e0c0ed7347901",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "tinyicons_icon_blocks_4erwpz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "image_with_text_cx7HBw": {
       "type": "image-with-text",
       "blocks": {
@@ -175,8 +196,8 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+        "color_scheme": "scheme-58216b8f-54f9-400c-8596-c8637f31f1a0",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -219,27 +240,6 @@
     "aboutsec": {
       "type": "about-sec",
       "settings": {}
-    },
-    "174349802587f133e5": {
-      "type": "apps",
-      "blocks": {
-        "tinyicons_icon_blocks_4erwpz": {
-          "type": "shopify://apps/tinyicons/blocks/icon-blocks/bc09a887-3864-462a-90ef-3be848234374",
-          "settings": {
-            "chicons_block_id": "084970efd5e30eff8e0c0ed7347901",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "tinyicons_icon_blocks_4erwpz"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     },
     "secure": {
       "type": "secure",
