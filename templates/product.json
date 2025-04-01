@@ -161,10 +161,6 @@
         "padding_bottom": 36
       }
     },
-    "aboutsec": {
-      "type": "about-sec",
-      "settings": {}
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -197,14 +193,18 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "aboutsec": {
+      "type": "about-sec",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "secure",
     "image_with_text_cx7HBw",
-    "aboutsec",
     "related-products",
-    "1734380302862a50d0"
+    "1734380302862a50d0",
+    "aboutsec"
   ]
 }
