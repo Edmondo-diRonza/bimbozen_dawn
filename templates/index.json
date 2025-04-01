@@ -556,6 +556,21 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1743497837eac5efe6": {
+      "type": "apps",
+      "blocks": {
+        "rocket_google_reviews_app_block_XWqtGV": {
+          "type": "shopify://apps/rocket-google-reviews/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "rocket_google_reviews_app_block_XWqtGV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -572,6 +587,7 @@
     "image_with_text_Q3Laq6",
     "featured_collection_FWWKWP",
     "collage_4gxTGL",
-    "newsletter_LbCLHm"
+    "newsletter_LbCLHm",
+    "1743497837eac5efe6"
   ]
 }
