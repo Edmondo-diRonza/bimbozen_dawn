@@ -22,11 +22,11 @@
             "button_label": "TUTTI I PRODOTTI",
             "link": "shopify://collections",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         },
@@ -40,11 +40,11 @@
             "button_label": "ACQUISTA ORA",
             "link": "shopify://collections/giocattoli",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         },
@@ -58,11 +58,11 @@
             "button_label": "ACQUISTA ORA",
             "link": "shopify://collections/puericultura",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 20,
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         },
@@ -76,11 +76,11 @@
             "button_label": "ACQUISTA ORA",
             "link": "shopify://collections/baby-party",
             "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         }
