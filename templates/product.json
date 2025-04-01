@@ -105,6 +105,62 @@
       "type": "secure",
       "settings": {}
     },
+    "image_with_text_cx7HBw": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_BCXnNN": {
+          "type": "caption",
+          "settings": {
+            "caption": "BENVENUTI IN BIMBO ZEN",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_YW4HaK": {
+          "type": "heading",
+          "settings": {
+            "heading": "La nostra filosofia",
+            "heading_size": "h1"
+          }
+        },
+        "text_WUMcDT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crediamo che ogni scelta per i più piccoli debba unire <strong>attenzione, cura e sostenibilità. </strong>Per questo selezioniamo solo prodotti che rispettano il benessere del bambino e accompagnano i genitori in ogni fase, con soluzioni efficaci e dal design senza tempo.</p><p>Il nostro impegno va oltre la vendita: creiamo occasioni di incontro e formazione per supportare le famiglie e farle sentire parte di una comunità consapevole, dove<strong> il contatto, l’ascolto e la relazione sono al centro di tutto.</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_PkFbUY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Etichetta pulsante",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_BCXnNN",
+        "heading_YW4HaK",
+        "text_WUMcDT",
+        "button_PkFbUY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/chi_siamo3_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "aboutsec": {
       "type": "about-sec",
       "settings": {}
@@ -146,6 +202,7 @@
   "order": [
     "main",
     "secure",
+    "image_with_text_cx7HBw",
     "aboutsec",
     "related-products",
     "1734380302862a50d0"
