@@ -14,15 +14,14 @@
       "blocks": {
         "image_block_7tQNpy": {
           "type": "image_block",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/hero_chi_siamo.jpg",
-            "text": "missing translation: \"t:Testo Predefinito\" is not present in any of the [\"it\", \"en\"] schema locale files",
-            "subtext": "Testo predefinito",
+            "text": "🎈 Il punto d’incontro per genitori, bambini e idee regalo che fanno",
+            "subtext": "Selezioniamo giochi educativi, libri, articoli per la prima infanzia e babywearing con cura, attenzione e uno sguardo al futuro. Qui trovi prodotti pensati per crescere insieme, con amore, qualità e consapevolezza.",
             "text_size": 96,
             "subtext_size": 16,
             "button_text": "Tutti i prodotti",
-            "button_url": "/"
+            "button_url": "shopify://collections"
           }
         },
         "image_block_bMGeCF": {
@@ -238,6 +237,27 @@
         "padding_bottom": 36
       }
     },
+    "17428949449a467e28": {
+      "type": "apps",
+      "blocks": {
+        "tinyicons_icon_blocks_xQabfa": {
+          "type": "shopify://apps/tinyicons/blocks/icon-blocks/bc09a887-3864-462a-90ef-3be848234374",
+          "settings": {
+            "chicons_block_id": "084970efd5e30eff8e0c0ed7347901",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "tinyicons_icon_blocks_xQabfa"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "image_with_text_Q3Laq6": {
       "type": "image-with-text",
       "blocks": {
@@ -385,27 +405,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "17428949449a467e28": {
-      "type": "apps",
-      "blocks": {
-        "tinyicons_icon_blocks_xQabfa": {
-          "type": "shopify://apps/tinyicons/blocks/icon-blocks/bc09a887-3864-462a-90ef-3be848234374",
-          "settings": {
-            "chicons_block_id": "084970efd5e30eff8e0c0ed7347901",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "tinyicons_icon_blocks_xQabfa"
-      ],
-      "settings": {
-        "include_margins": false
       }
     }
   },
