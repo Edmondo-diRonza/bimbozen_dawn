@@ -102,6 +102,21 @@
         "accessibility_info": "Presentazione sul nostro brand"
       }
     },
+    "1743497837eac5efe6": {
+      "type": "apps",
+      "blocks": {
+        "rocket_google_reviews_app_block_XWqtGV": {
+          "type": "shopify://apps/rocket-google-reviews/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "rocket_google_reviews_app_block_XWqtGV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "hero_banner": {
       "type": "hero",
       "blocks": {
@@ -557,16 +572,18 @@
         "padding_bottom": 52
       }
     },
-    "1743497837eac5efe6": {
+    "1743497839a771306e": {
       "type": "apps",
       "blocks": {
-        "rocket_google_reviews_app_block_XWqtGV": {
-          "type": "shopify://apps/rocket-google-reviews/blocks/app-block/d11c8893-a181-4aff-a280-7446d42cec3b",
-          "settings": {}
+        "judge_me_reviews_featured_carousel_YL7dCy": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
       "block_order": [
-        "rocket_google_reviews_app_block_XWqtGV"
+        "judge_me_reviews_featured_carousel_YL7dCy"
       ],
       "settings": {
         "include_margins": true
@@ -575,6 +592,7 @@
   },
   "order": [
     "slideshow_rkamfU",
+    "1743497837eac5efe6",
     "hero_banner",
     "marquee",
     "main_category",
@@ -588,6 +606,6 @@
     "featured_collection_FWWKWP",
     "collage_4gxTGL",
     "newsletter_LbCLHm",
-    "1743497837eac5efe6"
+    "1743497839a771306e"
   ]
 }
