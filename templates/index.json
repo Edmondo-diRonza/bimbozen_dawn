@@ -26,7 +26,7 @@
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
+            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
             "text_alignment_mobile": "left"
           }
         },
@@ -42,9 +42,9 @@
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
+            "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
             "text_alignment_mobile": "center"
           }
         },
@@ -65,12 +65,31 @@
             "color_scheme": "scheme-87a6c97d-8ad6-4c5f-aad7-8b04dabd6ea5",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_pitTQY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/strong-superhero-girl-with-superpowers-2023-11-27-05-11-04-utc_c601e362-cea1-49ed-bf97-1ba0681aeb69.jpg",
+            "heading": "Scopri la Magia di un Regalo Speciale",
+            "heading_size": "h1",
+            "subheading": "Compleanno in arrivo? Sorprendi con qualcosa di unico: idee regalo che fanno la differenza.",
+            "button_label": "ACQUISTA ORA",
+            "link": "shopify://collections/baby-party",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_hiwwjn",
         "slide_Nh77Ew",
-        "slide_hdAj4b"
+        "slide_hdAj4b",
+        "slide_pitTQY"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -78,7 +97,7 @@
         "slider_visual": "counter",
         "auto_rotate": true,
         "change_slides_speed": 5,
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "show_text_below": true,
         "accessibility_info": "Presentazione sul nostro brand"
       }
@@ -141,6 +160,7 @@
         "image_block_tWPn8q",
         "image_block_JKkpTn"
       ],
+      "disabled": true,
       "settings": {}
     },
     "marquee": {
@@ -207,8 +227,8 @@
         "button_r4XPRK": {
           "type": "button",
           "settings": {
-            "button_label": "Etichetta pulsante",
-            "button_link": "",
+            "button_label": "LA NOSTRA STORIA",
+            "button_link": "shopify://pages/chi-siamo",
             "button_style_secondary": false
           }
         }
@@ -220,15 +240,15 @@
         "button_r4XPRK"
       ],
       "settings": {
-        "image": "shopify://shop_images/chi_siamo3_1.jpg",
+        "image": "shopify://shop_images/BimboZen_Giocattoli_Pensati_per_i_bambini_di_oggi.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-e393175f-f1f3-473c-b42d-577136bfd52c",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
